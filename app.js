@@ -80,9 +80,12 @@
     if (!k.known) return `${k.day} · kickoff time TBD`;
     const ms = k.dt - Date.now();
     if (ms <= 0) return `Kicked off · ${k.day}, ${k.time}`;
-    const mins = Math.floor(ms / 60000);
-    const d = Math.floor(mins / 1440), h = Math.floor((mins % 1440) / 60), min = mins % 60;
-    return d > 0 ? `Kicks off in ${d}d ${h}h` : `Kicks off in ${h}h ${String(min).padStart(2, "0")}m`;
+    const secs = Math.floor(ms / 1000);
+    const d = Math.floor(secs / 86400), h = Math.floor((secs % 86400) / 3600),
+      min = Math.floor((secs % 3600) / 60), s = secs % 60;
+    if (d > 0) return `Kicks off in ${d}d ${h}h`;
+    if (h > 0) return `Kicks off in ${h}h ${String(min).padStart(2, "0")}m`;
+    return `Kicks off in ${min}:${String(s).padStart(2, "0")}`;
   }
 
   function armCountdown(m) {
@@ -92,7 +95,7 @@
       const el = document.querySelector("[data-countdown]");
       if (!el) { clearInterval(countdownTimer); return; }
       el.textContent = countdownText(m);
-    }, 30000);
+    }, 1000);
   }
 
   /* ---------- avatars, flags, colors ---------- */
@@ -132,33 +135,39 @@
 
   /* ---------- fixture card ---------- */
 
-  function duel(m) {
+  // The poster block: two team-color panels meeting on a diagonal.
+  function duel(m, { round = true } = {}) {
     const sideCell = (n) => {
       const s = side(m, n);
-      if (s.tbd) return `<div class="duel-side">${flagDisc(null)}<span class="duel-name is-tbd">${esc(s.note)}</span></div>`;
-      return `<div class="duel-side">${flagDisc(s.team)}<span class="duel-name">${esc(s.team.name)}</span></div>`;
+      if (s.tbd) return `<div class="duel-side is-tbd"><span class="duel-name">${esc(s.note)}</span></div>`;
+      return `<div class="duel-side" style="--c:${esc(teamColor(s.team))}">
+        <span class="duel-flag" aria-hidden="true">${s.team.flag}</span>
+        <span class="duel-name">${esc(s.team.name)}</span>
+      </div>`;
     };
     const mid = m.status === "final" && m.score
-      ? `<span class="duel-score">${esc(m.score)}</span>${m.penalties ? `<span class="duel-sub">pens ${esc(m.penalties)}</span>` : ""}`
-      : `<span>VS</span>`;
-    return `<div class="duel">${sideCell(1)}<div class="duel-mid">${mid}</div>${sideCell(2)}</div>`;
+      ? `<span class="score">${esc(m.score)}</span>${m.penalties ? `<span class="pens">pens ${esc(m.penalties)}</span>` : ""}`
+      : `VS`;
+    return `<div class="duel">
+      ${round ? `<span class="duel-round">${esc(ROUND_LABEL[m.round] || m.round)} · Match ${esc(String(m.bracket_slot))}</span>` : ""}
+      ${sideCell(1)}${sideCell(2)}
+      <span class="duel-vs">${mid}</span>
+    </div>`;
+  }
+
+  function placeOf(m) {
+    const venue = isTodo(m.venue) ? null : m.venue;
+    const city = isTodo(m.city) ? null : m.city;
+    return [venue, city].filter(Boolean).join(" · ") || "Venue TBD";
   }
 
   function fixtureCard(m, { hero = false } = {}) {
     const k = kickoff(m);
-    const venue = isTodo(m.venue) ? null : m.venue;
-    const city = isTodo(m.city) ? null : m.city;
-    const place = [venue, city].filter(Boolean).join(" · ") || "Venue TBD";
     const foot = m.status === "final"
-      ? `<span>Full time · ${esc(k.day)}</span><span>${esc(place)}</span>`
-      : `<span class="cd" ${hero ? "data-countdown" : ""}>${esc(countdownText(m))}</span><span>${esc(place)}</span>`;
-    return `<a class="fixture" style="${stripeVars(m)}" href="#/match/${esc(m.id)}">
-      <div class="fixture-wash" aria-hidden="true"></div>
-      <div class="fixture-meta">
-        <span class="pill ${m.status === "final" ? "" : "pill--live"}">${esc(ROUND_LABEL[m.round] || m.round)}</span>
-        <span>Match ${esc(String(m.bracket_slot))}</span>
-      </div>
-      <div class="fixture-body">${duel(m)}</div>
+      ? `<span>Full time · ${esc(k.day)}</span><span>${esc(placeOf(m))}</span>`
+      : `<span class="cd" ${hero ? "data-countdown" : ""}>${esc(countdownText(m))}</span><span>${esc(placeOf(m))}</span>`;
+    return `<a class="fixture pressable" href="#/match/${esc(m.id)}" data-peek="${esc(m.id)}">
+      ${duel(m)}
       <div class="fixture-foot">${foot}</div>
     </a>`;
   }
@@ -171,7 +180,7 @@
     const meta = m.status === "final" && m.score
       ? `<span class="score">${esc(m.score)}</span>${m.penalties ? `pens ${esc(m.penalties)}` : esc(k.day)}`
       : `${esc(k.day)}<br>${esc(k.time)}`;
-    return `<li><a class="match-line" style="${stripeVars(m)}" href="#/match/${esc(m.id)}">
+    return `<li><a class="match-line pressable" style="${stripeVars(m)}" href="#/match/${esc(m.id)}" data-peek="${esc(m.id)}">
       ${flags ? `<span class="match-line-flags" aria-hidden="true">${flags}</span>` : ""}
       <span class="match-line-names">${names(a)}<br>${names(b)}</span>
       <span class="match-line-meta">${meta}</span>
@@ -280,33 +289,72 @@
       </div>`;
   }
 
-  function openPlayerSheet(id) {
-    const p = db.playerById[id];
-    if (!p) return;
+  // Generic bottom sheet: hovers over the current page, never navigates.
+  function openSheet(label, bodyHTML) {
     const prev = document.activeElement;
     const backdrop = document.createElement("div");
     backdrop.className = "sheet-backdrop";
-    backdrop.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${isTodo(p.name) ? "Player card" : esc(p.name)}">
+    backdrop.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(label)}">
       <div class="sheet-grip" aria-hidden="true"></div>
       <button type="button" class="sheet-close" aria-label="Close">✕</button>
-      ${playerSheetBody(p)}
+      ${bodyHTML}
     </div>`;
     document.body.appendChild(backdrop);
     document.body.style.overflow = "hidden";
 
     const close = () => {
       backdrop.remove();
-      document.body.style.overflow = "";
+      if (!document.querySelector(".sheet-backdrop")) document.body.style.overflow = "";
       document.removeEventListener("keydown", onKey);
       if (prev && prev.focus) prev.focus();
     };
-    const onKey = (e) => { if (e.key === "Escape") close(); };
+    const onKey = (e) => {
+      if (e.key === "Escape" && backdrop === [...document.querySelectorAll(".sheet-backdrop")].pop()) close();
+    };
     backdrop.addEventListener("click", (e) => {
       if (e.target === backdrop || e.target.closest(".sheet-close")) close();
       if (e.target.closest("a")) close(); // navigating away: dismiss the sheet
     });
     document.addEventListener("keydown", onKey);
     backdrop.querySelector(".sheet-close").focus();
+    return close;
+  }
+
+  function openPlayerSheet(id) {
+    const p = db.playerById[id];
+    if (!p) return;
+    openSheet(isTodo(p.name) ? "Player card" : p.name, playerSheetBody(p));
+  }
+
+  // Quick match preview: the five-minute core without leaving the page.
+  function openMatchSheet(id) {
+    const m = db.matchById[id];
+    if (!m) return;
+    const teams = [side(m, 1), side(m, 2)].filter((s) => !s.tbd).map((s) => s.team);
+    const stars = teams.flatMap((t) => (t.star_player_ids || []).map((pid) => db.playerById[pid]).filter(Boolean));
+    const k = kickoff(m);
+    const watch = listIsTodo(m.things_to_watch)
+      ? `<p class="prose">${TODO_CHIP}</p>`
+      : `<ol class="watch-list">${m.things_to_watch.map((t) => `<li>${text(t)}</li>`).join("")}</ol>`;
+
+    const body = `
+      ${duel(m)}
+      <div class="sheet-body">
+        <p class="small muted" style="margin:12px 0 0">
+          ${m.status === "final" ? `Full time · ${esc(k.day)}` : `${esc(countdownText(m))}`} · ${esc(placeOf(m))}
+        </p>
+        <p class="kicker">The storyline</p>
+        <p class="prose">${text(m.storyline)}</p>
+        <p class="kicker">Three things to watch</p>
+        ${watch}
+        ${stars.length ? `<p class="kicker">Star players</p><div class="snap-row" style="margin:0;padding:6px 0 8px">${stars.map(playerSticker).join("")}</div>` : ""}
+        <div class="sheet-actions">
+          <a class="btn btn--primary" href="#/match/${esc(m.id)}">Full guide</a>
+          <button class="btn" type="button" data-share="${esc(m.id)}">Share card</button>
+        </div>
+      </div>`;
+    const sides = [side(m, 1), side(m, 2)].map((s) => s.tbd ? s.note : s.team.name);
+    openSheet(`${sides[0]} vs ${sides[1]}`, body);
   }
 
   const backLink = (href, label) => `<a class="back-link" href="${href}">← ${esc(label)}</a>`;
@@ -372,13 +420,8 @@
     const sideName = (s) => (s.tbd ? s.note : s.team.name);
 
     let html = `<h1 class="vh">${esc(sideName(a))} vs ${esc(sideName(b))} — ${esc(ROUND_LABEL[m.round] || m.round)}</h1>
-    <div class="fixture" style="${stripeVars(m)};margin-top:14px">
-      <div class="fixture-wash" aria-hidden="true"></div>
-      <div class="fixture-meta">
-        <span class="pill ${m.status === "final" ? "" : "pill--live"}">${esc(ROUND_LABEL[m.round] || m.round)}</span>
-        <span>Match ${esc(String(m.bracket_slot))}</span>
-      </div>
-      <div class="fixture-body">${duel(m)}</div>
+    <div class="fixture" style="margin-top:14px">
+      ${duel(m)}
       <div class="fixture-foot">
         ${m.status === "final"
           ? `<span>Full time · ${esc(k.day)}</span>`
@@ -518,7 +561,7 @@
         </div>`;
       };
       const place = isTodo(m.city) ? "" : ` · ${m.city.split(",")[0]}`;
-      return `<a class="bnode" href="#/match/${esc(m.id)}">
+      return `<a class="bnode pressable" href="#/match/${esc(m.id)}" data-peek="${esc(m.id)}">
         <div class="bnode-meta">${esc(k.day)}${esc(place)}</div>
         ${row(1)}${row(2)}
       </a>`;
@@ -601,15 +644,15 @@
     overlay.innerHTML = `
       <div class="share-stage">
         <p class="share-hint">Screenshot this card — it's sized for sharing.</p>
-        <div class="share-card" style="${stripeVars(m)}">
-          <div class="share-band"><span>${esc(ROUND_LABEL[m.round] || m.round)} · World Cup 2026</span><span>${esc(k.day)}</span></div>
+        <div class="share-card">
+          ${duel(m)}
           <div class="share-card-body">
-            ${duel(m)}
             ${isTodo(m.storyline) ? "" : `<p class="share-storyline">${esc(m.storyline)}</p>`}
             ${watch}
             ${starsLine}
+            <p class="small muted" style="margin:12px 0 0">${esc(k.day)} · ${esc(place)}</p>
           </div>
-          <div class="share-foot"><span>${esc(place)}</span><span>Kickoff in Five</span></div>
+          <div class="share-foot"><span>World Cup 2026</span><span>Kickoff in Five</span></div>
         </div>
         <p style="margin-top:16px"><button class="btn share-close" type="button">Done</button></p>
       </div>`;
@@ -630,10 +673,19 @@
 
   /* ---------- router ---------- */
 
+  const revealObserver = ("IntersectionObserver" in window) && !matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? new IntersectionObserver((entries) => {
+        for (const en of entries) if (en.isIntersecting) { en.target.classList.add("in"); revealObserver.unobserve(en.target); }
+      }, { rootMargin: "0px 0px -8% 0px" })
+    : null;
+
   function render(html, title) {
     $main.innerHTML = html;
     if (title) document.title = title;
     window.scrollTo(0, 0);
+    if (revealObserver) {
+      for (const el of $main.children) { el.classList.add("reveal"); revealObserver.observe(el); }
+    }
   }
 
   function route() {
@@ -675,6 +727,13 @@
         if (share) return openShare(share.getAttribute("data-share"));
         const player = e.target.closest("[data-player]");
         if (player && !player.disabled) return openPlayerSheet(player.getAttribute("data-player"));
+        // match links open a hover-over preview instead of navigating;
+        // modified clicks (new tab etc.) fall through to the real link
+        const peek = e.target.closest("[data-peek]");
+        if (peek && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+          e.preventDefault();
+          return openMatchSheet(peek.getAttribute("data-peek"));
+        }
       });
       route();
     } catch (err) {
