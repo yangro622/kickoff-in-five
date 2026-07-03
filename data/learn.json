@@ -1,0 +1,53 @@
+{
+  "sections": [
+    {
+      "id": "rules",
+      "title": "The rules in 3 minutes",
+      "intro": "TODO-RESEARCH",
+      "entries": [
+        { "title": "The 90 minutes (and stoppage time)", "body": "TODO-RESEARCH" },
+        { "title": "Extra time & penalty shootouts", "body": "TODO-RESEARCH" },
+        { "title": "Offside, explained like a human", "body": "TODO-RESEARCH" },
+        { "title": "Yellow and red cards", "body": "TODO-RESEARCH" },
+        { "title": "Substitutions", "body": "TODO-RESEARCH" },
+        { "title": "VAR (video review)", "body": "TODO-RESEARCH" }
+      ]
+    },
+    {
+      "id": "format",
+      "title": "How the tournament works",
+      "intro": "TODO-RESEARCH",
+      "entries": [
+        { "title": "48 teams, 12 groups", "body": "TODO-RESEARCH" },
+        { "title": "Round of 32 — new this year", "body": "TODO-RESEARCH" },
+        { "title": "The knockout rounds to the July 19 final", "body": "TODO-RESEARCH" },
+        { "title": "Three host countries", "body": "TODO-RESEARCH" }
+      ]
+    },
+    {
+      "id": "positions",
+      "title": "Positions: who does what",
+      "intro": "TODO-RESEARCH",
+      "entries": [
+        { "title": "Goalkeeper", "body": "TODO-RESEARCH" },
+        { "title": "Defenders", "body": "TODO-RESEARCH" },
+        { "title": "Midfielders", "body": "TODO-RESEARCH" },
+        { "title": "Forwards", "body": "TODO-RESEARCH" }
+      ]
+    },
+    {
+      "id": "leagues",
+      "title": "The club leagues",
+      "intro": "TODO-RESEARCH",
+      "entries": [
+        { "title": "Premier League (England)", "body": "TODO-RESEARCH" },
+        { "title": "La Liga (Spain)", "body": "TODO-RESEARCH" },
+        { "title": "Serie A (Italy)", "body": "TODO-RESEARCH" },
+        { "title": "Bundesliga (Germany)", "body": "TODO-RESEARCH" },
+        { "title": "Ligue 1 (France)", "body": "TODO-RESEARCH" },
+        { "title": "MLS (USA & Canada)", "body": "TODO-RESEARCH" },
+        { "title": "Saudi Pro League (Saudi Arabia)", "body": "TODO-RESEARCH" }
+      ]
+    }
+  ]
+}
