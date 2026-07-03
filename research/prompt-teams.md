@@ -21,6 +21,11 @@ For each team, produce a JSON object matching this schema exactly:
     "style": "One sentence: how they play, in plain English.",
     "fun_facts": ["…", "…"],
     "star_player_ids": ["pulisic", "…"],
+    "formation": "4-3-3",
+    "lineup": [
+      {"name": "Matt Turner", "position": "Goalkeeper", "player_id": null, "photo_url": null},
+      {"name": "…", "position": "Right back", "player_id": null, "photo_url": null}
+    ],
     "as_of": "2026-07-03"
   }]
 }
@@ -31,6 +36,7 @@ Field rules:
 - `color`: one hex color inspired by the team's primary kit (used as an accent stripe in the UI).
 - `star_player_ids`: 3–4 lowercase-hyphenated player ids (e.g. `mbappe`, `bellingham`) — these must match the `id` values you (or a separate session) produce for players.json.
 - `group_summary` should include their Round of 32 result too, e.g. "Won Group D, beat Chile 2–0 in the Ro32".
+- `formation` + `lineup`: the team's typical starting XI at THIS tournament (their most-used lineup so far — verify with search; if genuinely unsettled, use the most recent match's XI). `lineup` is ordered goalkeeper first, then defenders right-to-left, then each further-forward line, matching the formation (e.g. 4-3-3 → 1 GK, 4 DEF, 3 MID, 3 FWD = 11 entries). `player_id` links a lineup entry to players.json when that player is one of the team's stars; otherwise null. `photo_url` for non-star lineup players is optional — **Wikimedia Commons freely-licensed images only** (direct upload.wikimedia.org thumb URL, ~256px); null if none exists.
 
 Audience is soccer beginners — plain English, no jargon, no assumed knowledge. Verify every stat with search. Include `as_of` dates. If a fact can't be verified, omit it rather than guess. No invented quotes, no invented stats.
 

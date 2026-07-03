@@ -1,8 +1,11 @@
 /* =========================================================
-   KICKOFF IN FIVE — vanilla JS renderer
+   KICKOFF IN FIVE — vanilla JS renderer (v2, album design)
    Data comes exclusively from /data/*.json. This file writes
    zero factual content; anything marked TODO-RESEARCH in the
    data renders as an honest "research pending" chip.
+   Player photos come from photo_url in players.json (research
+   fills these with freely-licensed images); missing photos
+   fall back to initials avatars in team colors.
    ========================================================= */
 
 (() => {
@@ -26,13 +29,10 @@
   const listIsTodo = (a) => !Array.isArray(a) || a.length === 0 || a.every(isTodo);
 
   const TODO_CHIP = '<span class="todo">Research pending</span>';
-
-  // Render a data string, or the pending chip if it's a TODO placeholder.
   const text = (v) => (isTodo(v) ? TODO_CHIP : esc(v));
 
   const teamOf = (id) => db.teamById[id] || null;
 
-  // A match side: either a real team or a TBD note.
   function side(m, n) {
     const id = m[`team${n}_id`];
     if (!id || id === "tbd") {
@@ -45,17 +45,14 @@
 
   /* ---------- dates & countdown ---------- */
 
-  // Venue-local calendar date string -> Date pinned to UTC noon (safe for date-only formatting).
   const dateOnly = (s) => {
     const [y, mo, d] = s.split("-").map(Number);
     return new Date(Date.UTC(y, mo - 1, d, 12));
   };
 
   const fmt = {
-    // viewer-local, when we have a real kickoff instant
     localDay: (dt) => dt.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" }),
     localTime: (dt) => dt.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit", timeZoneName: "short" }),
-    // date-only (no verified kickoff time yet) — format in UTC to avoid off-by-one
     dayOnly: (s) => dateOnly(s).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }),
     dayOnlyLong: (s) => dateOnly(s).toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }),
   };
@@ -78,17 +75,14 @@
     (kickoff(a).sort - kickoff(b).sort) ||
     (a.bracket_slot - b.bracket_slot);
 
-  function countdownHTML(m) {
+  function countdownText(m) {
     const k = kickoff(m);
-    if (!k.known) {
-      return `<div class="countdown"><span class="cd-num">${esc(k.day)}</span><span class="cd-label">kickoff time TBD</span></div>`;
-    }
+    if (!k.known) return `${k.day} · kickoff time TBD`;
     const ms = k.dt - Date.now();
-    if (ms <= 0) return `<div class="countdown"><span class="cd-num">Kicked off</span><span class="cd-label">${esc(k.day)} · ${esc(k.time)}</span></div>`;
+    if (ms <= 0) return `Kicked off · ${k.day}, ${k.time}`;
     const mins = Math.floor(ms / 60000);
     const d = Math.floor(mins / 1440), h = Math.floor((mins % 1440) / 60), min = mins % 60;
-    const num = d > 0 ? `${d}d ${h}h` : `${h}h ${String(min).padStart(2, "0")}m`;
-    return `<div class="countdown"><span class="cd-num">${num}</span><span class="cd-label">to kickoff</span></div>`;
+    return d > 0 ? `Kicks off in ${d}d ${h}h` : `Kicks off in ${h}h ${String(min).padStart(2, "0")}m`;
   }
 
   function armCountdown(m) {
@@ -97,19 +91,37 @@
     countdownTimer = setInterval(() => {
       const el = document.querySelector("[data-countdown]");
       if (!el) { clearInterval(countdownTimer); return; }
-      el.innerHTML = countdownHTML(m);
+      el.textContent = countdownText(m);
     }, 30000);
   }
 
-  /* ---------- shared components ---------- */
+  /* ---------- avatars, flags, colors ---------- */
 
-  const flagOf = (t) => `<span aria-hidden="true">${t.flag}</span>`;
+  const teamColor = (t) => (t && t.color) || "#47554b";
+
+  function initials(name) {
+    if (isTodo(name)) return "?";
+    const parts = name.trim().split(/\s+/);
+    return (parts[0][0] + (parts.length > 1 ? parts[parts.length - 1][0] : "")).toUpperCase();
+  }
+
+  // Headshot if the data has one; otherwise initials on a team-color gradient.
+  function avatar(p, team, extra = "") {
+    const color = teamColor(team);
+    const vars = `--av-a:${esc(color)};--av-b:color-mix(in srgb, ${esc(color)} 55%, #000)`;
+    if (p && !isTodo(p.photo_url)) {
+      return `<span class="avatar ${extra}" style="${vars}"><img src="${esc(p.photo_url)}" alt="" loading="lazy" onerror="this.remove()"></span>`;
+    }
+    return `<span class="avatar ${extra}" style="${vars}">${esc(initials(p ? p.name : null))}</span>`;
+  }
+
+  const flagDisc = (t, size = "") => t
+    ? `<span class="flag-disc ${size}" style="--ring:${esc(teamColor(t))}" aria-hidden="true">${t.flag}</span>`
+    : `<span class="flag-disc flag-disc--tbd ${size}" aria-hidden="true">?</span>`;
 
   function stripeVars(m) {
     const a = side(m, 1), b = side(m, 2);
-    const c1 = (!a.tbd && a.team.color) || "var(--ink-faint)";
-    const c2 = (!b.tbd && b.team.color) || "var(--ink-faint)";
-    return `--stripe-a:${esc(c1)};--stripe-b:${esc(c2)}`;
+    return `--stripe-a:${esc(a.tbd ? "#9aa095" : teamColor(a.team))};--stripe-b:${esc(b.tbd ? "#9aa095" : teamColor(b.team))}`;
   }
 
   function scoreOf(m, n) {
@@ -118,50 +130,36 @@
     return parts.length === 2 ? parts[n - 1] : null;
   }
 
-  function matchupRows(m, { withScore = false } = {}) {
-    const row = (n) => {
+  /* ---------- fixture card ---------- */
+
+  function duel(m) {
+    const sideCell = (n) => {
       const s = side(m, n);
-      const sc = withScore ? scoreOf(m, n) : null;
-      if (s.tbd) {
-        return `<div class="matchup-row">
-          <span class="matchup-flag" aria-hidden="true">–</span>
-          <span class="matchup-name is-tbd">${esc(s.note)}</span>
-        </div>`;
-      }
-      return `<div class="matchup-row">
-        <span class="matchup-flag">${flagOf(s.team)}</span>
-        <span class="matchup-name">${esc(s.team.name)}</span>
-        ${sc != null ? `<span class="matchup-score">${esc(sc)}</span>` : ""}
-      </div>`;
+      if (s.tbd) return `<div class="duel-side">${flagDisc(null)}<span class="duel-name is-tbd">${esc(s.note)}</span></div>`;
+      return `<div class="duel-side">${flagDisc(s.team)}<span class="duel-name">${esc(s.team.name)}</span></div>`;
     };
-    return `<div class="matchup">${row(1)}<div class="matchup-vs">vs</div>${row(2)}</div>`;
+    const mid = m.status === "final" && m.score
+      ? `<span class="duel-score">${esc(m.score)}</span>${m.penalties ? `<span class="duel-sub">pens ${esc(m.penalties)}</span>` : ""}`
+      : `<span>VS</span>`;
+    return `<div class="duel">${sideCell(1)}<div class="duel-mid">${mid}</div>${sideCell(2)}</div>`;
   }
 
-  function stub(m) {
+  function fixtureCard(m, { hero = false } = {}) {
     const k = kickoff(m);
     const venue = isTodo(m.venue) ? null : m.venue;
     const city = isTodo(m.city) ? null : m.city;
-    const place = venue && city ? `${venue}` : (venue || city || "Venue TBD");
-    return `<div class="stub">
-      <div class="stub-cell"><span class="stub-label">Date</span><span class="stub-value">${esc(k.day)}</span></div>
-      <div class="stub-cell"><span class="stub-label">Kickoff</span><span class="stub-value">${esc(k.time)}</span></div>
-      <div class="stub-cell"><span class="stub-label">Venue</span><span class="stub-value">${esc(place)}${city && venue ? `<span class="stub-label">${esc(city)}</span>` : ""}</span></div>
-      <div class="stub-barcode" aria-hidden="true"></div>
-    </div>`;
-  }
-
-  function matchTicket(m, { hero = false } = {}) {
-    const bandLeft = `${ROUND_LABEL[m.round] || m.round} · Match ${m.bracket_slot}`;
-    const bandRight = m.status === "final" ? "Full time" : (hero ? "Up next" : "Admit one");
-    return `<a class="ticket ticket--striped" style="${stripeVars(m)}" href="#/match/${esc(m.id)}" aria-label="${esc(bandLeft)}: open match guide">
-      <span class="kit-stripe" aria-hidden="true"></span>
-      <div class="ticket-band ${hero ? "ticket-band--green" : ""}"><span>${esc(bandLeft)}</span><span class="band-right">${bandRight}</span></div>
-      <div class="ticket-body">
-        ${matchupRows(m, { withScore: m.status === "final" })}
-        ${hero ? `<div style="margin-top:12px" data-countdown>${countdownHTML(m)}</div>` : ""}
+    const place = [venue, city].filter(Boolean).join(" · ") || "Venue TBD";
+    const foot = m.status === "final"
+      ? `<span>Full time · ${esc(k.day)}</span><span>${esc(place)}</span>`
+      : `<span class="cd" ${hero ? "data-countdown" : ""}>${esc(countdownText(m))}</span><span>${esc(place)}</span>`;
+    return `<a class="fixture" style="${stripeVars(m)}" href="#/match/${esc(m.id)}">
+      <div class="fixture-wash" aria-hidden="true"></div>
+      <div class="fixture-meta">
+        <span class="pill ${m.status === "final" ? "" : "pill--live"}">${esc(ROUND_LABEL[m.round] || m.round)}</span>
+        <span>Match ${esc(String(m.bracket_slot))}</span>
       </div>
-      <div class="perf" aria-hidden="true"></div>
-      ${stub(m)}
+      <div class="fixture-body">${duel(m)}</div>
+      <div class="fixture-foot">${foot}</div>
     </a>`;
   }
 
@@ -171,28 +169,144 @@
     const names = (s) => s.tbd ? `<span class="tbd">${esc(s.note)}</span>` : esc(s.team.name);
     const flags = `${a.tbd ? "" : a.team.flag}${b.tbd ? "" : b.team.flag}`;
     const meta = m.status === "final" && m.score
-      ? `<span class="score">${esc(m.score)}</span>${m.penalties ? `<span>pens ${esc(m.penalties)}</span>` : `<span>${esc(k.day)}</span>`}`
+      ? `<span class="score">${esc(m.score)}</span>${m.penalties ? `pens ${esc(m.penalties)}` : esc(k.day)}`
       : `${esc(k.day)}<br>${esc(k.time)}`;
     return `<li><a class="match-line" style="${stripeVars(m)}" href="#/match/${esc(m.id)}">
-      <span class="kit-stripe" aria-hidden="true"></span>
       ${flags ? `<span class="match-line-flags" aria-hidden="true">${flags}</span>` : ""}
       <span class="match-line-names">${names(a)}<br>${names(b)}</span>
       <span class="match-line-meta">${meta}</span>
     </a></li>`;
   }
 
-  function playerChip(p) {
+  /* ---------- player stickers ---------- */
+
+  function playerSticker(p) {
     const team = teamOf(p.team_id);
-    if (isTodo(p.name)) {
-      return `<a class="chip" href="#/player/${esc(p.id)}">
-        <span class="chip-top">${team ? flagOf(team) : ""}<span class="chip-name muted">Star TBD</span></span>
-        <span class="chip-sub">research pending</span>
-      </a>`;
-    }
-    return `<a class="chip" href="#/player/${esc(p.id)}">
-      <span class="chip-top">${team ? `<span class="chip-flag">${flagOf(team)}</span>` : ""}<span class="chip-name">${esc(p.name)}</span></span>
-      <span class="chip-sub">${isTodo(p.club) ? "Club TBD" : esc(p.club)}</span>
-    </a>`;
+    const band = `--band:${esc(teamColor(team))}`;
+    const name = isTodo(p.name) ? '<span class="muted">Star TBD</span>' : esc(p.name);
+    const sub = isTodo(p.club) ? "research pending" : p.club;
+    return `<button type="button" class="sticker" style="${band}" data-player="${esc(p.id)}" aria-haspopup="dialog">
+      <span class="sticker-band" aria-hidden="true"></span>
+      ${avatar(p, team)}
+      <span class="sticker-name">${name}</span>
+      <span class="sticker-sub">${esc(sub)}</span>
+      ${team ? `<span class="sticker-flag" aria-hidden="true">${team.flag}</span>` : ""}
+    </button>`;
+  }
+
+  const stickerRow = (players) =>
+    `<div class="snap-row">${players.map(playerSticker).join("")}</div>`;
+
+  /* ---------- the pitch (default lineup) ---------- */
+
+  function pitchView(team) {
+    const lineup = Array.isArray(team.lineup) ? team.lineup : [];
+    const formation = !isTodo(team.formation) && /^\d+(-\d+)+$/.test(team.formation) ? team.formation : null;
+    const rows = [1, ...(formation ? formation.split("-").map(Number) : [4, 3, 3])]; // GK + outfield, bottom→top
+    const ghost = lineup.length === 0;
+
+    let idx = 0;
+    const nodes = [];
+    rows.forEach((count, r) => {
+      const y = 88 - (r * (72 / (rows.length - 1)));
+      for (let i = 0; i < count; i++) {
+        const x = (100 / (count + 1)) * (i + 1);
+        const entry = lineup[idx++] || null;
+        nodes.push({ x, y, entry });
+      }
+    });
+
+    const nodeHTML = nodes.map(({ x, y, entry }) => {
+      const pos = `style="left:${x}%;top:${y}%"`;
+      if (!entry || isTodo(entry.name)) {
+        return `<span class="pitch-node" ${pos} aria-hidden="true"><span class="avatar avatar--ghost" style="width:42px;height:42px">?</span></span>`;
+      }
+      const linked = entry.player_id && db.playerById[entry.player_id];
+      const p = linked ? db.playerById[entry.player_id] : { name: entry.name, photo_url: entry.photo_url };
+      const label = entry.name.trim().split(/\s+/).pop();
+      const inner = `${avatar(p, team)}<span class="pitch-node-name">${esc(label)}</span>`;
+      return linked
+        ? `<button type="button" class="pitch-node" ${pos} data-player="${esc(entry.player_id)}" aria-haspopup="dialog" aria-label="${esc(entry.name)}">${inner}</button>`
+        : `<button type="button" class="pitch-node" ${pos} disabled aria-label="${esc(entry.name)}">${inner}</button>`;
+    }).join("");
+
+    return `<div class="pitch-wrap">
+      <div class="pitch">
+        <span class="pitch-circle" aria-hidden="true"></span>
+        <span class="pitch-box" aria-hidden="true"></span>
+        ${nodeHTML}
+        ${ghost ? `<span class="pitch-note">${TODO_CHIP}</span>` : ""}
+      </div>
+      <p class="pitch-legend">${ghost
+        ? "Typical starting XI lands here once the research JSON drops."
+        : `Typical starting XI${formation ? ` · ${esc(formation)}` : ""}. Tap a face for the player card.`}</p>
+    </div>`;
+  }
+
+  /* ---------- player sheet (overlay card) ---------- */
+
+  function playerSheetBody(p, { asPage = false } = {}) {
+    const t = teamOf(p.team_id);
+    const stats = p.tournament_stats || {};
+    const statBits = [];
+    if (stats.goals != null) statBits.push(`${stats.goals} goal${stats.goals === 1 ? "" : "s"}`);
+    if (stats.assists != null) statBits.push(`${stats.assists} assist${stats.assists === 1 ? "" : "s"}`);
+    if (!isTodo(stats.note)) statBits.push(esc(stats.note));
+
+    return `
+      <div class="sheet-hero" style="--band:${esc(teamColor(t))}">
+        ${avatar(p, t)}
+        <div>
+          <h2>${isTodo(p.name) ? "Star player TBD" : esc(p.name)}</h2>
+          <p class="sub">
+            ${t ? `<a href="#/team/${esc(t.id)}">${t.flag} ${esc(t.name)}</a> · ` : ""}
+            ${isTodo(p.position) ? "Position TBD" : esc(p.position)}${p.age != null ? ` · age ${esc(String(p.age))}` : ""}
+          </p>
+        </div>
+      </div>
+      <div class="sheet-body">
+        <p class="kicker" style="margin-top:6px">Club</p>
+        <p class="prose">${text(p.club)}${isTodo(p.league) ? "" : ` · <a href="#/learn/leagues">${esc(p.league)}</a>`}</p>
+        ${statBits.length ? `<p class="kicker">This World Cup</p><p class="prose">${statBits.join(" · ")}</p>` : ""}
+        <p class="kicker">The journey</p>
+        <p class="prose">${text(p.journey)}</p>
+        <p class="kicker">Watch for this</p>
+        <p class="prose">${text(p.watch_for)}</p>
+        <div class="sheet-actions">
+          ${asPage
+            ? (t ? `<a class="btn" href="#/team/${esc(t.id)}">Team page</a>` : "")
+            : `<a class="btn" href="#/player/${esc(p.id)}" data-sheet-link>Full page &amp; link</a>`}
+        </div>
+      </div>`;
+  }
+
+  function openPlayerSheet(id) {
+    const p = db.playerById[id];
+    if (!p) return;
+    const prev = document.activeElement;
+    const backdrop = document.createElement("div");
+    backdrop.className = "sheet-backdrop";
+    backdrop.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${isTodo(p.name) ? "Player card" : esc(p.name)}">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <button type="button" class="sheet-close" aria-label="Close">✕</button>
+      ${playerSheetBody(p)}
+    </div>`;
+    document.body.appendChild(backdrop);
+    document.body.style.overflow = "hidden";
+
+    const close = () => {
+      backdrop.remove();
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKey);
+      if (prev && prev.focus) prev.focus();
+    };
+    const onKey = (e) => { if (e.key === "Escape") close(); };
+    backdrop.addEventListener("click", (e) => {
+      if (e.target === backdrop || e.target.closest(".sheet-close")) close();
+      if (e.target.closest("a")) close(); // navigating away: dismiss the sheet
+    });
+    document.addEventListener("keydown", onKey);
+    backdrop.querySelector(".sheet-close").focus();
   }
 
   const backLink = (href, label) => `<a class="back-link" href="${href}">← ${esc(label)}</a>`;
@@ -202,29 +316,17 @@
   function viewHome() {
     const upcoming = db.matches.filter((m) => m.status !== "final").sort(matchSort);
     const finished = db.matches.filter((m) => m.status === "final").sort(matchSort).reverse();
-    const hero = upcoming[0];
-
-    // group upcoming (after the hero) by day
-    const rest = upcoming.slice(1);
-    const groups = [];
-    for (const m of rest) {
-      const k = kickoff(m);
-      const label = m.datetime_utc
-        ? new Date(m.datetime_utc).toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" })
-        : (m.date_local ? fmt.dayOnlyLong(m.date_local)
-          : `${ROUND_LABEL[m.round] || m.round}${m.round === "F" ? "" : "s"} — dates TBD`);
-      const g = groups.find((x) => x.label === label);
-      if (g) g.items.push(m); else groups.push({ label, sort: k.sort, items: [m] });
-    }
+    const featured = upcoming.slice(0, 4).filter((m) => kickoff(m).sort !== Infinity);
 
     let html = `
       <p class="kicker">World Cup 2026 · Knockout stage</p>
-      <h1 class="h-display" style="font-size:clamp(1.6rem,7vw,2.3rem)">Catch up on any match<br>in five minutes.</h1>
+      <h1 class="hero-title">Catch up on any match in five minutes.</h1>
       <p class="hero-note">Pick a match. Get the storyline, the stars, and exactly what to watch for — written for people new to soccer.</p>
     `;
 
-    if (hero) {
-      html += `<p class="kicker">Next up</p>${matchTicket(hero, { hero: true })}`;
+    if (featured.length) {
+      html += `<p class="kicker">Up next — swipe</p>
+        <div class="snap-row snap-row--fixtures">${featured.map((m, i) => fixtureCard(m, { hero: i === 0 })).join("")}</div>`;
     }
 
     html += `<div class="btn-row">
@@ -232,6 +334,16 @@
       <a class="btn" href="#/learn">New here? Learn</a>
     </div>`;
 
+    // full schedule grouped by day
+    const groups = [];
+    for (const m of upcoming) {
+      const label = m.datetime_utc
+        ? new Date(m.datetime_utc).toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" })
+        : (m.date_local ? fmt.dayOnlyLong(m.date_local)
+          : `${ROUND_LABEL[m.round] || m.round}${m.round === "F" ? "" : "s"} — dates TBD`);
+      const g = groups.find((x) => x.label === label);
+      if (g) g.items.push(m); else groups.push({ label, items: [m] });
+    }
     for (const g of groups) {
       html += `<h2 class="day-heading">${esc(g.label)}</h2><ul class="match-list">${g.items.map(matchLine).join("")}</ul>`;
     }
@@ -243,7 +355,7 @@
     }
 
     render(html, "Kickoff in Five — World Cup 2026 Catch-Up Guide");
-    armCountdown(hero);
+    armCountdown(featured[0]);
   }
 
   function viewMatch(id) {
@@ -252,20 +364,27 @@
     const a = side(m, 1), b = side(m, 2);
     const teams = [a, b].filter((s) => !s.tbd).map((s) => s.team);
     const title = teams.length === 2 ? `${teams[0].name} vs ${teams[1].name}` : ROUND_LABEL[m.round] || "Match";
-
     const stars = teams.flatMap((t) => (t.star_player_ids || []).map((pid) => db.playerById[pid]).filter(Boolean));
-
+    const k = kickoff(m);
+    const venue = isTodo(m.venue) ? null : m.venue;
+    const city = isTodo(m.city) ? null : m.city;
+    const place = [venue, city].filter(Boolean).join(" · ") || "Venue TBD";
     const sideName = (s) => (s.tbd ? s.note : s.team.name);
+
     let html = `<h1 class="vh">${esc(sideName(a))} vs ${esc(sideName(b))} — ${esc(ROUND_LABEL[m.round] || m.round)}</h1>
-    <div class="ticket ticket--striped" style="${stripeVars(m)}">
-      <span class="kit-stripe" aria-hidden="true"></span>
-      <div class="ticket-band"><span>${esc(ROUND_LABEL[m.round] || m.round)} · Match ${esc(String(m.bracket_slot))}</span><span class="band-right">${m.status === "final" ? "Full time" : "Admit one"}</span></div>
-      <div class="ticket-body">${matchupRows(m, { withScore: m.status === "final" })}
-      ${m.status === "final" && m.penalties ? `<p class="small muted" style="margin:8px 0 0">Penalties: ${esc(m.penalties)}</p>` : ""}
-      ${m.status !== "final" ? `<div style="margin-top:12px" data-countdown>${countdownHTML(m)}</div>` : ""}
+    <div class="fixture" style="${stripeVars(m)};margin-top:14px">
+      <div class="fixture-wash" aria-hidden="true"></div>
+      <div class="fixture-meta">
+        <span class="pill ${m.status === "final" ? "" : "pill--live"}">${esc(ROUND_LABEL[m.round] || m.round)}</span>
+        <span>Match ${esc(String(m.bracket_slot))}</span>
       </div>
-      <div class="perf" aria-hidden="true"></div>
-      ${stub(m)}
+      <div class="fixture-body">${duel(m)}</div>
+      <div class="fixture-foot">
+        ${m.status === "final"
+          ? `<span>Full time · ${esc(k.day)}</span>`
+          : `<span class="cd" data-countdown>${esc(countdownText(m))}</span>`}
+        <span>${esc(place)}${k.known ? ` · ${esc(k.time)}` : ""}</span>
+      </div>
     </div>`;
 
     if (m.status === "final" && !isTodo(m.recap)) {
@@ -281,22 +400,20 @@
 
     html += `<div class="section"><h2 class="section-title">Star players</h2>`;
     html += stars.length
-      ? `<div class="chip-row">${stars.map(playerChip).join("")}</div>`
+      ? stickerRow(stars)
       : `<p class="prose muted small">Star players land here once the research JSON drops.</p>`;
     html += `</div>`;
 
-    // Head-to-head & fun facts
     const h2h = listIsTodo(m.h2h) ? `<p>${TODO_CHIP}</p>` : `<ul>${m.h2h.map((x) => `<li>${text(x)}</li>`).join("")}</ul>`;
     const funFacts = teams
       .filter((t) => !listIsTodo(t.fun_facts))
-      .map((t) => `<p class="small" style="margin:12px 0 4px"><strong>${flagOf(t)} ${esc(t.name)}</strong></p><ul>${t.fun_facts.map((f) => `<li>${text(f)}</li>`).join("")}</ul>`)
+      .map((t) => `<p class="small" style="margin:12px 0 4px"><strong>${t.flag} ${esc(t.name)}</strong></p><ul>${t.fun_facts.map((f) => `<li>${text(f)}</li>`).join("")}</ul>`)
       .join("");
     html += `<details class="fold"><summary>Head-to-head &amp; fun facts</summary><div class="fold-body">${h2h}${funFacts}</div></details>`;
 
-    // Team snapshots
     if (teams.length) {
-      const snaps = teams.map((t) => `<div class="snap">
-        <div class="snap-head">${flagOf(t)} ${esc(t.name)}</div>
+      const snaps = teams.map((t) => `<div class="snap-block">
+        <div class="snap-head">${t.flag} ${esc(t.name)}</div>
         <dl>
           <dt>FIFA rank</dt><dd>${t.fifa_rank == null ? TODO_CHIP : esc(String(t.fifa_rank))}</dd>
           <dt>Group run</dt><dd>${text(t.group_summary)}</dd>
@@ -329,25 +446,28 @@
     const theirMatches = db.matches.filter((m) => m.team1_id === id || m.team2_id === id).sort(matchSort);
 
     let html = `<div class="page-head">
-      <span class="page-head-flag">${flagOf(t)}</span>
+      ${flagDisc(t)}
       <div>
-        <h1 class="h-display" style="font-size:clamp(1.6rem,7vw,2.2rem)">${esc(t.name)}</h1>
+        <h1>${esc(t.name)}</h1>
         <p class="sub">${t.fifa_rank != null ? `FIFA rank ${esc(String(t.fifa_rank))} · ` : ""}${isTodo(t.group_summary) ? "" : esc(t.group_summary)}</p>
       </div>
     </div>
     <p><span class="status-pill ${t.still_alive ? "status-pill--alive" : "status-pill--out"}">${t.still_alive ? "Still alive" : "Eliminated"}</span></p>`;
 
     html += `<div class="section"><h2 class="section-title">This tournament</h2><p class="prose">${text(t.storyline)}</p></div>`;
+
+    html += `<div class="section"><h2 class="section-title">Stars to know</h2>`;
+    html += stars.length
+      ? stickerRow(stars)
+      : `<p class="prose muted small">Star players land here once the research JSON drops.</p>`;
+    html += `</div>`;
+
+    html += `<div class="section"><h2 class="section-title">On the field</h2>${pitchView(t)}</div>`;
+
     html += `<div class="section"><h2 class="section-title">How they play</h2><p class="prose">${text(t.style)}</p></div>`;
     html += `<div class="section"><h2 class="section-title">World Cup history</h2>
       <p class="prose">${text(t.wc_history)}</p>
       <p class="prose small muted" style="margin-top:8px">Best finish: ${text(t.best_wc_finish)}</p></div>`;
-
-    html += `<div class="section"><h2 class="section-title">Stars to know</h2>`;
-    html += stars.length
-      ? `<div class="chip-row">${stars.map(playerChip).join("")}</div>`
-      : `<p class="prose muted small">Star players land here once the research JSON drops.</p>`;
-    html += `</div>`;
 
     if (!listIsTodo(t.fun_facts)) {
       html += `<div class="section"><h2 class="section-title">Fun facts</h2><ul class="fact-list">${t.fun_facts.map((f) => `<li>${text(f)}</li>`).join("")}</ul></div>`;
@@ -364,35 +484,8 @@
   function viewPlayer(id) {
     const p = db.playerById[id];
     if (!p) return viewNotFound(`No player called “${id}”.`);
-    const t = teamOf(p.team_id);
-    const stats = p.tournament_stats || {};
-    const statBits = [];
-    if (stats.goals != null) statBits.push(`${stats.goals} goal${stats.goals === 1 ? "" : "s"}`);
-    if (stats.assists != null) statBits.push(`${stats.assists} assist${stats.assists === 1 ? "" : "s"}`);
-    if (!isTodo(stats.note)) statBits.push(esc(stats.note));
-
-    let html = `<div class="page-head">
-      ${t ? `<span class="page-head-flag">${flagOf(t)}</span>` : ""}
-      <div>
-        <h1 class="h-display" style="font-size:clamp(1.5rem,6.5vw,2.1rem)">${isTodo(p.name) ? "Star player TBD" : esc(p.name)}</h1>
-        <p class="sub">${t ? `<a href="#/team/${esc(t.id)}">${esc(t.name)}</a> · ` : ""}${isTodo(p.position) ? "Position TBD" : esc(p.position)}${p.age != null ? ` · age ${esc(String(p.age))}` : ""}</p>
-      </div>
-    </div>`;
-
-    if (isTodo(p.name)) html += `<p>${TODO_CHIP}</p>`;
-
-    html += `<div class="ticket" style="margin-top:14px"><div class="ticket-body">
-      <dl style="display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0;font-size:0.95rem">
-        <dt class="stub-label" style="padding-top:3px">Club</dt><dd style="margin:0">${text(p.club)}</dd>
-        <dt class="stub-label" style="padding-top:3px">League</dt><dd style="margin:0">${isTodo(p.league) ? TODO_CHIP : `<a href="#/learn/leagues">${esc(p.league)}</a>`}</dd>
-        ${statBits.length ? `<dt class="stub-label" style="padding-top:3px">This cup</dt><dd style="margin:0">${statBits.join(" · ")}</dd>` : ""}
-      </dl>
-    </div></div>`;
-
-    html += `<div class="section"><h2 class="section-title">The journey</h2><p class="prose">${text(p.journey)}</p></div>`;
-    html += `<div class="section"><h2 class="section-title">Watch for this</h2><p class="prose">${text(p.watch_for)}</p></div>`;
-
-    html += backLink(t ? `#/team/${esc(t.id)}` : "#/", t ? `${t.name} team page` : "All matches");
+    const html = `<div class="card" style="margin-top:16px">${playerSheetBody(p, { asPage: true })}</div>
+      ${backLink("#/", "All matches")}`;
     render(html, `${isTodo(p.name) ? "Player" : p.name} — Kickoff in Five`);
   }
 
@@ -413,20 +506,20 @@
           const other = scoreOf(m, n === 1 ? 2 : 1);
           if (Number(sc) !== Number(other)) return Number(sc) > Number(other);
           if (m.penalties) {
-            const p = String(m.penalties).split(/[–\-:]/).map(Number);
-            return p.length === 2 && p[n - 1] > p[n === 1 ? 1 : 0];
+            const pn = String(m.penalties).split(/[–\-:]/).map(Number);
+            return pn.length === 2 && pn[n - 1] > pn[n === 1 ? 1 : 0];
           }
           return false;
         })();
         if (s.tbd) return `<div class="bnode-team is-tbd">${esc(s.note)}</div>`;
         return `<div class="bnode-team ${winner ? "is-winner" : ""}">
-          <span class="bflag">${flagOf(s.team)}</span>${esc(s.team.code)}
+          <span class="bflag" aria-hidden="true">${s.team.flag}</span>${esc(s.team.code)}
           ${sc != null ? `<span class="bscore">${esc(sc)}</span>` : ""}
         </div>`;
       };
       const place = isTodo(m.city) ? "" : ` · ${m.city.split(",")[0]}`;
       return `<a class="bnode" href="#/match/${esc(m.id)}">
-        <div class="bnode-meta"><span>${esc(k.day)}${esc(place)}</span></div>
+        <div class="bnode-meta">${esc(k.day)}${esc(place)}</div>
         ${row(1)}${row(2)}
       </a>`;
     };
@@ -441,7 +534,7 @@
 
     const html = `
       <p class="kicker">Knockout stage</p>
-      <h1 class="h-display" style="font-size:clamp(1.6rem,7vw,2.2rem)">The bracket</h1>
+      <h1 class="hero-title">The bracket</h1>
       <p class="hero-note">Scroll sideways →. Tap any match for the five-minute guide.</p>
       <div class="bracket-scroller"><div class="bracket">${colHTML}</div></div>
       ${backLink("#/", "All matches")}`;
@@ -452,14 +545,14 @@
     const secs = db.learn.sections || [];
     let html = `
       <p class="kicker">New to soccer?</p>
-      <h1 class="h-display" style="font-size:clamp(1.6rem,7vw,2.2rem)">Learn the game<br>in five minutes</h1>
+      <h1 class="hero-title">Learn the game in five minutes</h1>
       <p class="hero-note">Everything you need to not feel lost at the watch party. Skim the headlines, tap what you're curious about.</p>`;
 
     for (const s of secs) {
       const open = s.id === sectionId;
       html += `<div class="section" id="learn-${esc(s.id)}">
         <h2 class="section-title">${esc(s.title)}</h2>
-        ${isTodo(s.intro) ? "" : `<p class="prose learn-intro" style="margin-bottom:10px">${esc(s.intro)}</p>`}
+        ${isTodo(s.intro) ? "" : `<p class="prose muted" style="margin-bottom:10px">${esc(s.intro)}</p>`}
         ${(s.entries || []).map((e) => `<details class="fold" ${open ? "open" : ""}>
           <summary>${esc(e.title)}</summary>
           <div class="fold-body"><p class="prose">${text(e.body)}</p></div>
@@ -477,10 +570,10 @@
 
   function viewNotFound(msg) {
     render(`
-      <div class="center" style="padding:40px 0">
-        <h1 class="h-display" style="font-size:1.6rem">Wrong turnstile</h1>
+      <div class="center" style="padding:48px 0">
+        <h1 class="hero-title" style="font-size:1.5rem">Wrong turnstile</h1>
         <p class="prose muted">${esc(msg || "That page doesn't exist.")}</p>
-        <p><a class="btn" href="#/">Back to today's matches</a></p>
+        <p style="margin-top:18px"><a class="btn" href="#/">Back to today's matches</a></p>
       </div>`, "Not found — Kickoff in Five");
   }
 
@@ -499,6 +592,9 @@
     const starsLine = stars.length
       ? `<p class="share-stars"><strong>Stars:</strong> ${stars.map((p) => esc(p.name)).join(" · ")}</p>` : "";
     const k = kickoff(m);
+    const venue = isTodo(m.venue) ? null : m.venue;
+    const city = isTodo(m.city) ? null : m.city;
+    const place = [venue, city].filter(Boolean).join(" · ") || "Venue TBD";
 
     const overlay = document.createElement("div");
     overlay.className = "share-overlay";
@@ -506,16 +602,14 @@
       <div class="share-stage">
         <p class="share-hint">Screenshot this card — it's sized for sharing.</p>
         <div class="share-card" style="${stripeVars(m)}">
-          <div class="ticket-band ticket-band--green"><span>${esc(ROUND_LABEL[m.round] || m.round)} · World Cup 2026</span><span class="band-right">${esc(k.day)}</span></div>
+          <div class="share-band"><span>${esc(ROUND_LABEL[m.round] || m.round)} · World Cup 2026</span><span>${esc(k.day)}</span></div>
           <div class="share-card-body">
-            ${matchupRows(m, { withScore: m.status === "final" })}
+            ${duel(m)}
             ${isTodo(m.storyline) ? "" : `<p class="share-storyline">${esc(m.storyline)}</p>`}
             ${watch}
             ${starsLine}
           </div>
-          <div class="perf" aria-hidden="true"></div>
-          ${stub(m)}
-          <div class="share-foot"><span>Kickoff in Five</span><span>${esc(location.host + location.pathname)}</span></div>
+          <div class="share-foot"><span>${esc(place)}</span><span>Kickoff in Five</span></div>
         </div>
         <p style="margin-top:16px"><button class="btn share-close" type="button">Done</button></p>
       </div>`;
@@ -577,15 +671,17 @@
 
       window.addEventListener("hashchange", route);
       document.body.addEventListener("click", (e) => {
-        const btn = e.target.closest("[data-share]");
-        if (btn) openShare(btn.getAttribute("data-share"));
+        const share = e.target.closest("[data-share]");
+        if (share) return openShare(share.getAttribute("data-share"));
+        const player = e.target.closest("[data-player]");
+        if (player && !player.disabled) return openPlayerSheet(player.getAttribute("data-player"));
       });
       route();
     } catch (err) {
-      render(`<div class="center" style="padding:40px 0">
-        <h1 class="h-display" style="font-size:1.4rem">Couldn't load match data</h1>
+      render(`<div class="center" style="padding:48px 0">
+        <h1 class="hero-title" style="font-size:1.3rem">Couldn't load match data</h1>
         <p class="prose muted small">${esc(err.message)}</p>
-        <p><button class="btn" onclick="location.reload()">Retry</button></p>
+        <p style="margin-top:18px"><button class="btn" onclick="location.reload()">Retry</button></p>
       </div>`, "Kickoff in Five");
     }
   }

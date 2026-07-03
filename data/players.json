@@ -4,65 +4,95 @@
       "id": "usa-star-1",
       "team_id": "usa",
       "name": "TODO-RESEARCH",
+      "photo_url": null,
+      "photo_credit": null,
       "position": "TODO-RESEARCH",
       "age": null,
       "club": "TODO-RESEARCH",
       "league": "TODO-RESEARCH",
       "journey": "TODO-RESEARCH",
       "watch_for": "TODO-RESEARCH",
-      "tournament_stats": { "goals": null, "assists": null, "note": "TODO-RESEARCH" },
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": "TODO-RESEARCH"
+      },
       "as_of": "2026-07-03"
     },
     {
       "id": "usa-star-2",
       "team_id": "usa",
       "name": "TODO-RESEARCH",
+      "photo_url": null,
+      "photo_credit": null,
       "position": "TODO-RESEARCH",
       "age": null,
       "club": "TODO-RESEARCH",
       "league": "TODO-RESEARCH",
       "journey": "TODO-RESEARCH",
       "watch_for": "TODO-RESEARCH",
-      "tournament_stats": { "goals": null, "assists": null, "note": "TODO-RESEARCH" },
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": "TODO-RESEARCH"
+      },
       "as_of": "2026-07-03"
     },
     {
       "id": "bel-star-1",
       "team_id": "bel",
       "name": "TODO-RESEARCH",
+      "photo_url": null,
+      "photo_credit": null,
       "position": "TODO-RESEARCH",
       "age": null,
       "club": "TODO-RESEARCH",
       "league": "TODO-RESEARCH",
       "journey": "TODO-RESEARCH",
       "watch_for": "TODO-RESEARCH",
-      "tournament_stats": { "goals": null, "assists": null, "note": "TODO-RESEARCH" },
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": "TODO-RESEARCH"
+      },
       "as_of": "2026-07-03"
     },
     {
       "id": "fra-star-1",
       "team_id": "fra",
       "name": "TODO-RESEARCH",
+      "photo_url": null,
+      "photo_credit": null,
       "position": "TODO-RESEARCH",
       "age": null,
       "club": "TODO-RESEARCH",
       "league": "TODO-RESEARCH",
       "journey": "TODO-RESEARCH",
       "watch_for": "TODO-RESEARCH",
-      "tournament_stats": { "goals": null, "assists": null, "note": "TODO-RESEARCH" },
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": "TODO-RESEARCH"
+      },
       "as_of": "2026-07-03"
     },
     {
       "id": "fra-star-2",
       "team_id": "fra",
       "name": "TODO-RESEARCH",
+      "photo_url": null,
+      "photo_credit": null,
       "position": "TODO-RESEARCH",
       "age": null,
       "club": "TODO-RESEARCH",
       "league": "TODO-RESEARCH",
       "journey": "TODO-RESEARCH",
       "watch_for": "TODO-RESEARCH",
-      "tournament_stats": { "goals": null, "assists": null, "note": "TODO-RESEARCH" },
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": "TODO-RESEARCH"
+      },
       "as_of": "2026-07-03"
     }
   ]

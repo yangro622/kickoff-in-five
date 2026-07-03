@@ -15,8 +15,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -34,8 +38,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -53,8 +61,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -72,8 +84,15 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
-      "star_player_ids": ["fra-star-1", "fra-star-2"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
+      "star_player_ids": [
+        "fra-star-1",
+        "fra-star-2"
+      ],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -91,8 +110,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -110,8 +133,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -129,8 +156,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -148,8 +179,12 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
       "star_player_ids": [],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -167,8 +202,15 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
-      "star_player_ids": ["usa-star-1", "usa-star-2"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
+      "star_player_ids": [
+        "usa-star-1",
+        "usa-star-2"
+      ],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     },
     {
@@ -186,8 +228,14 @@
       "wc_history": "TODO-RESEARCH",
       "storyline": "TODO-RESEARCH",
       "style": "TODO-RESEARCH",
-      "fun_facts": ["TODO-RESEARCH"],
-      "star_player_ids": ["bel-star-1"],
+      "fun_facts": [
+        "TODO-RESEARCH"
+      ],
+      "star_player_ids": [
+        "bel-star-1"
+      ],
+      "formation": "TODO-RESEARCH",
+      "lineup": [],
       "as_of": "2026-07-03"
     }
   ]
