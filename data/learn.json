@@ -3,50 +3,113 @@
     {
       "id": "rules",
       "title": "The rules in 3 minutes",
-      "intro": "TODO-RESEARCH",
+      "intro": "Everything you actually need to follow a match, minus the rulebook language.",
       "entries": [
-        { "title": "The 90 minutes (and stoppage time)", "body": "TODO-RESEARCH" },
-        { "title": "Extra time & penalty shootouts", "body": "TODO-RESEARCH" },
-        { "title": "Offside, explained like a human", "body": "TODO-RESEARCH" },
-        { "title": "Yellow and red cards", "body": "TODO-RESEARCH" },
-        { "title": "Substitutions", "body": "TODO-RESEARCH" },
-        { "title": "VAR (video review)", "body": "TODO-RESEARCH" }
+        {
+          "title": "The 90 minutes (and stoppage time)",
+          "body": "A match is two 45-minute halves with a running clock — it never stops, even for injuries or goals. Instead, the referee adds extra minutes at the end of each half ('stoppage time') to make up for pauses. That's why you'll see '90+4' on screen: four bonus minutes. In the group stage a tie is a perfectly fine result; in the knockout rounds (where we are now), somebody has to win."
+        },
+        {
+          "title": "Extra time & penalty shootouts",
+          "body": "If a knockout match is tied after 90 minutes, they play 30 more (two 15-minute halves of 'extra time'). Still tied? Penalty shootout: five shots per team, one shooter against the goalkeeper from 12 yards, best score wins — then sudden death if needed. It's the most dramatic thing in sports, and this tournament has already had several (ask Germany)."
+        },
+        {
+          "title": "Offside, explained like a human",
+          "body": "An attacker can't hang out behind the last defender waiting for a pass. At the moment a teammate kicks the ball forward, the attacker needs at least one defender (besides the goalkeeper) between them and the goal — or to be behind the ball. If not, the flag goes up: offside, free kick the other way. That's it. All the slow-motion replays with lines? Just checking this rule, sometimes by centimeters."
+        },
+        {
+          "title": "Yellow and red cards",
+          "body": "A yellow card is a formal warning for a bad foul or unsporting behavior. Two yellows in one game equal a red; a straight red is for something serious. A red card means you're ejected AND your team plays the rest of the game a player short, which changes everything. Cards also carry over: pick up a red (or too many yellows across games) and you're suspended for the next match."
+        },
+        {
+          "title": "Substitutions",
+          "body": "Each team can make five substitutions per game (six if it goes to extra time), and a player who comes off can't return. Watch for a wave of fresh attackers around the 60-70 minute mark — that's a coach going for the win — or defenders coming on late to protect a lead."
+        },
+        {
+          "title": "VAR (video review)",
+          "body": "The Video Assistant Referee is a team of officials watching replays. They only intervene for big stuff: goals, penalties, red cards, and mistaken identity. When the referee draws a rectangle in the air, they're checking the video screen. Expect a couple of nervy 2-minute pauses per game — and remember a goal doesn't fully count until the check is done."
+        }
       ]
     },
     {
       "id": "format",
       "title": "How the tournament works",
-      "intro": "TODO-RESEARCH",
+      "intro": "The 2026 edition is the biggest World Cup ever — here's the shape of it.",
       "entries": [
-        { "title": "48 teams, 12 groups", "body": "TODO-RESEARCH" },
-        { "title": "Round of 32 — new this year", "body": "TODO-RESEARCH" },
-        { "title": "The knockout rounds to the July 19 final", "body": "TODO-RESEARCH" },
-        { "title": "Three host countries", "body": "TODO-RESEARCH" }
+        {
+          "title": "48 teams, 12 groups",
+          "body": "For the first time, 48 countries qualified (up from 32). They were split into 12 groups of four; each team played the other three in its group. The top two from each group plus the eight best third-place teams — 32 in all — moved on to the knockout rounds."
+        },
+        {
+          "title": "Round of 32 — new this year",
+          "body": "Because of the bigger field, there's a brand-new knockout round before the familiar ones. It ran June 28 - July 3 and produced instant classics: Paraguay knocking out Germany on penalties, Morocco beating the Netherlands in a shootout, and Egypt winning a knockout game for the first time ever."
+        },
+        {
+          "title": "The knockout rounds to the July 19 final",
+          "body": "From here it's win-or-go-home: Round of 16 (July 4-7), quarterfinals (July 9-11 in Boston, Los Angeles, Miami and Kansas City), semifinals (July 14 in Dallas, July 15 in Atlanta), and the final on Sunday, July 19 at MetLife Stadium outside New York City."
+        },
+        {
+          "title": "Three host countries",
+          "body": "This is the first World Cup hosted by three nations: the United States, Mexico and Canada. Most knockout matches are in US cities, but Mexico City's legendary Estadio Azteca and Vancouver's BC Place both host Round-of-16 games — and both co-hosts are still alive in the tournament."
+        }
       ]
     },
     {
       "id": "positions",
       "title": "Positions: who does what",
-      "intro": "TODO-RESEARCH",
+      "intro": "Eleven players per team: one goalkeeper, then (usually) four defenders, three midfielders and three forwards, tweaked by each coach.",
       "entries": [
-        { "title": "Goalkeeper", "body": "TODO-RESEARCH" },
-        { "title": "Defenders", "body": "TODO-RESEARCH" },
-        { "title": "Midfielders", "body": "TODO-RESEARCH" },
-        { "title": "Forwards", "body": "TODO-RESEARCH" }
+        {
+          "title": "Goalkeeper",
+          "body": "The only player allowed to use hands, and only inside their own penalty box. Great keepers win shootouts and steal wins — Morocco's Yassine Bounou has broken two countries' hearts in penalty shootouts at the last two World Cups. Keepers wear a different color from everyone else."
+        },
+        {
+          "title": "Defenders",
+          "body": "The back line in front of the goalkeeper. Center backs are the big ones who win headers and block shots; fullbacks patrol the sides — and the modern ones attack constantly. Watch Morocco's Achraf Hakimi or Canada's Alphonso Davies: nominally defenders, functionally extra wingers."
+        },
+        {
+          "title": "Midfielders",
+          "body": "The link between defense and attack, and where games are usually decided. Some destroy (win the ball, like Mexico's Edson Álvarez), some create (pick passes, like Belgium's Kevin De Bruyne), most do a bit of both. If one team's midfield controls the ball, their fans are happy."
+        },
+        {
+          "title": "Forwards",
+          "body": "The goal-getters: a central striker (Erling Haaland, Harry Kane) plus wingers who attack from the sides (Vinícius Júnior, Mohamed Salah). Wingers often play on the 'wrong' side on purpose — a left-footed winger on the right — so they can cut inside and shoot."
+        }
       ]
     },
     {
       "id": "leagues",
       "title": "The club leagues",
-      "intro": "TODO-RESEARCH",
+      "intro": "National teams only assemble a few weeks a year — the rest of the time, these players are club teammates and rivals across the world's leagues.",
       "entries": [
-        { "title": "Premier League (England)", "body": "TODO-RESEARCH" },
-        { "title": "La Liga (Spain)", "body": "TODO-RESEARCH" },
-        { "title": "Serie A (Italy)", "body": "TODO-RESEARCH" },
-        { "title": "Bundesliga (Germany)", "body": "TODO-RESEARCH" },
-        { "title": "Ligue 1 (France)", "body": "TODO-RESEARCH" },
-        { "title": "MLS (USA & Canada)", "body": "TODO-RESEARCH" },
-        { "title": "Saudi Pro League (Saudi Arabia)", "body": "TODO-RESEARCH" }
+        {
+          "title": "Premier League (England)",
+          "body": "The richest, most-watched league on the planet, home to Manchester City, Liverpool and Arsenal. Its global TV reach means Premier League players are often household names — Haaland, Salah and Saka all play there. When someone 'plays in the Premier League,' assume they're very, very good."
+        },
+        {
+          "title": "La Liga (Spain)",
+          "body": "Spain's league, defined by the two most famous clubs in the sport: Real Madrid and Barcelona. Real Madrid have won the European Cup/Champions League more than anyone, which is why 'plays for Real Madrid' (Mbappé, Bellingham, Vinícius) is shorthand for elite. Barcelona counter with the kids: Lamine Yamal and Pedri."
+        },
+        {
+          "title": "Serie A (Italy)",
+          "body": "Italy's league — slower and more tactical by reputation, and historically the home of great defending. AC Milan, Inter and Juventus are its giants, and half the USMNT's stars (Pulisic, McKennie) plus Belgium's veterans (De Bruyne, Lukaku at Napoli) play there."
+        },
+        {
+          "title": "Bundesliga (Germany)",
+          "body": "Germany's league, famous for packed stadiums, cheap tickets and one dominant club: Bayern Munich, where Harry Kane, Michael Olise, Luis Díaz and Alphonso Davies all play. It's also a launchpad — stars like Bellingham and Haaland broke out at Bundesliga clubs before their mega-moves."
+        },
+        {
+          "title": "Ligue 1 (France)",
+          "body": "France's league, dominated for a decade by Paris Saint-Germain — the Qatari-backed superclub where Hakimi, Dembélé and Vitinha play. Critics call the league a one-team show; scouts call it the best young-talent factory in Europe (it produced Mbappé)."
+        },
+        {
+          "title": "MLS (USA & Canada)",
+          "body": "Major League Soccer — the top league in the US and Canada, growing fast and forever changed in 2023 when Lionel Messi joined Inter Miami. It's where he still plays his club football, which is why this World Cup felt within reach the moment he arrived."
+        },
+        {
+          "title": "Saudi Pro League (Saudi Arabia)",
+          "body": "Saudi Arabia's league went from obscurity to headlines in 2023 by signing global stars on enormous salaries — starting with Cristiano Ronaldo at Al-Nassr, where he still plays at 41. Morocco's goalkeeper Bounou is there too. Dismissed by some as a retirement league, it keeps proving it can hold onto big names."
+        }
       ]
     }
   ]
