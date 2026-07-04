@@ -26,9 +26,10 @@ players share a name, match on country.
 
 Save the output as `rankings.json` in the repo root, then run:
 
-    python3 tools/apply_rankings.py rankings.json
+    python3 tools/update_players.py
 
-That writes the ranks into data/players.json and deletes nothing else.
+The script applies rankings.json as an override (it also tries to fetch and
+parse the FOX article itself, so the manual file is only needed if that fails).
 
 Player list to match against (regenerate with:
 `python3 -c "import json; [print(f\"{p['id']}: {p['name']} ({p['team_id']})\") for p in json.load(open('data/players.json'))['players']]"`):
