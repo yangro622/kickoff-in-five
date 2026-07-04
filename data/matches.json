@@ -17,13 +17,20 @@
       "city": "Houston, USA",
       "team1_id": "can",
       "team2_id": "mar",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "0-3",
       "penalties": null,
-      "recap": null,
+      "recap": "Azzedine Ounahi scored twice and Soufiane Rahimi added a stoppage-time third as Morocco ended the co-hosts' run and cruised into the quarterfinals.",
       "storyline": "Co-hosts Canada, roared on by a home crowd in Houston, face the Morocco side that stunned the world by reaching the semifinals at the 2022 World Cup, the first African or Arab nation ever to get that far. It is a classic host-nation-hope versus battle-tested-underdog clash. History is one-sided: Morocco have won both recent meetings comfortably.",
-      "things_to_watch": ["Canada captain Alphonso Davies bombing forward down the left flank", "Morocco soaking up pressure and springing fast counterattacks, the style that beat Spain and Portugal in 2022", "Aerial duels on corners and free kicks, where Morocco's tall center-backs are dangerous"],
-      "h2h": ["Morocco beat Canada 2-1 in the group stage of the 2022 World Cup.", "Morocco also won a 2016 friendly 4-0; the sides drew 1-1 in a 1994 friendly in Montreal."],
+      "things_to_watch": [
+        "Canada captain Alphonso Davies bombing forward down the left flank",
+        "Morocco soaking up pressure and springing fast counterattacks, the style that beat Spain and Portugal in 2022",
+        "Aerial duels on corners and free kicks, where Morocco's tall center-backs are dangerous"
+      ],
+      "h2h": [
+        "Morocco beat Canada 2-1 in the group stage of the 2022 World Cup.",
+        "Morocco also won a 2016 friendly 4-0; the sides drew 1-1 in a 1994 friendly in Montreal."
+      ],
       "stakes": "The winner advances to Quarterfinal 1 in Boston on July 9 to face the winner of Paraguay vs France.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -42,8 +49,16 @@
       "penalties": null,
       "recap": null,
       "storyline": "France, runners-up in 2022 and champions in 2018, arrive as one of the tournament favorites with Kylian Mbappe leading the attack. Paraguay are the gritty, defensive underdogs who have never beaten France in their history. The form book screams France, but Paraguay specialize in frustrating bigger teams and dragging games into the trenches.",
-      "things_to_watch": ["Kylian Mbappe's pace attacking the space in behind Paraguay's back line", "Paraguay packing men behind the ball and defending deep to frustrate France", "France's height from their center-backs at attacking corners"],
-      "h2h": ["France have never lost to Paraguay (2 wins, 3 draws in 5 meetings).", "France won their 1998 World Cup Round of 16 tie 1-0 on Laurent Blanc's 114th-minute strike, the first 'golden goal' in World Cup history.", "France thrashed Paraguay 7-3 at the 1958 World Cup, with Just Fontaine scoring a hat-trick."],
+      "things_to_watch": [
+        "Kylian Mbappe's pace attacking the space in behind Paraguay's back line",
+        "Paraguay packing men behind the ball and defending deep to frustrate France",
+        "France's height from their center-backs at attacking corners"
+      ],
+      "h2h": [
+        "France have never lost to Paraguay (2 wins, 3 draws in 5 meetings).",
+        "France won their 1998 World Cup Round of 16 tie 1-0 on Laurent Blanc's 114th-minute strike, the first 'golden goal' in World Cup history.",
+        "France thrashed Paraguay 7-3 at the 1958 World Cup, with Just Fontaine scoring a hat-trick."
+      ],
       "stakes": "The winner advances to Quarterfinal 1 in Boston on July 9 to face the winner of Canada vs Morocco.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -62,8 +77,15 @@
       "penalties": null,
       "recap": null,
       "storyline": "Five-time champions Brazil meet a Norway side built around superstar striker Erling Haaland, back at a World Cup after decades away. Norway carry a slice of history into this one: their shock 2-1 win over Brazil at the 1998 World Cup, and the fact they have never lost to Brazil in a World Cup meeting. Brazil are heavy favorites, but this matchup has a habit of springing surprises.",
-      "things_to_watch": ["Erling Haaland's runs across the last defender, looking to get on the end of crosses", "Brazil's attacking fullbacks pushing high and overloading the wings", "How Norway defends deep and counterattacks, the blueprint from their 1998 upset"],
-      "h2h": ["Norway beat Brazil 2-1 at the 1998 World Cup, Kjetil Rekdal's late penalty sealing the upset.", "Norway have never lost to Brazil in their World Cup meetings, a unique record."],
+      "things_to_watch": [
+        "Erling Haaland's runs across the last defender, looking to get on the end of crosses",
+        "Brazil's attacking fullbacks pushing high and overloading the wings",
+        "How Norway defends deep and counterattacks, the blueprint from their 1998 upset"
+      ],
+      "h2h": [
+        "Norway beat Brazil 2-1 at the 1998 World Cup, Kjetil Rekdal's late penalty sealing the upset.",
+        "Norway have never lost to Brazil in their World Cup meetings, a unique record."
+      ],
       "stakes": "The winner advances to Quarterfinal 2 in Los Angeles on July 10 to face the winner of Mexico vs England.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -82,8 +104,15 @@
       "penalties": null,
       "recap": null,
       "storyline": "Co-hosts Mexico get a dream setting, the iconic Estadio Azteca high in the mountains of Mexico City, against an England team still chasing its first World Cup title since 1966. England hold the historical edge, but the altitude, the hostile crowd, and raw knockout pressure make this a genuine coin-flip.",
-      "things_to_watch": ["Harry Kane dropping deep to link play, then arriving late in the box for England", "Mexico using the Azteca altitude and crowd to press England hard early on", "England's wide deliveries and set pieces aimed at Kane"],
-      "h2h": ["England won their only previous World Cup meeting 2-0 in the 1966 group stage, through Bobby Charlton and Roger Hunt.", "England lead the all-time series, winning six of nine meetings; Mexico beat England 1-0 in a 1985 friendly at the Azteca."],
+      "things_to_watch": [
+        "Harry Kane dropping deep to link play, then arriving late in the box for England",
+        "Mexico using the Azteca altitude and crowd to press England hard early on",
+        "England's wide deliveries and set pieces aimed at Kane"
+      ],
+      "h2h": [
+        "England won their only previous World Cup meeting 2-0 in the 1966 group stage, through Bobby Charlton and Roger Hunt.",
+        "England lead the all-time series, winning six of nine meetings; Mexico beat England 1-0 in a 1985 friendly at the Azteca."
+      ],
       "stakes": "The winner advances to Quarterfinal 2 in Los Angeles on July 10 to face the winner of Brazil vs Norway.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -102,8 +131,15 @@
       "penalties": null,
       "recap": null,
       "storyline": "A rematch loaded with history: the last time these teams met at a World Cup, Belgium knocked the USA out in extra time in 2014, a night defined by American goalkeeper Tim Howard's record-breaking 16 saves. Now the co-hosts get a shot at revenge in front of a raucous Seattle crowd against a Belgium side still packed with stars like Kevin De Bruyne and Romelu Lukaku.",
-      "things_to_watch": ["Kevin De Bruyne's passing from midfield, threading balls in behind the USA defense", "The USA's high-energy press trying to rattle Belgium early in a loud Seattle stadium", "Belgium's aerial threat through Romelu Lukaku against the USA center-backs"],
-      "h2h": ["Belgium beat the USA 2-1 after extra time in the 2014 World Cup Round of 16.", "In that game USA goalkeeper Tim Howard made a World Cup-record 16 saves in a single match."],
+      "things_to_watch": [
+        "Kevin De Bruyne's passing from midfield, threading balls in behind the USA defense",
+        "The USA's high-energy press trying to rattle Belgium early in a loud Seattle stadium",
+        "Belgium's aerial threat through Romelu Lukaku against the USA center-backs"
+      ],
+      "h2h": [
+        "Belgium beat the USA 2-1 after extra time in the 2014 World Cup Round of 16.",
+        "In that game USA goalkeeper Tim Howard made a World Cup-record 16 saves in a single match."
+      ],
       "stakes": "The winner advances to Quarterfinal 3 in Miami on July 11 to face the winner of Spain vs Portugal.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -122,8 +158,15 @@
       "penalties": null,
       "recap": null,
       "storyline": "The Iberian derby, neighbors who know each other inside out, on the biggest stage. Spain arrive as one of the favorites with a dazzling young attack led by Lamine Yamal; Portugal counter with their own firepower and big-game pedigree. Remarkably, the two nations have met only once at a World Cup, the wild 3-3 draw in 2018, making this their first-ever World Cup knockout clash.",
-      "things_to_watch": ["Lamine Yamal taking defenders on one-on-one down Spain's right wing", "Spain's patient possession game trying to pull a compact Portugal apart", "Portugal's threat on the counterattack and from set pieces"],
-      "h2h": ["Spain and Portugal drew 3-3 in their only previous World Cup meeting, the 2018 group stage, with Cristiano Ronaldo scoring a hat-trick.", "This is the first time the Iberian neighbors have met in a World Cup knockout round."],
+      "things_to_watch": [
+        "Lamine Yamal taking defenders on one-on-one down Spain's right wing",
+        "Spain's patient possession game trying to pull a compact Portugal apart",
+        "Portugal's threat on the counterattack and from set pieces"
+      ],
+      "h2h": [
+        "Spain and Portugal drew 3-3 in their only previous World Cup meeting, the 2018 group stage, with Cristiano Ronaldo scoring a hat-trick.",
+        "This is the first time the Iberian neighbors have met in a World Cup knockout round."
+      ],
       "stakes": "The winner advances to Quarterfinal 3 in Miami on July 11 to face the winner of USA vs Belgium.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -142,8 +185,15 @@
       "penalties": null,
       "recap": null,
       "storyline": "Reigning world champions Argentina, led by Lionel Messi, face an Egypt side making history: this is the first time Egypt have ever reached the World Cup Round of 16. Mohamed Salah's team arrive on a high after a penalty-shootout win over Australia, but they have rarely crossed paths with Argentina, and never on a stage like this.",
-      "things_to_watch": ["Lionel Messi drifting into pockets of space to unlock the Egypt defense", "Mohamed Salah's darting runs in behind on Egypt's counterattacks", "Argentina's midfield control against Egypt's compact, disciplined defensive block"],
-      "h2h": ["Argentina and Egypt have met only a handful of times; Argentina won 6-0 in the semifinals of the 1928 Olympic football tournament.", "This is their first meeting at a FIFA World Cup."],
+      "things_to_watch": [
+        "Lionel Messi drifting into pockets of space to unlock the Egypt defense",
+        "Mohamed Salah's darting runs in behind on Egypt's counterattacks",
+        "Argentina's midfield control against Egypt's compact, disciplined defensive block"
+      ],
+      "h2h": [
+        "Argentina and Egypt have met only a handful of times; Argentina won 6-0 in the semifinals of the 1928 Olympic football tournament.",
+        "This is their first meeting at a FIFA World Cup."
+      ],
       "stakes": "The winner advances to Quarterfinal 4 in Kansas City on July 11 to face the winner of Switzerland vs Colombia.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -162,8 +212,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "Two well-organized sides meet in Vancouver with a place in the quarterfinals on the line. Switzerland are the reliable tournament over-achievers who so often grind out knockout results; Colombia bring South American flair and just came through a tough group. Their only previous World Cup meeting came back in 1994, when Colombia won 2-0.",
-      "things_to_watch": ["Colombia's creative playmakers threading passes through the middle", "Switzerland's compact, well-drilled defensive shape frustrating Colombia", "Both teams' set-piece deliveries in what could be a tight, low-scoring game"],
-      "h2h": ["Colombia beat Switzerland 2-0 in the group stage of the 1994 World Cup, the teams' only previous World Cup meeting."],
+      "things_to_watch": [
+        "Colombia's creative playmakers threading passes through the middle",
+        "Switzerland's compact, well-drilled defensive shape frustrating Colombia",
+        "Both teams' set-piece deliveries in what could be a tight, low-scoring game"
+      ],
+      "h2h": [
+        "Colombia beat Switzerland 2-0 in the group stage of the 1994 World Cup, the teams' only previous World Cup meeting."
+      ],
       "stakes": "The winner advances to Quarterfinal 4 in Kansas City on July 11 to face the winner of Argentina vs Egypt.",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -175,8 +231,7 @@
       "date_local": "2026-07-09",
       "venue": "Gillette Stadium",
       "city": "Foxborough, USA",
-      "team1_id": "tbd",
-      "team1_tbd_note": "Winner of Canada vs Morocco",
+      "team1_id": "mar",
       "team2_id": "tbd",
       "team2_tbd_note": "Winner of Paraguay vs France",
       "status": "upcoming",
@@ -184,8 +239,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -206,8 +267,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -228,8 +295,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -250,8 +323,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -272,8 +351,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -294,8 +379,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     },
@@ -316,8 +407,14 @@
       "penalties": null,
       "recap": null,
       "storyline": "TODO-RESEARCH",
-      "things_to_watch": ["TODO-RESEARCH", "TODO-RESEARCH", "TODO-RESEARCH"],
-      "h2h": ["TODO-RESEARCH"],
+      "things_to_watch": [
+        "TODO-RESEARCH",
+        "TODO-RESEARCH",
+        "TODO-RESEARCH"
+      ],
+      "h2h": [
+        "TODO-RESEARCH"
+      ],
       "stakes": "TODO-RESEARCH",
       "watch_link": "https://www.foxsports.com/live"
     }

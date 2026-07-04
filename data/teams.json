@@ -9,8 +9,8 @@
       "tier": 1,
       "fifa_rank": 30,
       "group": "B",
-      "group_summary": "Reached the Round of 16 as co-hosts; beat South Africa 1–0 in the Round of 32.",
-      "still_alive": true,
+      "group_summary": "Reached the Round of 16 as co-hosts; beat South Africa 1–0 in the Round of 32, then fell 0-3 to Morocco in the Round of 16.",
+      "still_alive": false,
       "best_wc_finish": "Round of 16, 2026 (their best-ever finish — before this tournament Canada had never won a game at a World Cup)",
       "wc_history": "Canada had only played two World Cups before this one (1986 and 2022) and lost every single game. As co-hosts in 2026 they finally broke through, winning matches and reaching the knockout rounds for the first time.",
       "storyline": "This is the greatest run in Canadian men's soccer history, and it is happening at home. A young, fast team built around superstar left back Alphonso Davies is playing with house money and a nation suddenly paying attention.",
@@ -19,20 +19,80 @@
         "Before 2026, Canada's men had never scored more than one goal in a World Cup and had never won a match.",
         "Canada is co-hosting this World Cup alongside the USA and Mexico."
       ],
-      "star_player_ids": ["davies", "david", "eustaquio", "larin"],
+      "star_player_ids": [
+        "davies",
+        "david",
+        "eustaquio",
+        "larin"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Maxime Crépeau", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Alistair Johnston", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Moïse Bombito", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Derek Cornelius", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Alphonso Davies", "position": "Left back", "player_id": "davies", "photo_url": null},
-        {"name": "Stephen Eustáquio", "position": "Central midfield", "player_id": "eustaquio", "photo_url": null},
-        {"name": "Ismaël Koné", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Jonathan Osorio", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Tajon Buchanan", "position": "Right wing", "player_id": null, "photo_url": null},
-        {"name": "Jonathan David", "position": "Striker", "player_id": "david", "photo_url": null},
-        {"name": "Cyle Larin", "position": "Left wing", "player_id": "larin", "photo_url": null}
+        {
+          "name": "Maxime Crépeau",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Alistair Johnston",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Moïse Bombito",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Derek Cornelius",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Alphonso Davies",
+          "position": "Left back",
+          "player_id": "davies",
+          "photo_url": null
+        },
+        {
+          "name": "Stephen Eustáquio",
+          "position": "Central midfield",
+          "player_id": "eustaquio",
+          "photo_url": null
+        },
+        {
+          "name": "Ismaël Koné",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jonathan Osorio",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tajon Buchanan",
+          "position": "Right wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jonathan David",
+          "position": "Striker",
+          "player_id": "david",
+          "photo_url": null
+        },
+        {
+          "name": "Cyle Larin",
+          "position": "Left wing",
+          "player_id": "larin",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -55,20 +115,80 @@
         "In 2022 Morocco became the first African or Arab team ever to reach a World Cup semifinal.",
         "Their fans are known for creating some of the loudest atmospheres of any team at the tournament."
       ],
-      "star_player_ids": ["hakimi", "en-nesyri", "amrabat", "brahim"],
+      "star_player_ids": [
+        "hakimi",
+        "en-nesyri",
+        "amrabat",
+        "brahim"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Yassine Bounou", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Achraf Hakimi", "position": "Right back", "player_id": "hakimi", "photo_url": null},
-        {"name": "Nayef Aguerd", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Romain Saïss", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Noussair Mazraoui", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Sofyan Amrabat", "position": "Defensive midfield", "player_id": "amrabat", "photo_url": null},
-        {"name": "Azzedine Ounahi", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Brahim Díaz", "position": "Central midfield", "player_id": "brahim", "photo_url": null},
-        {"name": "Hakim Ziyech", "position": "Right wing", "player_id": null, "photo_url": null},
-        {"name": "Youssef En-Nesyri", "position": "Striker", "player_id": "en-nesyri", "photo_url": null},
-        {"name": "Sofiane Boufal", "position": "Left wing", "player_id": null, "photo_url": null}
+        {
+          "name": "Yassine Bounou",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Achraf Hakimi",
+          "position": "Right back",
+          "player_id": "hakimi",
+          "photo_url": null
+        },
+        {
+          "name": "Nayef Aguerd",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Romain Saïss",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Noussair Mazraoui",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sofyan Amrabat",
+          "position": "Defensive midfield",
+          "player_id": "amrabat",
+          "photo_url": null
+        },
+        {
+          "name": "Azzedine Ounahi",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brahim Díaz",
+          "position": "Central midfield",
+          "player_id": "brahim",
+          "photo_url": null
+        },
+        {
+          "name": "Hakim Ziyech",
+          "position": "Right wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Youssef En-Nesyri",
+          "position": "Striker",
+          "player_id": "en-nesyri",
+          "photo_url": null
+        },
+        {
+          "name": "Sofiane Boufal",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -91,20 +211,80 @@
         "Paraguay knocked out four-time champions Germany on penalties to reach the Round of 16.",
         "They are famous for being one of the hardest teams in the world to score against."
       ],
-      "star_player_ids": ["almiron", "sanabria", "enciso", "gustavo-gomez"],
+      "star_player_ids": [
+        "almiron",
+        "sanabria",
+        "enciso",
+        "gustavo-gomez"
+      ],
       "formation": "4-4-2",
       "lineup": [
-        {"name": "Roberto Fernández", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Ángel Cardozo", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Gustavo Gómez", "position": "Centre back", "player_id": "gustavo-gomez", "photo_url": null},
-        {"name": "Omar Alderete", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Junior Alonso", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Miguel Almirón", "position": "Right midfield", "player_id": "almiron", "photo_url": null},
-        {"name": "Andrés Cubas", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Damián Bobadilla", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Julio Enciso", "position": "Left midfield", "player_id": "enciso", "photo_url": null},
-        {"name": "Antonio Sanabria", "position": "Striker", "player_id": "sanabria", "photo_url": null},
-        {"name": "Adam Bareiro", "position": "Striker", "player_id": null, "photo_url": null}
+        {
+          "name": "Roberto Fernández",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ángel Cardozo",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Gustavo Gómez",
+          "position": "Centre back",
+          "player_id": "gustavo-gomez",
+          "photo_url": null
+        },
+        {
+          "name": "Omar Alderete",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Junior Alonso",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Miguel Almirón",
+          "position": "Right midfield",
+          "player_id": "almiron",
+          "photo_url": null
+        },
+        {
+          "name": "Andrés Cubas",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Damián Bobadilla",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Julio Enciso",
+          "position": "Left midfield",
+          "player_id": "enciso",
+          "photo_url": null
+        },
+        {
+          "name": "Antonio Sanabria",
+          "position": "Striker",
+          "player_id": "sanabria",
+          "photo_url": null
+        },
+        {
+          "name": "Adam Bareiro",
+          "position": "Striker",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -127,20 +307,80 @@
         "France reached the final in 2022, losing to Argentina on penalties after a 3–3 thriller in which Mbappé scored a hat-trick.",
         "They are one of only a handful of nations to win the World Cup more than once."
       ],
-      "star_player_ids": ["mbappe", "dembele", "tchouameni", "saliba"],
+      "star_player_ids": [
+        "mbappe",
+        "dembele",
+        "tchouameni",
+        "saliba"
+      ],
       "formation": "4-2-3-1",
       "lineup": [
-        {"name": "Mike Maignan", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Jules Koundé", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "William Saliba", "position": "Centre back", "player_id": "saliba", "photo_url": null},
-        {"name": "Dayot Upamecano", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Theo Hernández", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Aurélien Tchouaméni", "position": "Defensive midfield", "player_id": "tchouameni", "photo_url": null},
-        {"name": "Eduardo Camavinga", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Ousmane Dembélé", "position": "Right wing", "player_id": "dembele", "photo_url": null},
-        {"name": "Antoine Griezmann", "position": "Attacking midfield", "player_id": null, "photo_url": null},
-        {"name": "Kylian Mbappé", "position": "Left wing", "player_id": "mbappe", "photo_url": null},
-        {"name": "Randal Kolo Muani", "position": "Striker", "player_id": null, "photo_url": null}
+        {
+          "name": "Mike Maignan",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jules Koundé",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "William Saliba",
+          "position": "Centre back",
+          "player_id": "saliba",
+          "photo_url": null
+        },
+        {
+          "name": "Dayot Upamecano",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Theo Hernández",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Aurélien Tchouaméni",
+          "position": "Defensive midfield",
+          "player_id": "tchouameni",
+          "photo_url": null
+        },
+        {
+          "name": "Eduardo Camavinga",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "position": "Right wing",
+          "player_id": "dembele",
+          "photo_url": null
+        },
+        {
+          "name": "Antoine Griezmann",
+          "position": "Attacking midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kylian Mbappé",
+          "position": "Left wing",
+          "player_id": "mbappe",
+          "photo_url": null
+        },
+        {
+          "name": "Randal Kolo Muani",
+          "position": "Striker",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -163,20 +403,80 @@
         "Brazil is the only country to have played in every World Cup since the tournament began in 1930.",
         "Their five titles are more than any other nation."
       ],
-      "star_player_ids": ["vinicius", "raphinha", "rodrygo", "marquinhos"],
+      "star_player_ids": [
+        "vinicius",
+        "raphinha",
+        "rodrygo",
+        "marquinhos"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Alisson", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Danilo", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Marquinhos", "position": "Centre back", "player_id": "marquinhos", "photo_url": null},
-        {"name": "Gabriel Magalhães", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Wendell", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Bruno Guimarães", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Casemiro", "position": "Defensive midfield", "player_id": null, "photo_url": null},
-        {"name": "Lucas Paquetá", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Raphinha", "position": "Right wing", "player_id": "raphinha", "photo_url": null},
-        {"name": "Rodrygo", "position": "Striker", "player_id": "rodrygo", "photo_url": null},
-        {"name": "Vinícius Júnior", "position": "Left wing", "player_id": "vinicius", "photo_url": null}
+        {
+          "name": "Alisson",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Danilo",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Marquinhos",
+          "position": "Centre back",
+          "player_id": "marquinhos",
+          "photo_url": null
+        },
+        {
+          "name": "Gabriel Magalhães",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Wendell",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bruno Guimarães",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Casemiro",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lucas Paquetá",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Raphinha",
+          "position": "Right wing",
+          "player_id": "raphinha",
+          "photo_url": null
+        },
+        {
+          "name": "Rodrygo",
+          "position": "Striker",
+          "player_id": "rodrygo",
+          "photo_url": null
+        },
+        {
+          "name": "Vinícius Júnior",
+          "position": "Left wing",
+          "player_id": "vinicius",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -199,20 +499,80 @@
         "Before 2026, Norway hadn't played at a World Cup since 1998.",
         "Norway have a quirky record of never losing to Brazil at a World Cup."
       ],
-      "star_player_ids": ["haaland", "odegaard", "sorloth", "nusa"],
+      "star_player_ids": [
+        "haaland",
+        "odegaard",
+        "sorloth",
+        "nusa"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Ørjan Nyland", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Julian Ryerson", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Kristoffer Ajer", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Leo Østigård", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "David Møller Wolfe", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Sander Berge", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Martin Ødegaard", "position": "Central midfield", "player_id": "odegaard", "photo_url": null},
-        {"name": "Patrick Berg", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Antonio Nusa", "position": "Right wing", "player_id": "nusa", "photo_url": null},
-        {"name": "Erling Haaland", "position": "Striker", "player_id": "haaland", "photo_url": null},
-        {"name": "Alexander Sørloth", "position": "Left wing", "player_id": "sorloth", "photo_url": null}
+        {
+          "name": "Ørjan Nyland",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Julian Ryerson",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kristoffer Ajer",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Leo Østigård",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "David Møller Wolfe",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sander Berge",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Martin Ødegaard",
+          "position": "Central midfield",
+          "player_id": "odegaard",
+          "photo_url": null
+        },
+        {
+          "name": "Patrick Berg",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Antonio Nusa",
+          "position": "Right wing",
+          "player_id": "nusa",
+          "photo_url": null
+        },
+        {
+          "name": "Erling Haaland",
+          "position": "Striker",
+          "player_id": "haaland",
+          "photo_url": null
+        },
+        {
+          "name": "Alexander Sørloth",
+          "position": "Left wing",
+          "player_id": "sorloth",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -235,20 +595,80 @@
         "Estadio Azteca is the first stadium to host World Cup matches at three different tournaments (1970, 1986, 2026).",
         "Mexico had been knocked out in the Round of 16 in seven straight World Cups before 2026."
       ],
-      "star_player_ids": ["gimenez", "edson-alvarez", "lozano", "raul-jimenez"],
+      "star_player_ids": [
+        "gimenez",
+        "edson-alvarez",
+        "lozano",
+        "raul-jimenez"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Guillermo Ochoa", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Jorge Sánchez", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "César Montes", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Johan Vásquez", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Jesús Gallardo", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Edson Álvarez", "position": "Defensive midfield", "player_id": "edson-alvarez", "photo_url": null},
-        {"name": "Luis Chávez", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Orbelín Pineda", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Hirving Lozano", "position": "Right wing", "player_id": "lozano", "photo_url": null},
-        {"name": "Santiago Giménez", "position": "Striker", "player_id": "gimenez", "photo_url": null},
-        {"name": "Alexis Vega", "position": "Left wing", "player_id": null, "photo_url": null}
+        {
+          "name": "Guillermo Ochoa",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jorge Sánchez",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "César Montes",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Johan Vásquez",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jesús Gallardo",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Edson Álvarez",
+          "position": "Defensive midfield",
+          "player_id": "edson-alvarez",
+          "photo_url": null
+        },
+        {
+          "name": "Luis Chávez",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Orbelín Pineda",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Hirving Lozano",
+          "position": "Right wing",
+          "player_id": "lozano",
+          "photo_url": null
+        },
+        {
+          "name": "Santiago Giménez",
+          "position": "Striker",
+          "player_id": "gimenez",
+          "photo_url": null
+        },
+        {
+          "name": "Alexis Vega",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -271,20 +691,80 @@
         "England's only World Cup title came in 1966, when they hosted the tournament.",
         "Harry Kane is England's all-time leading goalscorer."
       ],
-      "star_player_ids": ["kane", "bellingham", "saka", "foden"],
+      "star_player_ids": [
+        "kane",
+        "bellingham",
+        "saka",
+        "foden"
+      ],
       "formation": "4-2-3-1",
       "lineup": [
-        {"name": "Jordan Pickford", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Kyle Walker", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "John Stones", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Marc Guéhi", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Rico Lewis", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Declan Rice", "position": "Defensive midfield", "player_id": null, "photo_url": null},
-        {"name": "Jude Bellingham", "position": "Central midfield", "player_id": "bellingham", "photo_url": null},
-        {"name": "Bukayo Saka", "position": "Right wing", "player_id": "saka", "photo_url": null},
-        {"name": "Phil Foden", "position": "Attacking midfield", "player_id": "foden", "photo_url": null},
-        {"name": "Cole Palmer", "position": "Left wing", "player_id": null, "photo_url": null},
-        {"name": "Harry Kane", "position": "Striker", "player_id": "kane", "photo_url": null}
+        {
+          "name": "Jordan Pickford",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kyle Walker",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "John Stones",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Marc Guéhi",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rico Lewis",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Declan Rice",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jude Bellingham",
+          "position": "Central midfield",
+          "player_id": "bellingham",
+          "photo_url": null
+        },
+        {
+          "name": "Bukayo Saka",
+          "position": "Right wing",
+          "player_id": "saka",
+          "photo_url": null
+        },
+        {
+          "name": "Phil Foden",
+          "position": "Attacking midfield",
+          "player_id": "foden",
+          "photo_url": null
+        },
+        {
+          "name": "Cole Palmer",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Harry Kane",
+          "position": "Striker",
+          "player_id": "kane",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -307,20 +787,80 @@
         "The USA is co-hosting the 2026 World Cup with Canada and Mexico.",
         "Their captain and star, Christian Pulisic, was the most expensive American player in history when he joined Chelsea."
       ],
-      "star_player_ids": ["pulisic", "mckennie", "adams", "balogun"],
+      "star_player_ids": [
+        "pulisic",
+        "mckennie",
+        "adams",
+        "balogun"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Matt Turner", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Sergiño Dest", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Chris Richards", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Tim Ream", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Antonee Robinson", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Tyler Adams", "position": "Defensive midfield", "player_id": "adams", "photo_url": null},
-        {"name": "Weston McKennie", "position": "Central midfield", "player_id": "mckennie", "photo_url": null},
-        {"name": "Yunus Musah", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Christian Pulisic", "position": "Right wing", "player_id": "pulisic", "photo_url": null},
-        {"name": "Folarin Balogun", "position": "Striker", "player_id": "balogun", "photo_url": null},
-        {"name": "Timothy Weah", "position": "Left wing", "player_id": null, "photo_url": null}
+        {
+          "name": "Matt Turner",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sergiño Dest",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Chris Richards",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tim Ream",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Antonee Robinson",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tyler Adams",
+          "position": "Defensive midfield",
+          "player_id": "adams",
+          "photo_url": null
+        },
+        {
+          "name": "Weston McKennie",
+          "position": "Central midfield",
+          "player_id": "mckennie",
+          "photo_url": null
+        },
+        {
+          "name": "Yunus Musah",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Christian Pulisic",
+          "position": "Right wing",
+          "player_id": "pulisic",
+          "photo_url": null
+        },
+        {
+          "name": "Folarin Balogun",
+          "position": "Striker",
+          "player_id": "balogun",
+          "photo_url": null
+        },
+        {
+          "name": "Timothy Weah",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -343,20 +883,80 @@
         "Belgium beat the USA in the Round of 16 in 2014, a night famous for goalkeeper Tim Howard's record 16 saves.",
         "Kevin De Bruyne is regarded as one of the best passers of his generation."
       ],
-      "star_player_ids": ["debruyne", "lukaku", "doku", "tielemans"],
+      "star_player_ids": [
+        "debruyne",
+        "lukaku",
+        "doku",
+        "tielemans"
+      ],
       "formation": "4-2-3-1",
       "lineup": [
-        {"name": "Koen Casteels", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Timothy Castagne", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Wout Faes", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Zeno Debast", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Arthur Theate", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Amadou Onana", "position": "Defensive midfield", "player_id": null, "photo_url": null},
-        {"name": "Youri Tielemans", "position": "Central midfield", "player_id": "tielemans", "photo_url": null},
-        {"name": "Jérémy Doku", "position": "Right wing", "player_id": "doku", "photo_url": null},
-        {"name": "Kevin De Bruyne", "position": "Attacking midfield", "player_id": "debruyne", "photo_url": null},
-        {"name": "Leandro Trossard", "position": "Left wing", "player_id": null, "photo_url": null},
-        {"name": "Romelu Lukaku", "position": "Striker", "player_id": "lukaku", "photo_url": null}
+        {
+          "name": "Koen Casteels",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Timothy Castagne",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Wout Faes",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Zeno Debast",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Arthur Theate",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Amadou Onana",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Youri Tielemans",
+          "position": "Central midfield",
+          "player_id": "tielemans",
+          "photo_url": null
+        },
+        {
+          "name": "Jérémy Doku",
+          "position": "Right wing",
+          "player_id": "doku",
+          "photo_url": null
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "position": "Attacking midfield",
+          "player_id": "debruyne",
+          "photo_url": null
+        },
+        {
+          "name": "Leandro Trossard",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Romelu Lukaku",
+          "position": "Striker",
+          "player_id": "lukaku",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -379,20 +979,81 @@
         "Spain's 2010 title came from a famous style of quick, short passing known as 'tiki-taka'.",
         "Lamine Yamal became a global star while still a teenager."
       ],
-      "star_player_ids": ["yamal", "pedri", "rodri", "nico-williams", "oyarzabal"],
+      "star_player_ids": [
+        "yamal",
+        "pedri",
+        "rodri",
+        "nico-williams",
+        "oyarzabal"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Unai Simón", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Pedro Porro", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Dean Huijsen", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Robin Le Normand", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Marc Cucurella", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Rodri", "position": "Defensive midfield", "player_id": "rodri", "photo_url": null},
-        {"name": "Pedri", "position": "Central midfield", "player_id": "pedri", "photo_url": null},
-        {"name": "Fabián Ruiz", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Lamine Yamal", "position": "Right wing", "player_id": "yamal", "photo_url": null},
-        {"name": "Mikel Oyarzabal", "position": "Striker", "player_id": "oyarzabal", "photo_url": null},
-        {"name": "Nico Williams", "position": "Left wing", "player_id": "nico-williams", "photo_url": null}
+        {
+          "name": "Unai Simón",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Pedro Porro",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Dean Huijsen",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Robin Le Normand",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Marc Cucurella",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rodri",
+          "position": "Defensive midfield",
+          "player_id": "rodri",
+          "photo_url": null
+        },
+        {
+          "name": "Pedri",
+          "position": "Central midfield",
+          "player_id": "pedri",
+          "photo_url": null
+        },
+        {
+          "name": "Fabián Ruiz",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lamine Yamal",
+          "position": "Right wing",
+          "player_id": "yamal",
+          "photo_url": null
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "position": "Striker",
+          "player_id": "oyarzabal",
+          "photo_url": null
+        },
+        {
+          "name": "Nico Williams",
+          "position": "Left wing",
+          "player_id": "nico-williams",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -415,20 +1076,80 @@
         "Cristiano Ronaldo is the all-time leading goalscorer in men's international football.",
         "Portugal won the European Championship in 2016, but have never won a World Cup."
       ],
-      "star_player_ids": ["ronaldo", "bruno-fernandes", "vitinha", "ruben-dias"],
+      "star_player_ids": [
+        "ronaldo",
+        "bruno-fernandes",
+        "vitinha",
+        "ruben-dias"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Diogo Costa", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "João Cancelo", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Rúben Dias", "position": "Centre back", "player_id": "ruben-dias", "photo_url": null},
-        {"name": "Gonçalo Inácio", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Nuno Mendes", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Vitinha", "position": "Central midfield", "player_id": "vitinha", "photo_url": null},
-        {"name": "Rúben Neves", "position": "Defensive midfield", "player_id": null, "photo_url": null},
-        {"name": "Bruno Fernandes", "position": "Attacking midfield", "player_id": "bruno-fernandes", "photo_url": null},
-        {"name": "Bernardo Silva", "position": "Right wing", "player_id": null, "photo_url": null},
-        {"name": "Cristiano Ronaldo", "position": "Striker", "player_id": "ronaldo", "photo_url": null},
-        {"name": "Rafael Leão", "position": "Left wing", "player_id": null, "photo_url": null}
+        {
+          "name": "Diogo Costa",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "João Cancelo",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rúben Dias",
+          "position": "Centre back",
+          "player_id": "ruben-dias",
+          "photo_url": null
+        },
+        {
+          "name": "Gonçalo Inácio",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nuno Mendes",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Vitinha",
+          "position": "Central midfield",
+          "player_id": "vitinha",
+          "photo_url": null
+        },
+        {
+          "name": "Rúben Neves",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bruno Fernandes",
+          "position": "Attacking midfield",
+          "player_id": "bruno-fernandes",
+          "photo_url": null
+        },
+        {
+          "name": "Bernardo Silva",
+          "position": "Right wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "position": "Striker",
+          "player_id": "ronaldo",
+          "photo_url": null
+        },
+        {
+          "name": "Rafael Leão",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -451,20 +1172,80 @@
         "Argentina are the defending champions, having won the 2022 final against France on penalties.",
         "Lionel Messi is leading the 2026 Golden Boot race for most goals at the tournament."
       ],
-      "star_player_ids": ["messi", "julian-alvarez", "lautaro", "emi-martinez"],
+      "star_player_ids": [
+        "messi",
+        "julian-alvarez",
+        "lautaro",
+        "emi-martinez"
+      ],
       "formation": "4-3-3",
       "lineup": [
-        {"name": "Emiliano Martínez", "position": "Goalkeeper", "player_id": "emi-martinez", "photo_url": null},
-        {"name": "Nahuel Molina", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Cristian Romero", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Nicolás Otamendi", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Nicolás Tagliafico", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Rodrigo De Paul", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Enzo Fernández", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Alexis Mac Allister", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Lionel Messi", "position": "Right wing", "player_id": "messi", "photo_url": null},
-        {"name": "Julián Álvarez", "position": "Striker", "player_id": "julian-alvarez", "photo_url": null},
-        {"name": "Lautaro Martínez", "position": "Left wing", "player_id": "lautaro", "photo_url": null}
+        {
+          "name": "Emiliano Martínez",
+          "position": "Goalkeeper",
+          "player_id": "emi-martinez",
+          "photo_url": null
+        },
+        {
+          "name": "Nahuel Molina",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Cristian Romero",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nicolás Otamendi",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nicolás Tagliafico",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rodrigo De Paul",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Enzo Fernández",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Alexis Mac Allister",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lionel Messi",
+          "position": "Right wing",
+          "player_id": "messi",
+          "photo_url": null
+        },
+        {
+          "name": "Julián Álvarez",
+          "position": "Striker",
+          "player_id": "julian-alvarez",
+          "photo_url": null
+        },
+        {
+          "name": "Lautaro Martínez",
+          "position": "Left wing",
+          "player_id": "lautaro",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -487,20 +1268,79 @@
         "Egypt have won the Africa Cup of Nations a record seven times.",
         "Their talisman Mohamed Salah is one of the most prolific goalscorers in Premier League history."
       ],
-      "star_player_ids": ["salah", "marmoush", "zizo"],
+      "star_player_ids": [
+        "salah",
+        "marmoush",
+        "zizo"
+      ],
       "formation": "4-2-3-1",
       "lineup": [
-        {"name": "Mohamed El Shenawy", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Mohamed Hany", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Mohamed Abdelmonem", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Rami Rabia", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Ahmed Fatouh", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Mohamed Elneny", "position": "Defensive midfield", "player_id": null, "photo_url": null},
-        {"name": "Nabil Emad", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Omar Marmoush", "position": "Attacking midfield", "player_id": "marmoush", "photo_url": null},
-        {"name": "Zizo", "position": "Right wing", "player_id": "zizo", "photo_url": null},
-        {"name": "Mohamed Salah", "position": "Left wing", "player_id": "salah", "photo_url": null},
-        {"name": "Mostafa Mohamed", "position": "Striker", "player_id": null, "photo_url": null}
+        {
+          "name": "Mohamed El Shenawy",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Hany",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Abdelmonem",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rami Rabia",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ahmed Fatouh",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Elneny",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nabil Emad",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Omar Marmoush",
+          "position": "Attacking midfield",
+          "player_id": "marmoush",
+          "photo_url": null
+        },
+        {
+          "name": "Zizo",
+          "position": "Right wing",
+          "player_id": "zizo",
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Salah",
+          "position": "Left wing",
+          "player_id": "salah",
+          "photo_url": null
+        },
+        {
+          "name": "Mostafa Mohamed",
+          "position": "Striker",
+          "player_id": null,
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -523,20 +1363,80 @@
         "Switzerland reached the Round of 16 at four of the last five World Cups.",
         "They famously knocked out world champions France on penalties at Euro 2020."
       ],
-      "star_player_ids": ["xhaka", "akanji", "embolo", "ndoye"],
+      "star_player_ids": [
+        "xhaka",
+        "akanji",
+        "embolo",
+        "ndoye"
+      ],
       "formation": "4-2-3-1",
       "lineup": [
-        {"name": "Gregor Kobel", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Silvan Widmer", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Manuel Akanji", "position": "Centre back", "player_id": "akanji", "photo_url": null},
-        {"name": "Nico Elvedi", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Ricardo Rodríguez", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Remo Freuler", "position": "Defensive midfield", "player_id": null, "photo_url": null},
-        {"name": "Granit Xhaka", "position": "Central midfield", "player_id": "xhaka", "photo_url": null},
-        {"name": "Dan Ndoye", "position": "Right wing", "player_id": "ndoye", "photo_url": null},
-        {"name": "Xherdan Shaqiri", "position": "Attacking midfield", "player_id": null, "photo_url": null},
-        {"name": "Ruben Vargas", "position": "Left wing", "player_id": null, "photo_url": null},
-        {"name": "Breel Embolo", "position": "Striker", "player_id": "embolo", "photo_url": null}
+        {
+          "name": "Gregor Kobel",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Silvan Widmer",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Manuel Akanji",
+          "position": "Centre back",
+          "player_id": "akanji",
+          "photo_url": null
+        },
+        {
+          "name": "Nico Elvedi",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ricardo Rodríguez",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Remo Freuler",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Granit Xhaka",
+          "position": "Central midfield",
+          "player_id": "xhaka",
+          "photo_url": null
+        },
+        {
+          "name": "Dan Ndoye",
+          "position": "Right wing",
+          "player_id": "ndoye",
+          "photo_url": null
+        },
+        {
+          "name": "Xherdan Shaqiri",
+          "position": "Attacking midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ruben Vargas",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Breel Embolo",
+          "position": "Striker",
+          "player_id": "embolo",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     },
@@ -559,20 +1459,80 @@
         "James Rodríguez won the Golden Boot as top scorer at the 2014 World Cup.",
         "Colombian games are famous for the party atmosphere their fans bring."
       ],
-      "star_player_ids": ["james", "luis-diaz", "duran", "richard-rios"],
+      "star_player_ids": [
+        "james",
+        "luis-diaz",
+        "duran",
+        "richard-rios"
+      ],
       "formation": "4-2-3-1",
       "lineup": [
-        {"name": "Camilo Vargas", "position": "Goalkeeper", "player_id": null, "photo_url": null},
-        {"name": "Santiago Arias", "position": "Right back", "player_id": null, "photo_url": null},
-        {"name": "Dávinson Sánchez", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Yerry Mina", "position": "Centre back", "player_id": null, "photo_url": null},
-        {"name": "Johan Mojica", "position": "Left back", "player_id": null, "photo_url": null},
-        {"name": "Richard Ríos", "position": "Defensive midfield", "player_id": "richard-rios", "photo_url": null},
-        {"name": "Jefferson Lerma", "position": "Central midfield", "player_id": null, "photo_url": null},
-        {"name": "Luis Díaz", "position": "Right wing", "player_id": "luis-diaz", "photo_url": null},
-        {"name": "James Rodríguez", "position": "Attacking midfield", "player_id": "james", "photo_url": null},
-        {"name": "Jhon Arias", "position": "Left wing", "player_id": null, "photo_url": null},
-        {"name": "Jhon Durán", "position": "Striker", "player_id": "duran", "photo_url": null}
+        {
+          "name": "Camilo Vargas",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Santiago Arias",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Dávinson Sánchez",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Yerry Mina",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Johan Mojica",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Richard Ríos",
+          "position": "Defensive midfield",
+          "player_id": "richard-rios",
+          "photo_url": null
+        },
+        {
+          "name": "Jefferson Lerma",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Luis Díaz",
+          "position": "Right wing",
+          "player_id": "luis-diaz",
+          "photo_url": null
+        },
+        {
+          "name": "James Rodríguez",
+          "position": "Attacking midfield",
+          "player_id": "james",
+          "photo_url": null
+        },
+        {
+          "name": "Jhon Arias",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jhon Durán",
+          "position": "Striker",
+          "player_id": "duran",
+          "photo_url": null
+        }
       ],
       "as_of": "2026-07-04"
     }

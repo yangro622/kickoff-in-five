@@ -1,5 +1,15 @@
 # Research kit — how content gets into the site
 
+> **Status 2026-07-04:** a first full research pass is DONE and committed — 16 tier-1
+> teams, ~47 star players, all 8 Ro16 matches with verified kickoff times, and the
+> complete Learn section. Remaining TODO-RESEARCH slots: group letters/records,
+> a few FIFA ranks (BEL/SUI/COL/NOR/EGY/PAR), a few current clubs (Enciso, James,
+> Arias), formations/lineups, and QF venue assignment for the two July 11 games.
+> Player photos: run `python3 tools/fetch_headshots.py` from the repo root on a
+> machine with open internet — it downloads ~256px Wikipedia lead images into
+> `assets/players/`, records licenses in `assets/players/CREDITS.md`, and fills
+> `photo_url`/`photo_credit` in players.json automatically.
+
 The site renders **only** what's in `/data/*.json`. The renderer never invents facts:
 anything still marked `"TODO-RESEARCH"` shows up on the site as an honest
 "research pending" chip. That's the decoupling: **code lives in the repo root,
