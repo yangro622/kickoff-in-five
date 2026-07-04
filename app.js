@@ -221,7 +221,9 @@
     rows.forEach((count, r) => {
       const y = 88 - (r * (72 / (rows.length - 1)));
       for (let i = 0; i < count; i++) {
-        const x = (100 / (count + 1)) * (i + 1);
+        // lineup data lists each line right-to-left, so mirror x to draw
+        // the right back on the right side of the pitch
+        const x = (100 / (count + 1)) * (count - i);
         const entry = lineup[idx++] || null;
         nodes.push({ x, y, entry });
       }

@@ -3,113 +3,50 @@
     {
       "id": "rules",
       "title": "The rules in 3 minutes",
-      "intro": "Everything you actually need to follow a match, minus the rulebook language.",
+      "intro": "Just enough of the rulebook so nothing on screen catches you off guard.",
       "entries": [
-        {
-          "title": "The 90 minutes (and stoppage time)",
-          "body": "A match is two 45-minute halves with a running clock — it never stops, even for injuries or goals. Instead, the referee adds extra minutes at the end of each half ('stoppage time') to make up for pauses. That's why you'll see '90+4' on screen: four bonus minutes. In the group stage a tie is a perfectly fine result; in the knockout rounds (where we are now), somebody has to win."
-        },
-        {
-          "title": "Extra time & penalty shootouts",
-          "body": "If a knockout match is tied after 90 minutes, they play 30 more (two 15-minute halves of 'extra time'). Still tied? Penalty shootout: five shots per team, one shooter against the goalkeeper from 12 yards, best score wins — then sudden death if needed. It's the most dramatic thing in sports, and this tournament has already had several (ask Germany)."
-        },
-        {
-          "title": "Offside, explained like a human",
-          "body": "An attacker can't hang out behind the last defender waiting for a pass. At the moment a teammate kicks the ball forward, the attacker needs at least one defender (besides the goalkeeper) between them and the goal — or to be behind the ball. If not, the flag goes up: offside, free kick the other way. That's it. All the slow-motion replays with lines? Just checking this rule, sometimes by centimeters."
-        },
-        {
-          "title": "Yellow and red cards",
-          "body": "A yellow card is a formal warning for a bad foul or unsporting behavior. Two yellows in one game equal a red; a straight red is for something serious. A red card means you're ejected AND your team plays the rest of the game a player short, which changes everything. Cards also carry over: pick up a red (or too many yellows across games) and you're suspended for the next match."
-        },
-        {
-          "title": "Substitutions",
-          "body": "Each team can make five substitutions per game (six if it goes to extra time), and a player who comes off can't return. Watch for a wave of fresh attackers around the 60-70 minute mark — that's a coach going for the win — or defenders coming on late to protect a lead."
-        },
-        {
-          "title": "VAR (video review)",
-          "body": "The Video Assistant Referee is a team of officials watching replays. They only intervene for big stuff: goals, penalties, red cards, and mistaken identity. When the referee draws a rectangle in the air, they're checking the video screen. Expect a couple of nervy 2-minute pauses per game — and remember a goal doesn't fully count until the check is done."
-        }
+        { "title": "The 90 minutes (and stoppage time)", "body": "A match is two 45-minute halves with a short break in between, and the clock never stops for fouls, injuries, or goal celebrations. Instead, the referee adds those wasted minutes back on at the end of each half, which you'll see announced as \"stoppage time\" or \"added time.\" So when the clock hits 90:00, the game isn't over yet, and it's common to play three to ten extra minutes. Plenty of dramatic goals happen in this bonus window." },
+        { "title": "Extra time & penalty shootouts", "body": "In the knockout rounds someone has to win, so a tie can't stand. If the score is level after 90 minutes, they play two extra 15-minute halves, called extra time. If it's still tied after that, the game goes to a penalty shootout: players take turns shooting one-on-one against the goalkeeper from a fixed spot, and whoever scores more wins. It's nerve-wracking and often decided by a single save." },
+        { "title": "Offside, explained like a human", "body": "Offside stops attackers from just camping next to the goal waiting for a pass. Picture the moment a teammate kicks the ball forward: if the guy he's passing to is closer to the goal than all but one defender at that exact instant, he's offside and the play is waved off. The key is timing, it's about where the attacker was when the ball was played, not where he ends up. If he stays level with or behind the defenders when the pass goes, he's fine." },
+        { "title": "Yellow and red cards", "body": "The referee uses colored cards to punish fouls. A yellow card is a formal warning for a bad or cynical foul. A red card means you're ejected, and your team has to play the rest of the match a player short, which is a huge disadvantage. Two yellow cards in one game add up to a red, so a player already on a yellow has to be careful." },
+        { "title": "Substitutions", "body": "Each team can swap out tired or injured players for fresh ones from the bench. At this World Cup teams are allowed up to five substitutions per game, and once a player is taken off he can't come back on. Coaches save subs for the right moment, bringing on fresh legs or an attacker late when they need a goal." },
+        { "title": "VAR (video review)", "body": "VAR stands for Video Assistant Referee, a team of officials watching replays to catch clear mistakes. They only step in for the big stuff: goals, penalties, red cards, and offside calls. When something is being checked you'll see the on-field referee pause the game, sometimes jogging to a pitchside monitor to look for himself before making the final call. It can kill the buzz of an early celebration, but it's there to get the important decisions right." }
       ]
     },
     {
       "id": "format",
       "title": "How the tournament works",
-      "intro": "The 2026 edition is the biggest World Cup ever — here's the shape of it.",
+      "intro": "The road from 48 teams down to one champion, in plain terms.",
       "entries": [
-        {
-          "title": "48 teams, 12 groups",
-          "body": "For the first time, 48 countries qualified (up from 32). They were split into 12 groups of four; each team played the other three in its group. The top two from each group plus the eight best third-place teams — 32 in all — moved on to the knockout rounds."
-        },
-        {
-          "title": "Round of 32 — new this year",
-          "body": "Because of the bigger field, there's a brand-new knockout round before the familiar ones. It ran June 28 - July 3 and produced instant classics: Paraguay knocking out Germany on penalties, Morocco beating the Netherlands in a shootout, and Egypt winning a knockout game for the first time ever."
-        },
-        {
-          "title": "The knockout rounds to the July 19 final",
-          "body": "From here it's win-or-go-home: Round of 16 (July 4-7), quarterfinals (July 9-11 in Boston, Los Angeles, Miami and Kansas City), semifinals (July 14 in Dallas, July 15 in Atlanta), and the final on Sunday, July 19 at MetLife Stadium outside New York City."
-        },
-        {
-          "title": "Three host countries",
-          "body": "This is the first World Cup hosted by three nations: the United States, Mexico and Canada. Most knockout matches are in US cities, but Mexico City's legendary Estadio Azteca and Vancouver's BC Place both host Round-of-16 games — and both co-hosts are still alive in the tournament."
-        }
+        { "title": "48 teams, 12 groups", "body": "This is the biggest World Cup ever, with 48 teams instead of the usual 32. They're split into 12 groups of 4, and every team plays the other three in its group once. The top two from each group automatically move on, plus the eight best third-place teams, which adds up to 32 teams advancing to the knockout rounds." },
+        { "title": "Round of 32 — new this year", "body": "Because the tournament grew to 48 teams, there's a brand-new knockout round this year: the Round of 32. It's the first stage where losing sends you home, no more second chances like in the group stage. The 32 teams that survived the groups pair off in single games, and the 16 winners move on. This round has already been played, which is how we got to the Round of 16 you're watching now." },
+        { "title": "The knockout rounds to the July 19 final", "body": "From here it's straight elimination: win and you advance, lose and you're out. The Round of 16 narrows the field to eight, then the quarterfinals leave four, the semifinals leave two, and those two meet in the final on July 19, 2026. Every game from now on can go to extra time and penalties, so there are no more draws, someone always goes through." },
+        { "title": "Three host countries", "body": "For the first time the World Cup is being co-hosted by three countries: the United States, Canada, and Mexico. Matches are spread across 16 cities in North America, with most games in the U.S. and the rest in Mexico and Canada. The final is being played in the United States." }
       ]
     },
     {
       "id": "positions",
       "title": "Positions: who does what",
-      "intro": "Eleven players per team: one goalkeeper, then (usually) four defenders, three midfielders and three forwards, tweaked by each coach.",
+      "intro": "The four basic jobs on the field and a star playing each one right now.",
       "entries": [
-        {
-          "title": "Goalkeeper",
-          "body": "The only player allowed to use hands, and only inside their own penalty box. Great keepers win shootouts and steal wins — Morocco's Yassine Bounou has broken two countries' hearts in penalty shootouts at the last two World Cups. Keepers wear a different color from everyone else."
-        },
-        {
-          "title": "Defenders",
-          "body": "The back line in front of the goalkeeper. Center backs are the big ones who win headers and block shots; fullbacks patrol the sides — and the modern ones attack constantly. Watch Morocco's Achraf Hakimi or Canada's Alphonso Davies: nominally defenders, functionally extra wingers."
-        },
-        {
-          "title": "Midfielders",
-          "body": "The link between defense and attack, and where games are usually decided. Some destroy (win the ball, like Mexico's Edson Álvarez), some create (pick passes, like Belgium's Kevin De Bruyne), most do a bit of both. If one team's midfield controls the ball, their fans are happy."
-        },
-        {
-          "title": "Forwards",
-          "body": "The goal-getters: a central striker (Erling Haaland, Harry Kane) plus wingers who attack from the sides (Vinícius Júnior, Mohamed Salah). Wingers often play on the 'wrong' side on purpose — a left-footed winger on the right — so they can cut inside and shoot."
-        }
+        { "title": "Goalkeeper", "body": "The goalkeeper is the last line of defense and the only player allowed to use his hands, but only inside his own penalty box. His whole job is to stop the ball from going into the net, whether by catching shots, diving to tip them wide, or rushing out to smother an attacker. A great one can win a game single-handedly, especially in a penalty shootout. Argentina's Emiliano Martínez, still playing in this tournament, is famous for exactly that kind of shootout heroics." },
+        { "title": "Defenders", "body": "Defenders play in front of the goalkeeper and their job is to stop the other team from scoring, by blocking shots, winning tackles, and heading the ball clear. Center-backs guard the middle while full-backs patrol the sides and often push forward to help attack. Good defending is less flashy than scoring but just as important. Portugal's Rúben Dias, in action at this World Cup, is one of the best in the world at organizing a defense and shutting attackers down." },
+        { "title": "Midfielders", "body": "Midfielders work in the center of the field and connect defense to attack, so they touch the ball more than anyone. Some focus on breaking up the other team's moves, others on threading passes and starting attacks, and the best do a bit of everything while covering enormous ground. They're the engine of the team. England's Jude Bellingham, playing in this World Cup, is a perfect example, a midfielder who defends, creates, and scores." },
+        { "title": "Forwards", "body": "Forwards, also called strikers or attackers, play closest to the opponent's goal and their main job is to score. They live for the split-second chances in and around the box, using speed, skill, and finishing to beat the goalkeeper. A world-class forward is the difference between a good team and a champion. France's Kylian Mbappé, one of the biggest stars of this tournament and near the top of the scoring race, is about as dangerous as they come." }
       ]
     },
     {
       "id": "leagues",
       "title": "The club leagues",
-      "intro": "National teams only assemble a few weeks a year — the rest of the time, these players are club teammates and rivals across the world's leagues.",
+      "intro": "Between World Cups, these are the club teams the players go home to, and why some names carry weight.",
       "entries": [
-        {
-          "title": "Premier League (England)",
-          "body": "The richest, most-watched league on the planet, home to Manchester City, Liverpool and Arsenal. Its global TV reach means Premier League players are often household names — Haaland, Salah and Saka all play there. When someone 'plays in the Premier League,' assume they're very, very good."
-        },
-        {
-          "title": "La Liga (Spain)",
-          "body": "Spain's league, defined by the two most famous clubs in the sport: Real Madrid and Barcelona. Real Madrid have won the European Cup/Champions League more than anyone, which is why 'plays for Real Madrid' (Mbappé, Bellingham, Vinícius) is shorthand for elite. Barcelona counter with the kids: Lamine Yamal and Pedri."
-        },
-        {
-          "title": "Serie A (Italy)",
-          "body": "Italy's league — slower and more tactical by reputation, and historically the home of great defending. AC Milan, Inter and Juventus are its giants, and half the USMNT's stars (Pulisic, McKennie) plus Belgium's veterans (De Bruyne, Lukaku at Napoli) play there."
-        },
-        {
-          "title": "Bundesliga (Germany)",
-          "body": "Germany's league, famous for packed stadiums, cheap tickets and one dominant club: Bayern Munich, where Harry Kane, Michael Olise, Luis Díaz and Alphonso Davies all play. It's also a launchpad — stars like Bellingham and Haaland broke out at Bundesliga clubs before their mega-moves."
-        },
-        {
-          "title": "Ligue 1 (France)",
-          "body": "France's league, dominated for a decade by Paris Saint-Germain — the Qatari-backed superclub where Hakimi, Dembélé and Vitinha play. Critics call the league a one-team show; scouts call it the best young-talent factory in Europe (it produced Mbappé)."
-        },
-        {
-          "title": "MLS (USA & Canada)",
-          "body": "Major League Soccer — the top league in the US and Canada, growing fast and forever changed in 2023 when Lionel Messi joined Inter Miami. It's where he still plays his club football, which is why this World Cup felt within reach the moment he arrived."
-        },
-        {
-          "title": "Saudi Pro League (Saudi Arabia)",
-          "body": "Saudi Arabia's league went from obscurity to headlines in 2023 by signing global stars on enormous salaries — starting with Cristiano Ronaldo at Al-Nassr, where he still plays at 41. Morocco's goalkeeper Bounou is there too. Dismissed by some as a retirement league, it keeps proving it can hold onto big names."
-        }
+        { "title": "Premier League (England)", "body": "The Premier League is England's top division and the richest, most-watched league in the world, broadcast to nearly every country. Clubs like Manchester City, Liverpool, and Arsenal spend huge money to sign the best players from everywhere, so the league is stacked with international stars. It's known for fast, physical, end-to-end games. When a player stars in the Premier League, the whole soccer world is watching." },
+        { "title": "La Liga (Spain)", "body": "La Liga is Spain's top league and home to two of the most famous clubs on the planet, Real Madrid and Barcelona, whose head-to-head match is called El Clásico. Real Madrid in particular has won more European titles than anyone, so \"plays for Real Madrid\" is shorthand for being among the very best in the game. The league is famous for skillful, technical, possession-based soccer. Generations of the world's greatest players have called it home." },
+        { "title": "Serie A (Italy)", "body": "Serie A is Italy's top division, historically famous for tactical, defensively disciplined soccer. Storied clubs like Juventus, AC Milan, and Inter Milan have long, decorated histories and passionate fan bases. It was the world's glamour league in the 1990s and remains a place where tactics and defending are prized. A strong showing here still marks a player as a serious talent." },
+        { "title": "Bundesliga (Germany)", "body": "The Bundesliga is Germany's top league, known for packed stadiums, a lively fan culture, and attacking, high-energy soccer. Bayern Munich is the dominant club, a regular contender for the European crown, and the league is famous for developing and showcasing young talent. Tickets are relatively affordable and the atmosphere is among the best anywhere. It's a proving ground that regularly launches players onto the world stage." },
+        { "title": "Ligue 1 (France)", "body": "Ligue 1 is France's top division, best known internationally for Paris Saint-Germain, the star-studded club backed by huge investment. France reliably produces world-class talent, and the league has long been a launchpad where young players break through before big-money moves abroad. It may not have the top-to-bottom depth of England or Spain, but its best clubs and players compete at the highest level." },
+        { "title": "MLS (USA & Canada)", "body": "Major League Soccer is the top league in the United States and Canada, and it's grown fast, especially since Lionel Messi joined Inter Miami. It's still considered a step below Europe's top leagues in overall quality, but it attracts big-name stars in the later stages of their careers and is developing more homegrown talent every year. With the World Cup being co-hosted here, the sport's popularity in North America is booming. It's the league closest to home for American fans." },
+        { "title": "Saudi Pro League (Saudi Arabia)", "body": "The Saudi Pro League is Saudi Arabia's top division, which grabbed global headlines by spending enormous sums to sign famous players, most notably Cristiano Ronaldo. Backed by the country's vast wealth, its clubs lured stars away from Europe with massive contracts. The overall standard is still below the top European leagues, but the spending made it impossible to ignore. It represents a big, well-funded push to become a major force in world soccer." }
       ]
     }
   ]

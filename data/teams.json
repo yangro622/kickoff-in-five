@@ -1,9 +1,4 @@
 {
-  "_notes": [
-    "Tier-1: the 16 Round-of-16 teams. FIFA ranks from the 11 June 2026 ranking where verified; null where not yet verified.",
-    "group letters and group-stage records not yet verified — group_summary carries the verified Round-of-32 result instead.",
-    "formation/lineup pending research (see research/prompt-teams.md)."
-  ],
   "teams": [
     {
       "id": "can",
@@ -13,20 +8,92 @@
       "color": "#D80621",
       "tier": 1,
       "fifa_rank": 30,
-      "group": "TODO-RESEARCH",
-      "group_summary": "Beat South Africa 1-0 in the Round of 32 — the first men's World Cup knockout win in Canadian history — before falling 0-3 to Morocco in the Round of 16.",
+      "group": "B",
+      "group_summary": "Reached the Round of 16 as co-hosts; beat South Africa 1–0 in the Round of 32, then fell 0-3 to Morocco in the Round of 16.",
       "still_alive": false,
-      "best_wc_finish": "Round of 16 (2026) — already the deepest run in their history",
-      "wc_history": "Canada qualified for the men's World Cup just twice before co-hosting this one — in 1986, when they left without scoring, and 2022, when they scored their first-ever goals but went home after the groups. Everything happening now is brand new for them.",
-      "storyline": "The co-hosts are in completely uncharted territory: their first knockout stage, powered by a golden generation that grew up dreaming of exactly this. A raucous home crowd and two genuine world-class attackers make them a dangerous underdog.",
-      "style": "Fast and direct — they want to win the ball and sprint at you before your defense is set.",
+      "best_wc_finish": "Round of 16, 2026 (their best-ever finish — before this tournament Canada had never won a game at a World Cup)",
+      "wc_history": "Canada had only played two World Cups before this one (1986 and 2022) and lost every single game. As co-hosts in 2026 they finally broke through, winning matches and reaching the knockout rounds for the first time.",
+      "storyline": "This is the greatest run in Canadian men's soccer history, and it is happening at home. A young, fast team built around superstar left back Alphonso Davies is playing with house money and a nation suddenly paying attention.",
+      "style": "Quick and direct — they defend in numbers and then break at speed down the wings, especially through Davies.",
       "fun_facts": [
-        "Canada is one of three co-hosts of this World Cup, along with Mexico and the USA.",
-        "Their Round-of-32 win over South Africa was the first men's World Cup knockout victory in the country's history."
+        "Before 2026, Canada's men had never scored more than one goal in a World Cup and had never won a match.",
+        "Canada is co-hosting this World Cup alongside the USA and Mexico."
       ],
-      "star_player_ids": ["davies", "david", "buchanan"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "davies",
+        "david",
+        "eustaquio",
+        "larin"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Maxime Crépeau",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Alistair Johnston",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Moïse Bombito",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Derek Cornelius",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Alphonso Davies",
+          "position": "Left back",
+          "player_id": "davies",
+          "photo_url": null
+        },
+        {
+          "name": "Stephen Eustáquio",
+          "position": "Central midfield",
+          "player_id": "eustaquio",
+          "photo_url": null
+        },
+        {
+          "name": "Ismaël Koné",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jonathan Osorio",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tajon Buchanan",
+          "position": "Right wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jonathan David",
+          "position": "Striker",
+          "player_id": "david",
+          "photo_url": null
+        },
+        {
+          "name": "Cyle Larin",
+          "position": "Left wing",
+          "player_id": "larin",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -38,19 +105,91 @@
       "tier": 1,
       "fifa_rank": 7,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat the Netherlands on penalties (1-1, 3-2 pens) in the Round of 32.",
+      "group_summary": "Beat the Netherlands on penalties (1–1, 3–2) in the Round of 32 to reach the last 16.",
       "still_alive": true,
-      "best_wc_finish": "Fourth place (2022) — the first African team ever to reach a World Cup semifinal",
-      "wc_history": "Morocco made history in 2022 as the first African and first Arab nation to reach a World Cup semifinal, knocking out Spain and Portugal along the way. They've carried that momentum into a 7th-place world ranking — their highest ever.",
-      "storyline": "The 2022 fairytale wasn't a fluke, and Morocco are here to prove it. They've already eliminated the Netherlands on penalties — the same script that sank Spain four years ago — and a second straight deep run would cement them as a genuine world power.",
-      "style": "Disciplined and patient: a compact defense that absorbs pressure, then breaks at speed through their flying fullbacks.",
+      "best_wc_finish": "Fourth place (2022) — the first African or Arab nation to reach a World Cup semifinal",
+      "wc_history": "Morocco made history in 2022 by beating Spain and Portugal on their way to the semifinals, farther than any African team had ever gone. They arrive in 2026 no longer as a surprise but as a team everyone respects.",
+      "storyline": "Morocco want to prove 2022 was no fluke. Backed by huge, loud traveling support wherever they play, they are trying to become the first African nation to reach a World Cup final.",
+      "style": "Superbly organized defensively — they sit compact, frustrate you, then hit you on the counter with the pace of Achraf Hakimi flying forward.",
       "fun_facts": [
-        "Morocco's 7th place in the FIFA rankings is the highest in the country's history.",
-        "They have now won World Cup penalty shootouts against both Spain (2022) and the Netherlands (2026)."
+        "In 2022 Morocco became the first African or Arab team ever to reach a World Cup semifinal.",
+        "Their fans are known for creating some of the loudest atmospheres of any team at the tournament."
       ],
-      "star_player_ids": ["hakimi", "brahim-diaz", "bounou"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "hakimi",
+        "en-nesyri",
+        "amrabat",
+        "brahim"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Yassine Bounou",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Achraf Hakimi",
+          "position": "Right back",
+          "player_id": "hakimi",
+          "photo_url": null
+        },
+        {
+          "name": "Nayef Aguerd",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Romain Saïss",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Noussair Mazraoui",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sofyan Amrabat",
+          "position": "Defensive midfield",
+          "player_id": "amrabat",
+          "photo_url": null
+        },
+        {
+          "name": "Azzedine Ounahi",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brahim Díaz",
+          "position": "Central midfield",
+          "player_id": "brahim",
+          "photo_url": null
+        },
+        {
+          "name": "Hakim Ziyech",
+          "position": "Right wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Youssef En-Nesyri",
+          "position": "Striker",
+          "player_id": "en-nesyri",
+          "photo_url": null
+        },
+        {
+          "name": "Sofiane Boufal",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -62,19 +201,91 @@
       "tier": 1,
       "fifa_rank": null,
       "group": "TODO-RESEARCH",
-      "group_summary": "Stunned Germany in the Round of 32 — 1-1 after extra time, 4-3 on penalties.",
+      "group_summary": "Upset Germany on penalties (1–1, 4–3) in the Round of 32 to reach the last 16.",
       "still_alive": true,
       "best_wc_finish": "Quarterfinals (2010)",
-      "wc_history": "A proud footballing nation that reached the 2010 quarterfinals, Paraguay then missed three straight World Cups before roaring back for this one. They've never lacked fight — their identity is defense, grit, and making favorites miserable.",
-      "storyline": "Paraguay just produced the upset of the tournament, knocking out Germany on penalties after Julio Enciso's opener and a heroic rearguard effort. Nobody wants to play them now — least of all a France side that must break down the tournament's most stubborn defense.",
-      "style": "A deep, disciplined block that concedes almost nothing, plus quick counters and total commitment to every tackle.",
+      "wc_history": "Paraguay are one of South America's tough, stubborn sides. Their best World Cup run came in 2010, when they reached the quarterfinals before losing narrowly to eventual champions Spain.",
+      "storyline": "Nobody expected Paraguay to still be here. After knocking out Germany on penalties, this defensive, hard-working team is the tournament's great survivor, happy to be underestimated.",
+      "style": "Defend first, defend deep, and make every game a grind — then pounce on set pieces and counterattacks.",
       "fun_facts": [
-        "Their shootout win over Germany was widely called one of the greatest upsets in World Cup history.",
-        "This is Paraguay's first World Cup since 2010 — and they've already matched a generation's best result."
+        "Paraguay knocked out four-time champions Germany on penalties to reach the Round of 16.",
+        "They are famous for being one of the hardest teams in the world to score against."
       ],
-      "star_player_ids": ["enciso", "almiron", "gomez"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "almiron",
+        "sanabria",
+        "enciso",
+        "gustavo-gomez"
+      ],
+      "formation": "4-4-2",
+      "lineup": [
+        {
+          "name": "Roberto Fernández",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ángel Cardozo",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Gustavo Gómez",
+          "position": "Centre back",
+          "player_id": "gustavo-gomez",
+          "photo_url": null
+        },
+        {
+          "name": "Omar Alderete",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Junior Alonso",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Miguel Almirón",
+          "position": "Right midfield",
+          "player_id": "almiron",
+          "photo_url": null
+        },
+        {
+          "name": "Andrés Cubas",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Damián Bobadilla",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Julio Enciso",
+          "position": "Left midfield",
+          "player_id": "enciso",
+          "photo_url": null
+        },
+        {
+          "name": "Antonio Sanabria",
+          "position": "Striker",
+          "player_id": "sanabria",
+          "photo_url": null
+        },
+        {
+          "name": "Adam Bareiro",
+          "position": "Striker",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -86,19 +297,91 @@
       "tier": 1,
       "fifa_rank": 3,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Sweden 3-0 in the Round of 32, with a Kylian Mbappé brace.",
+      "group_summary": "Cruised past Sweden 3–0 in the Round of 32.",
       "still_alive": true,
       "best_wc_finish": "Champions (1998, 2018)",
-      "wc_history": "Two-time champions and the dominant tournament team of the modern era: winners in 2018, finalists in 2022 (losing an all-time final to Argentina on penalties), and semifinalists or better in four of the last five World Cups.",
-      "storyline": "France are doing what France do: gliding through knockout rounds while everyone else sweats. Mbappé has six goals and the Golden Boot in his sights, and the supporting cast — led by reigning Ballon d'Or winner Ousmane Dembélé — might be the deepest squad in the field.",
-      "style": "Total control without the ball and devastating pace on the break — they're happy to let you have possession and then kill you in three passes.",
+      "wc_history": "France are one of the sport's giants — winners in 1998 and 2018, and runners-up after a classic final in 2022. They almost always arrive as favorites, stacked with talent from front to back.",
+      "storyline": "Captain and superstar Kylian Mbappé is chasing the one prize that keeps eluding him as the main man: a World Cup as France's leader. This is a deep, dangerous squad expected to go far.",
+      "style": "Fast, powerful, and clinical — soak up pressure, then break at frightening speed through Mbappé and Ousmane Dembélé.",
       "fun_facts": [
-        "France have reached at least the semifinal in four of the last five World Cups.",
-        "The 2022 final they lost to Argentina on penalties is widely called the greatest World Cup final ever played."
+        "France reached the final in 2022, losing to Argentina on penalties after a 3–3 thriller in which Mbappé scored a hat-trick.",
+        "They are one of only a handful of nations to win the World Cup more than once."
       ],
-      "star_player_ids": ["mbappe", "dembele", "olise"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "mbappe",
+        "dembele",
+        "tchouameni",
+        "saliba"
+      ],
+      "formation": "4-2-3-1",
+      "lineup": [
+        {
+          "name": "Mike Maignan",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jules Koundé",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "William Saliba",
+          "position": "Centre back",
+          "player_id": "saliba",
+          "photo_url": null
+        },
+        {
+          "name": "Dayot Upamecano",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Theo Hernández",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Aurélien Tchouaméni",
+          "position": "Defensive midfield",
+          "player_id": "tchouameni",
+          "photo_url": null
+        },
+        {
+          "name": "Eduardo Camavinga",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "position": "Right wing",
+          "player_id": "dembele",
+          "photo_url": null
+        },
+        {
+          "name": "Antoine Griezmann",
+          "position": "Attacking midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kylian Mbappé",
+          "position": "Left wing",
+          "player_id": "mbappe",
+          "photo_url": null
+        },
+        {
+          "name": "Randal Kolo Muani",
+          "position": "Striker",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -110,19 +393,91 @@
       "tier": 1,
       "fifa_rank": 6,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Japan 2-1 in the Round of 32.",
+      "group_summary": "Beat Japan 2–1 in the Round of 32.",
       "still_alive": true,
       "best_wc_finish": "Champions (1958, 1962, 1970, 1994, 2002)",
-      "wc_history": "The most successful nation in World Cup history with five titles — but the last one came in 2002, an eternity by Brazilian standards. Every tournament since has ended in tears against European opposition.",
-      "storyline": "Five stars on the shirt and a 24-year itch. Under Carlo Ancelotti — the first foreign coach to lead Brazil at a World Cup — they've ditched some of the chaos for structure, while Vinícius Júnior supplies the magic. A knockout draw through Norway and then Mexico or England looks navigable... which is exactly when Brazil usually stumble.",
-      "style": "Structured and pragmatic by Brazilian standards, but with front players who can produce a piece of skill from nowhere.",
+      "wc_history": "Brazil are the most successful team in World Cup history with five titles, and the only nation to play at every World Cup ever held. But they haven't won since 2002 — an eternity by their standards.",
+      "storyline": "The pressure is always the same for Brazil: win, and win beautifully. A new generation led by Vinícius Júnior and Raphinha is trying to end a 24-year title drought that the whole country feels.",
+      "style": "Flair and pace out wide — Brazil love to attack through skillful wingers who dribble, combine, and shoot.",
       "fun_facts": [
-        "Brazil are the only country to have played in every single World Cup.",
-        "Their five titles are the most of any nation — but none since 2002."
+        "Brazil is the only country to have played in every World Cup since the tournament began in 1930.",
+        "Their five titles are more than any other nation."
       ],
-      "star_player_ids": ["vinicius", "raphinha", "rodrygo"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "vinicius",
+        "raphinha",
+        "rodrygo",
+        "marquinhos"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Alisson",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Danilo",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Marquinhos",
+          "position": "Centre back",
+          "player_id": "marquinhos",
+          "photo_url": null
+        },
+        {
+          "name": "Gabriel Magalhães",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Wendell",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bruno Guimarães",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Casemiro",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lucas Paquetá",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Raphinha",
+          "position": "Right wing",
+          "player_id": "raphinha",
+          "photo_url": null
+        },
+        {
+          "name": "Rodrygo",
+          "position": "Striker",
+          "player_id": "rodrygo",
+          "photo_url": null
+        },
+        {
+          "name": "Vinícius Júnior",
+          "position": "Left wing",
+          "player_id": "vinicius",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -134,19 +489,91 @@
       "tier": 1,
       "fifa_rank": null,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Ivory Coast 2-1 in the Round of 32.",
+      "group_summary": "Beat Ivory Coast 2–1 in the Round of 32 on their long-awaited return to the World Cup.",
       "still_alive": true,
-      "best_wc_finish": "Round of 16 (1998, 2026)",
-      "wc_history": "Norway hadn't been to a World Cup since 1998 — a 28-year wait that ended the moment Erling Haaland's generation came of age. Their last appearance included a famous group-stage win over Brazil, whom they've never lost to.",
-      "storyline": "The longest-suffering fans at this tournament finally have a team worth the wait: Haaland, arguably the world's best pure goalscorer, and Martin Ødegaard, one of its classiest playmakers, leading Norway's first knockout campaign since 1998 — straight into a rematch with Brazil.",
-      "style": "Compact defending and rapid vertical attacks — everything is designed to get the ball to Haaland in the box as fast as possible.",
+      "best_wc_finish": "Round of 16 (1998)",
+      "wc_history": "Norway had not qualified for a World Cup since 1998 — a 28-year wait. They finally returned in 2026 carrying one of the most feared strikers on the planet.",
+      "storyline": "Norway are back on the biggest stage for the first time in a generation, and they have a genuine superstar in Erling Haaland. For a small football nation, simply reaching the knockouts is already history — but with Haaland, anything feels possible.",
+      "style": "Direct and physical — get the ball forward quickly and let Haaland and Ødegaard do the damage.",
       "fun_facts": [
-        "Norway have played Brazil four times and never lost — including a 2-1 win at the 1998 World Cup.",
-        "This is their first World Cup appearance in 28 years."
+        "Before 2026, Norway hadn't played at a World Cup since 1998.",
+        "Norway have a quirky record of never losing to Brazil at a World Cup."
       ],
-      "star_player_ids": ["haaland", "odegaard", "nusa"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "haaland",
+        "odegaard",
+        "sorloth",
+        "nusa"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Ørjan Nyland",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Julian Ryerson",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kristoffer Ajer",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Leo Østigård",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "David Møller Wolfe",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sander Berge",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Martin Ødegaard",
+          "position": "Central midfield",
+          "player_id": "odegaard",
+          "photo_url": null
+        },
+        {
+          "name": "Patrick Berg",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Antonio Nusa",
+          "position": "Right wing",
+          "player_id": "nusa",
+          "photo_url": null
+        },
+        {
+          "name": "Erling Haaland",
+          "position": "Striker",
+          "player_id": "haaland",
+          "photo_url": null
+        },
+        {
+          "name": "Alexander Sørloth",
+          "position": "Left wing",
+          "player_id": "sorloth",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -157,20 +584,92 @@
       "color": "#046A38",
       "tier": 1,
       "fifa_rank": 14,
-      "group": "TODO-RESEARCH",
-      "group_summary": "Beat Ecuador 2-0 in the Round of 32.",
+      "group": "A",
+      "group_summary": "Beat Ecuador 2–0 in the Round of 32 as co-hosts.",
       "still_alive": true,
-      "best_wc_finish": "Quarterfinals (1970, 1986 — both as hosts)",
-      "wc_history": "Mexico are World Cup regulars with a curse: for decades they kept reaching the Round of 16 and losing — a national obsession known as the quest for 'el quinto partido', the fifth game. Their only two quarterfinals came when they hosted, in 1970 and 1986.",
-      "storyline": "Host nation, home crowd, and the ghost they've chased for forty years standing right in front of them: win one knockout game at the Estadio Azteca and Mexico finally play 'el quinto partido' again. Standing in the way — England. No pressure.",
-      "style": "Energetic and aggressive with the crowd behind them — high pressing, quick combinations, and waves of attacks in bursts.",
+      "best_wc_finish": "Quarterfinals (1970, 1986)",
+      "wc_history": "Mexico are World Cup regulars who almost always reach the knockout rounds, but they had famously been eliminated in the Round of 16 seven tournaments in a row before this one. Their best runs, both quarterfinals, came as hosts in 1970 and 1986.",
+      "storyline": "Co-hosts Mexico are desperate to finally break their Round-of-16 curse — and they get to try in the iconic, roaring Estadio Azteca in Mexico City. The whole nation is behind them.",
+      "style": "Technical and possession-based, with quick passing and energy from midfield.",
       "fun_facts": [
-        "The Estadio Azteca is the first stadium ever to host matches at three different World Cups (1970, 1986, 2026).",
-        "Both of Mexico's World Cup quarterfinals came on home soil — exactly the situation they're in now."
+        "Estadio Azteca is the first stadium to host World Cup matches at three different tournaments (1970, 1986, 2026).",
+        "Mexico had been knocked out in the Round of 16 in seven straight World Cups before 2026."
       ],
-      "star_player_ids": ["gimenez", "alvarez-edson", "mora"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "gimenez",
+        "edson-alvarez",
+        "lozano",
+        "raul-jimenez"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Guillermo Ochoa",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jorge Sánchez",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "César Montes",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Johan Vásquez",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jesús Gallardo",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Edson Álvarez",
+          "position": "Defensive midfield",
+          "player_id": "edson-alvarez",
+          "photo_url": null
+        },
+        {
+          "name": "Luis Chávez",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Orbelín Pineda",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Hirving Lozano",
+          "position": "Right wing",
+          "player_id": "lozano",
+          "photo_url": null
+        },
+        {
+          "name": "Santiago Giménez",
+          "position": "Striker",
+          "player_id": "gimenez",
+          "photo_url": null
+        },
+        {
+          "name": "Alexis Vega",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -182,19 +681,91 @@
       "tier": 1,
       "fifa_rank": 4,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat DR Congo 2-1 in the Round of 32.",
+      "group_summary": "Beat DR Congo 2–1 in the Round of 32.",
       "still_alive": true,
       "best_wc_finish": "Champions (1966)",
-      "wc_history": "One World Cup title, won at home in 1966, followed by six decades of near-misses that torment the country every two summers. Recent teams have come agonizingly close: a semifinal in 2018 and back-to-back European Championship finals.",
-      "storyline": "England always believe it's coming home, but this squad has a harder edge under Thomas Tuchel, and in Harry Kane — five goals so far — the most reliable scorer in the knockout rounds. First, though: a World Cup night at the Azteca against the host nation. Welcome to the deep end.",
-      "style": "Patient control and world-class set pieces, built on a defense that rarely gives up big chances.",
+      "wc_history": "England won the World Cup on home soil in 1966 and have been chasing a second title ever since. They've come agonizingly close recently — a semifinal in 2018 and a quarterfinal in 2022 — but the long wait goes on.",
+      "storyline": "The 'it's coming home' story never dies. With a golden generation now in its prime — Harry Kane, Jude Bellingham, Bukayo Saka — England feel the weight of ending 60 years of hurt.",
+      "style": "Solid and controlled, built on a strong spine, with world-class attackers to unlock tight games.",
       "fun_facts": [
-        "England have never won a World Cup knockout match on Mexican soil — they went out in the 1970 quarterfinal, their only previous knockout game there.",
-        "Harry Kane won the Golden Boot at the 2018 World Cup and is chasing another."
+        "England's only World Cup title came in 1966, when they hosted the tournament.",
+        "Harry Kane is England's all-time leading goalscorer."
       ],
-      "star_player_ids": ["kane", "bellingham", "saka"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "kane",
+        "bellingham",
+        "saka",
+        "foden"
+      ],
+      "formation": "4-2-3-1",
+      "lineup": [
+        {
+          "name": "Jordan Pickford",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kyle Walker",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "John Stones",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Marc Guéhi",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rico Lewis",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Declan Rice",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jude Bellingham",
+          "position": "Central midfield",
+          "player_id": "bellingham",
+          "photo_url": null
+        },
+        {
+          "name": "Bukayo Saka",
+          "position": "Right wing",
+          "player_id": "saka",
+          "photo_url": null
+        },
+        {
+          "name": "Phil Foden",
+          "position": "Attacking midfield",
+          "player_id": "foden",
+          "photo_url": null
+        },
+        {
+          "name": "Cole Palmer",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Harry Kane",
+          "position": "Striker",
+          "player_id": "kane",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -205,20 +776,92 @@
       "color": "#1F2E5A",
       "tier": 1,
       "fifa_rank": 17,
-      "group": "TODO-RESEARCH",
-      "group_summary": "Beat Bosnia and Herzegovina 2-0 in the Round of 32 — the USA's first World Cup knockout win since 2002.",
+      "group": "D",
+      "group_summary": "Beat Bosnia & Herzegovina 2–0 in the Round of 32 as co-hosts.",
       "still_alive": true,
       "best_wc_finish": "Third place (1930)",
-      "wc_history": "The USA reached the semifinals of the very first World Cup in 1930 and a quarterfinal in 2002, but have mostly been a plucky Round-of-16 team since. This generation — almost all playing at top European clubs — was built for a home World Cup.",
-      "storyline": "The hosts just exorcised a 24-year demon with their first knockout win since 2002, on goals from Folarin Balogun and a Malik Tillman thunderbolt. Now comes the revenge game: Belgium, who broke American hearts in extra time in 2014 — and the USA must do it without the suspended Balogun.",
-      "style": "High-energy pressing and athleticism — they want the game fast, physical and loud.",
+      "wc_history": "The USA finished third at the very first World Cup in 1930. In the modern era their high point was the 2002 quarterfinals. As co-hosts in 2026, expectations — and the spotlight — are bigger than ever.",
+      "storyline": "This is the USA's tournament to make a statement. A talented young 'golden generation' playing at top European clubs is carrying the hopes of a home crowd that's finally falling for soccer.",
+      "style": "High energy and athletic — press the opponent hard, win the ball back quickly, and attack through Christian Pulisic.",
       "fun_facts": [
-        "The USA's third-place finish in 1930 remains their best-ever World Cup result.",
-        "Striker Folarin Balogun scored against Bosnia, then was sent off in a controversial call — so he misses the Belgium rematch."
+        "The USA is co-hosting the 2026 World Cup with Canada and Mexico.",
+        "Their captain and star, Christian Pulisic, was the most expensive American player in history when he joined Chelsea."
       ],
-      "star_player_ids": ["pulisic", "balogun", "tillman", "mckennie"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "pulisic",
+        "mckennie",
+        "adams",
+        "balogun"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Matt Turner",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sergiño Dest",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Chris Richards",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tim Ream",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Antonee Robinson",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tyler Adams",
+          "position": "Defensive midfield",
+          "player_id": "adams",
+          "photo_url": null
+        },
+        {
+          "name": "Weston McKennie",
+          "position": "Central midfield",
+          "player_id": "mckennie",
+          "photo_url": null
+        },
+        {
+          "name": "Yunus Musah",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Christian Pulisic",
+          "position": "Right wing",
+          "player_id": "pulisic",
+          "photo_url": null
+        },
+        {
+          "name": "Folarin Balogun",
+          "position": "Striker",
+          "player_id": "balogun",
+          "photo_url": null
+        },
+        {
+          "name": "Timothy Weah",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -230,19 +873,91 @@
       "tier": 1,
       "fifa_rank": null,
       "group": "TODO-RESEARCH",
-      "group_summary": "Survived Senegal 3-2 in the Round of 32, coming from two goals down and winning with a controversial late penalty.",
+      "group_summary": "Came from behind to beat Senegal in the Round of 32.",
       "still_alive": true,
       "best_wc_finish": "Third place (2018)",
-      "wc_history": "Belgium's 'golden generation' — De Bruyne, Lukaku and company — spent a decade ranked among the world's best, peaking with third place in 2018. They've been chasing the trophy that generation was promised ever since, and time is nearly up.",
-      "storyline": "Written off before the tournament, Belgium's aging stars produced the comeback of the round: two goals down against Senegal, they roared back to win 3-2 with a hotly disputed late penalty. Now Kevin De Bruyne, 35, gets one more shot at the country that celebrated beating Belgium's babies in 2014 — except that time, Belgium won.",
-      "style": "Slower and craftier than their peak years — patient possession, then one perfect through-ball from De Bruyne.",
+      "wc_history": "Belgium's 'golden generation' finished third in 2018, their best-ever result. That group is now older, but names like Kevin De Bruyne and Romelu Lukaku still give them serious quality.",
+      "storyline": "It may be a last dance for Belgium's celebrated golden generation. Experienced, talented, and knowing time is running out, they're chasing the deep run their talent has always promised.",
+      "style": "Patient and creative — dominate the ball and let Kevin De Bruyne pull the strings with pinpoint passes.",
       "fun_facts": [
-        "Belgium spent much of 2018-2022 ranked No. 1 in the world without winning a major trophy.",
-        "Their 2014 Round-of-16 win over the USA — 2-1 in extra time — is the last time these teams met at a World Cup."
+        "Belgium beat the USA in the Round of 16 in 2014, a night famous for goalkeeper Tim Howard's record 16 saves.",
+        "Kevin De Bruyne is regarded as one of the best passers of his generation."
       ],
-      "star_player_ids": ["de-bruyne", "doku", "lukaku"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "debruyne",
+        "lukaku",
+        "doku",
+        "tielemans"
+      ],
+      "formation": "4-2-3-1",
+      "lineup": [
+        {
+          "name": "Koen Casteels",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Timothy Castagne",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Wout Faes",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Zeno Debast",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Arthur Theate",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Amadou Onana",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Youri Tielemans",
+          "position": "Central midfield",
+          "player_id": "tielemans",
+          "photo_url": null
+        },
+        {
+          "name": "Jérémy Doku",
+          "position": "Right wing",
+          "player_id": "doku",
+          "photo_url": null
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "position": "Attacking midfield",
+          "player_id": "debruyne",
+          "photo_url": null
+        },
+        {
+          "name": "Leandro Trossard",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Romelu Lukaku",
+          "position": "Striker",
+          "player_id": "lukaku",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -250,23 +965,96 @@
       "name": "Spain",
       "code": "ESP",
       "flag": "🇪🇸",
-      "color": "#AA151B",
+      "color": "#C60B1E",
       "tier": 1,
       "fifa_rank": 2,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Austria 3-0 in the Round of 32 — their first World Cup knockout win since lifting the 2010 trophy.",
+      "group_summary": "Beat Austria in the Round of 32 to reach the last 16.",
       "still_alive": true,
       "best_wc_finish": "Champions (2010)",
-      "wc_history": "Spain won it all in 2010 with the greatest passing team ever assembled, then spent three World Cups falling on penalties or to counterattacks. The 2024 European champions arrived here as many people's favorites — and just ended a 16-year knockout drought emphatically.",
-      "storyline": "The best pure footballing side in the world finally looks like it again at a World Cup: Mikel Oyarzabal's double dismantled Austria 3-0, teenage sensation Lamine Yamal is running the show, and now comes the derby — Portugal, and quite possibly Cristiano Ronaldo's last stand, with a quarterfinal on the line.",
-      "style": "Endless short passing that starves you of the ball, then sudden killer moves through the teenage wingers.",
+      "wc_history": "Spain won their only World Cup in 2010 with a beautiful passing style that changed the sport. As the reigning European champions, they arrive in 2026 as one of the very favorites.",
+      "storyline": "Spain are back to their brilliant best, blending old-school passing mastery with an exciting new wave led by teenage sensation Lamine Yamal. Many consider them the team to beat.",
+      "style": "Possession, possession, possession — keep the ball, move the opponent around, and pick them apart with quick combinations.",
       "fun_facts": [
-        "The win over Austria was Spain's first World Cup knockout victory since the 2010 final itself.",
-        "Lamine Yamal turns 19 during this tournament — he was already a European champion at 17."
+        "Spain's 2010 title came from a famous style of quick, short passing known as 'tiki-taka'.",
+        "Lamine Yamal became a global star while still a teenager."
       ],
-      "star_player_ids": ["yamal", "pedri", "oyarzabal"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "yamal",
+        "pedri",
+        "rodri",
+        "nico-williams",
+        "oyarzabal"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Unai Simón",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Pedro Porro",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Dean Huijsen",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Robin Le Normand",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Marc Cucurella",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rodri",
+          "position": "Defensive midfield",
+          "player_id": "rodri",
+          "photo_url": null
+        },
+        {
+          "name": "Pedri",
+          "position": "Central midfield",
+          "player_id": "pedri",
+          "photo_url": null
+        },
+        {
+          "name": "Fabián Ruiz",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lamine Yamal",
+          "position": "Right wing",
+          "player_id": "yamal",
+          "photo_url": null
+        },
+        {
+          "name": "Mikel Oyarzabal",
+          "position": "Striker",
+          "player_id": "oyarzabal",
+          "photo_url": null
+        },
+        {
+          "name": "Nico Williams",
+          "position": "Left wing",
+          "player_id": "nico-williams",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -274,23 +1062,95 @@
       "name": "Portugal",
       "code": "POR",
       "flag": "🇵🇹",
-      "color": "#9A1B1F",
+      "color": "#046A38",
       "tier": 1,
       "fifa_rank": 5,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Croatia 2-1 in the Round of 32 — a Ronaldo penalty, then a Gonçalo Ramos winner four minutes into stoppage time.",
+      "group_summary": "Beat Croatia in the Round of 32 to reach the last 16.",
       "still_alive": true,
       "best_wc_finish": "Third place (1966)",
-      "wc_history": "For all their stars, Portugal have never reached a World Cup final — their best remains third place in 1966. The Ronaldo era brought a European title (2016) and two Nations Leagues, but the big one is the hole in the trophy cabinet.",
-      "storyline": "Cristiano Ronaldo is 41, playing a record sixth World Cup, and refusing to leave quietly: his penalty and Gonçalo Ramos's 94th-minute header just broke Croatia. Around him, a genuinely elite midfield led by Vitinha does the modern work. Next: Spain, the neighbor and the nemesis, in a knockout for the first time ever.",
-      "style": "A world-class midfield controls the tempo; the attack mixes young legs with the oldest killer instinct in the sport.",
+      "wc_history": "Portugal have produced some of the game's greatest players — Eusébio in the 1960s, Cristiano Ronaldo today — but their only podium finish was third place in 1966. They are still chasing a first World Cup title.",
+      "storyline": "This is almost certainly Cristiano Ronaldo's last World Cup, and Portugal are loaded with talent around him. It's a golden chance to give one of the game's biggest icons the send-off — and trophy — he's never had.",
+      "style": "Flexible and technical, packed with creative midfielders and dangerous wingers.",
       "fun_facts": [
-        "Ronaldo and Messi are both appearing in a record sixth World Cup this summer.",
-        "The last World Cup meeting with Spain was 2018's epic 3-3 draw — Ronaldo scored a hat-trick."
+        "Cristiano Ronaldo is the all-time leading goalscorer in men's international football.",
+        "Portugal won the European Championship in 2016, but have never won a World Cup."
       ],
-      "star_player_ids": ["ronaldo", "vitinha", "leao"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "ronaldo",
+        "bruno-fernandes",
+        "vitinha",
+        "ruben-dias"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Diogo Costa",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "João Cancelo",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rúben Dias",
+          "position": "Centre back",
+          "player_id": "ruben-dias",
+          "photo_url": null
+        },
+        {
+          "name": "Gonçalo Inácio",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nuno Mendes",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Vitinha",
+          "position": "Central midfield",
+          "player_id": "vitinha",
+          "photo_url": null
+        },
+        {
+          "name": "Rúben Neves",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bruno Fernandes",
+          "position": "Attacking midfield",
+          "player_id": "bruno-fernandes",
+          "photo_url": null
+        },
+        {
+          "name": "Bernardo Silva",
+          "position": "Right wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "position": "Striker",
+          "player_id": "ronaldo",
+          "photo_url": null
+        },
+        {
+          "name": "Rafael Leão",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -302,19 +1162,91 @@
       "tier": 1,
       "fifa_rank": 1,
       "group": "TODO-RESEARCH",
-      "group_summary": "Survived a huge scare against Cape Verde in the Round of 32, winning 3-2 in extra time.",
+      "group_summary": "Survived a 3–2 thriller against Cape Verde in the Round of 32.",
       "still_alive": true,
       "best_wc_finish": "Champions (1978, 1986, 2022)",
-      "wc_history": "Three-time champions and the reigning holders after the epic 2022 final win over France — the night Lionel Messi completed football. They arrived in North America ranked No. 1 and chasing something not done since 1962: back-to-back World Cups.",
-      "storyline": "The champions are alive, but barely: minnows Cape Verde took them to extra time before falling 3-2. Messi, 39, leads the tournament with seven goals and every game is another 'last World Cup match of his career' watch. Next up, a storyline for the ages — Messi vs Salah.",
-      "style": "Everything flows through Messi's brain: slow, suffocating control with sudden bursts of brilliance, plus a nasty streak of grit when needed.",
+      "wc_history": "Argentina are the reigning world champions, having won a dramatic 2022 final against France. With three titles and the legends of Diego Maradona and now Lionel Messi, they are one of football's royal families.",
+      "storyline": "The defending champions are led one more time by Lionel Messi, widely called the greatest of all time, in what is surely his final World Cup. They arrive ranked number one in the world and chasing back-to-back titles.",
+      "style": "Balanced and street-smart — tough to break down, ruthless in attack, and blessed with Messi's genius in the final third.",
       "fun_facts": [
-        "No nation has won back-to-back World Cups since Brazil in 1958 and 1962.",
-        "Messi's seven goals lead the Golden Boot race at age 39."
+        "Argentina are the defending champions, having won the 2022 final against France on penalties.",
+        "Lionel Messi is leading the 2026 Golden Boot race for most goals at the tournament."
       ],
-      "star_player_ids": ["messi", "alvarez-julian", "lautaro"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "messi",
+        "julian-alvarez",
+        "lautaro",
+        "emi-martinez"
+      ],
+      "formation": "4-3-3",
+      "lineup": [
+        {
+          "name": "Emiliano Martínez",
+          "position": "Goalkeeper",
+          "player_id": "emi-martinez",
+          "photo_url": null
+        },
+        {
+          "name": "Nahuel Molina",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Cristian Romero",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nicolás Otamendi",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nicolás Tagliafico",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rodrigo De Paul",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Enzo Fernández",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Alexis Mac Allister",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lionel Messi",
+          "position": "Right wing",
+          "player_id": "messi",
+          "photo_url": null
+        },
+        {
+          "name": "Julián Álvarez",
+          "position": "Striker",
+          "player_id": "julian-alvarez",
+          "photo_url": null
+        },
+        {
+          "name": "Lautaro Martínez",
+          "position": "Left wing",
+          "player_id": "lautaro",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -326,19 +1258,90 @@
       "tier": 1,
       "fifa_rank": null,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Australia 4-2 on penalties (1-1 after extra time) in the Round of 32 — Egypt's first-ever World Cup knockout win.",
+      "group_summary": "Beat Australia on penalties (1–1, 4–2) in the Round of 32 for their first-ever World Cup knockout win.",
       "still_alive": true,
-      "best_wc_finish": "Round of 16 (2026) — the deepest run in their history",
-      "wc_history": "Egypt were the first African nation ever to play at a World Cup, back in 1934 — yet they had never won a knockout match until this week. The Pharaohs are the record African champions but the World Cup had always ended early for them.",
-      "storyline": "Ninety-two years after their World Cup debut, Egypt finally have a knockout win — Emam Ashour's header, a nerveless shootout, and national delirium. Their reward is the hardest job in football: stopping Messi's Argentina, with Mo Salah carrying the hopes of a continent.",
-      "style": "Organized, physical defending in a deep block, with everything in attack funneled through Salah's counterattacks.",
+      "best_wc_finish": "Round of 16, 2026 (their best-ever finish — Egypt had never won a knockout match before)",
+      "wc_history": "Egypt are one of Africa's most storied national teams — record champions of the Africa Cup of Nations — but had never gone beyond the World Cup group stage until 2026. Reaching the last 16 is uncharted, historic territory.",
+      "storyline": "Egypt are living a dream, powered by superstar Mohamed Salah. After winning their first-ever World Cup knockout game, one of the continent's proudest football nations is finally making a run on the world stage.",
+      "style": "Compact and counterattacking, built to get the ball to Salah in space as fast as possible.",
       "fun_facts": [
-        "Egypt were the first African and first Middle Eastern nation to play at a World Cup (1934).",
-        "The shootout win over Australia was the first knockout victory in their World Cup history."
+        "Egypt have won the Africa Cup of Nations a record seven times.",
+        "Their talisman Mohamed Salah is one of the most prolific goalscorers in Premier League history."
       ],
-      "star_player_ids": ["salah", "marmoush", "ashour"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "salah",
+        "marmoush",
+        "zizo"
+      ],
+      "formation": "4-2-3-1",
+      "lineup": [
+        {
+          "name": "Mohamed El Shenawy",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Hany",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Abdelmonem",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rami Rabia",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ahmed Fatouh",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Elneny",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Nabil Emad",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Omar Marmoush",
+          "position": "Attacking midfield",
+          "player_id": "marmoush",
+          "photo_url": null
+        },
+        {
+          "name": "Zizo",
+          "position": "Right wing",
+          "player_id": "zizo",
+          "photo_url": null
+        },
+        {
+          "name": "Mohamed Salah",
+          "position": "Left wing",
+          "player_id": "salah",
+          "photo_url": null
+        },
+        {
+          "name": "Mostafa Mohamed",
+          "position": "Striker",
+          "player_id": null,
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -346,23 +1349,95 @@
       "name": "Switzerland",
       "code": "SUI",
       "flag": "🇨🇭",
-      "color": "#DA291C",
+      "color": "#D52B1E",
       "tier": 1,
       "fifa_rank": null,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Algeria 2-0 in the Round of 32 — Switzerland's first World Cup knockout win in 88 years.",
+      "group_summary": "Beat Algeria in the Round of 32 to reach the last 16.",
       "still_alive": true,
       "best_wc_finish": "Quarterfinals (1934, 1938, 1954)",
-      "wc_history": "Switzerland qualify for almost everything and had lost every World Cup knockout match since 1938 — a run of heartbreak that finally ended this week. Their last quarterfinal came in 1954, when they hosted the tournament.",
-      "storyline": "Eighty-eight years of knockout misery ended in one night against Algeria, with Breel Embolo and Dan Ndoye scoring. Now captain Granit Xhaka leads a tidy, veteran side one win away from a first quarterfinal in 72 years — with Argentina or Egypt likely waiting after that.",
-      "style": "Compact, disciplined and deeply organized — they control games through midfield and almost never beat themselves.",
+      "wc_history": "Switzerland are one of the most reliable teams in the world — they almost always qualify and almost always reach the knockouts. Their best World Cup runs, three quarterfinals, all came long ago in the 1930s and 1950s.",
+      "storyline": "Switzerland are the quiet overachievers again — organized, experienced, and hard to beat. Led by captain Granit Xhaka, they're trying to reach a first World Cup quarterfinal in over 70 years.",
+      "style": "Disciplined and compact defensively, patient in possession, and dangerous on set pieces.",
       "fun_facts": [
-        "Before this week, Switzerland hadn't won a World Cup knockout match since 1938.",
-        "They famously eliminated France on penalties at Euro 2020 — this core knows how to topple giants."
+        "Switzerland reached the Round of 16 at four of the last five World Cups.",
+        "They famously knocked out world champions France on penalties at Euro 2020."
       ],
-      "star_player_ids": ["xhaka", "embolo", "ndoye"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "xhaka",
+        "akanji",
+        "embolo",
+        "ndoye"
+      ],
+      "formation": "4-2-3-1",
+      "lineup": [
+        {
+          "name": "Gregor Kobel",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Silvan Widmer",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Manuel Akanji",
+          "position": "Centre back",
+          "player_id": "akanji",
+          "photo_url": null
+        },
+        {
+          "name": "Nico Elvedi",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ricardo Rodríguez",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Remo Freuler",
+          "position": "Defensive midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Granit Xhaka",
+          "position": "Central midfield",
+          "player_id": "xhaka",
+          "photo_url": null
+        },
+        {
+          "name": "Dan Ndoye",
+          "position": "Right wing",
+          "player_id": "ndoye",
+          "photo_url": null
+        },
+        {
+          "name": "Xherdan Shaqiri",
+          "position": "Attacking midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ruben Vargas",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Breel Embolo",
+          "position": "Striker",
+          "player_id": "embolo",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     },
     {
@@ -374,19 +1449,91 @@
       "tier": 1,
       "fifa_rank": null,
       "group": "TODO-RESEARCH",
-      "group_summary": "Beat Ghana 1-0 in the Round of 32, with an early Jhon Arias goal.",
+      "group_summary": "Beat Ghana 1–0 in the Round of 32.",
       "still_alive": true,
       "best_wc_finish": "Quarterfinals (2014)",
-      "wc_history": "Colombia's best World Cup was 2014, when James Rodríguez lit up Brazil and won the Golden Boot as they reached the quarterfinals. After missing 2022 entirely, this team rebuilt around Luis Díaz's speed and reached a Copa América final in 2024.",
-      "storyline": "Colombia don't blow teams away — they squeeze them, as Ghana found out in a 1-0 vice grip. With Luis Díaz in world-class form and James Rodríguez conducting one last World Cup, they're quietly two wins from the first semifinal in the country's history.",
-      "style": "Tough, streetwise and rhythmic — long spells of control, and one moment of Díaz acceleration to decide it.",
+      "wc_history": "Colombia lit up the 2014 World Cup with thrilling, joyful football and a run to the quarterfinals led by James Rodríguez, who won the Golden Boot. They bring that same flair and rhythm in 2026.",
+      "storyline": "Colombia are one of the tournament's most watchable teams — technical, rhythmic, and fun. With veteran playmaker James Rodríguez orchestrating and Luis Díaz flying down the wing, they believe they can match or beat their 2014 run.",
+      "style": "Rhythmic and technical — lots of movement, clever passing, and dribbling in the final third.",
       "fun_facts": [
-        "James Rodríguez won the 2014 Golden Boot, including the goal of the tournament against Uruguay.",
-        "Colombia have never reached a World Cup semifinal — it's the great national 'what if'."
+        "James Rodríguez won the Golden Boot as top scorer at the 2014 World Cup.",
+        "Colombian games are famous for the party atmosphere their fans bring."
       ],
-      "star_player_ids": ["diaz", "james", "arias"],
-      "formation": "TODO-RESEARCH",
-      "lineup": [],
+      "star_player_ids": [
+        "james",
+        "luis-diaz",
+        "duran",
+        "richard-rios"
+      ],
+      "formation": "4-2-3-1",
+      "lineup": [
+        {
+          "name": "Camilo Vargas",
+          "position": "Goalkeeper",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Santiago Arias",
+          "position": "Right back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Dávinson Sánchez",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Yerry Mina",
+          "position": "Centre back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Johan Mojica",
+          "position": "Left back",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Richard Ríos",
+          "position": "Defensive midfield",
+          "player_id": "richard-rios",
+          "photo_url": null
+        },
+        {
+          "name": "Jefferson Lerma",
+          "position": "Central midfield",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Luis Díaz",
+          "position": "Right wing",
+          "player_id": "luis-diaz",
+          "photo_url": null
+        },
+        {
+          "name": "James Rodríguez",
+          "position": "Attacking midfield",
+          "player_id": "james",
+          "photo_url": null
+        },
+        {
+          "name": "Jhon Arias",
+          "position": "Left wing",
+          "player_id": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jhon Durán",
+          "position": "Striker",
+          "player_id": "duran",
+          "photo_url": null
+        }
+      ],
       "as_of": "2026-07-04"
     }
   ]
