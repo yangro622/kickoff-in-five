@@ -191,6 +191,11 @@
 
   /* ---------- player stickers ---------- */
 
+  // FOX Sports' "World Cup 2026: ranking best 100 players" position, when filled.
+  const rankBadge = (p, extra = "") => p.world_ranking
+    ? `<span class="rank-badge ${extra}" title="No. ${esc(String(p.world_ranking))} in FOX Sports' World Cup top-100 player ranking">#${esc(String(p.world_ranking))}</span>`
+    : "";
+
   function playerSticker(p) {
     const team = teamOf(p.team_id);
     const band = `--band:${esc(teamColor(team))}`;
@@ -199,7 +204,7 @@
     return `<button type="button" class="sticker" style="${band}" data-player="${esc(p.id)}" aria-haspopup="dialog">
       <span class="sticker-band" aria-hidden="true"></span>
       ${avatar(p, team)}
-      <span class="sticker-name">${name}</span>
+      <span class="sticker-name">${rankBadge(p)}${name}</span>
       <span class="sticker-sub">${esc(sub)}</span>
       ${team ? `<span class="sticker-flag" aria-hidden="true">${team.flag}</span>` : ""}
     </button>`;
@@ -270,10 +275,11 @@
       <div class="sheet-hero" style="--band:${esc(teamColor(t))}">
         ${avatar(p, t)}
         <div>
-          <h2>${isTodo(p.name) ? "Star player TBD" : esc(p.name)}</h2>
+          <h2>${rankBadge(p, "rank-badge--lg")}${isTodo(p.name) ? "Star player TBD" : esc(p.name)}</h2>
           <p class="sub">
             ${t ? `<a href="#/team/${esc(t.id)}">${t.flag} ${esc(t.name)}</a> · ` : ""}
             ${isTodo(p.position) ? "Position TBD" : esc(p.position)}${p.age != null ? ` · age ${esc(String(p.age))}` : ""}
+            ${p.world_ranking ? ` · <span title="FOX Sports' World Cup top-100 player ranking">World Cup Top 100: <strong>No. ${esc(String(p.world_ranking))}</strong></span>` : ""}
           </p>
         </div>
       </div>
