@@ -351,6 +351,7 @@ h1.hero-title {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.fixture-foot > span:last-child { text-align: right; min-width: 0; }
 
 /* ---------- snap carousels ---------- */
 

@@ -79,7 +79,9 @@
     const k = kickoff(m);
     if (!k.known) return `${k.day} · kickoff time TBD`;
     const ms = k.dt - Date.now();
-    if (ms <= 0) return `Kicked off · ${k.day}, ${k.time}`;
+    // in progress (a match lasts ~2h; up to ~2h45m with extra time + shootout)
+    if (ms <= 0 && ms > -2.75 * 3600 * 1000) return `Live now · kicked off ${k.time}`;
+    if (ms <= 0) return `Awaiting final score · ${k.day}`;
     const secs = Math.floor(ms / 1000);
     const d = Math.floor(secs / 86400), h = Math.floor((secs % 86400) / 3600),
       min = Math.floor((secs % 3600) / 60), s = secs % 60;
@@ -472,8 +474,8 @@
       html += `<div class="section"><h2 class="section-title">The stakes</h2><p class="prose">${esc(m.stakes)}</p></div>`;
     }
 
-    html += `<div class="btn-row">
-      ${m.watch_link ? `<a class="btn btn--primary" href="${esc(m.watch_link)}" target="_blank" rel="noopener">Watch live →</a>` : ""}
+    html += `<div class="btn-row" ${m.status === "final" || !m.watch_link ? 'style="grid-template-columns:1fr"' : ""}>
+      ${m.status !== "final" && m.watch_link ? `<a class="btn btn--primary" href="${esc(m.watch_link)}" target="_blank" rel="noopener">Watch live →</a>` : ""}
       <button class="btn" type="button" data-share="${esc(m.id)}">Share card</button>
     </div>`;
 
