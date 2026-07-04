@@ -4,6 +4,7 @@
       "id": "davies",
       "team_id": "can",
       "name": "Alphonso Davies",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Left back",
@@ -12,13 +13,18 @@
       "league": "Bundesliga (Germany)",
       "journey": "Born in a refugee camp in Ghana to Liberian parents, Davies grew up in Canada and became a superstar at German giants Bayern Munich. He is the face of Canadian soccer and one of the fastest players in the world.",
       "watch_for": "When Canada win the ball, watch him sprint the length of the left touchline — few defenders on earth can keep up with his pure speed.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "david",
       "team_id": "can",
       "name": "Jonathan David",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -27,13 +33,18 @@
       "league": "Serie A (Italy)",
       "journey": "A cool, clinical finisher who made his name scoring goals in France before moving to Italian side Juventus. He is Canada's main source of goals and one of their most reliable players.",
       "watch_for": "The way he drifts quietly across defenders and pops up unmarked in the box — he does his best work in the split second before the ball arrives.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "eustaquio",
       "team_id": "can",
       "name": "Stephen Eustáquio",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Central midfield",
@@ -42,13 +53,18 @@
       "league": "Primeira Liga (Portugal)",
       "journey": "Canadian-Portuguese midfielder who runs the middle of the park for Canada, dictating the tempo from his base at Portuguese club Porto. He is the calm heartbeat of the team.",
       "watch_for": "He rarely gives the ball away — watch him take a pass under pressure, turn out of trouble, and start Canada's attacks.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "larin",
       "team_id": "can",
       "name": "Cyle Larin",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -57,13 +73,18 @@
       "league": "La Liga (Spain)",
       "journey": "Canada's all-time leading goalscorer, a big, strong forward who has scored crucial goals throughout the team's rise. A dependable presence up front.",
       "watch_for": "His aerial ability — when a cross comes in, he is the one attacking it with his head.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "hakimi",
       "team_id": "mar",
       "name": "Achraf Hakimi",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Right back",
@@ -72,13 +93,18 @@
       "league": "Ligue 1 (France)",
       "journey": "One of the best attacking full backs in the world, Hakimi is a Champions League winner with French champions PSG and the engine of Morocco's right side. Born and raised in Spain, he chose to represent Morocco.",
       "watch_for": "He plays like an extra winger — watch him charge forward past his own attackers and whip crosses in from the right.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "en-nesyri",
       "team_id": "mar",
       "name": "Youssef En-Nesyri",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -87,13 +113,18 @@
       "league": "Süper Lig (Turkey)",
       "journey": "A tall, powerful striker who scored the header that knocked Portugal out of the 2022 World Cup. He leads the Moroccan attack with his strength and leaping ability.",
       "watch_for": "His jumping — he hangs in the air on crosses and can outleap defenders by what looks like a full head.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "amrabat",
       "team_id": "mar",
       "name": "Sofyan Amrabat",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Defensive midfield",
@@ -102,13 +133,18 @@
       "league": "Serie A (Italy)",
       "journey": "A tireless, combative midfielder who was one of the standout players of Morocco's run to the 2022 semifinals. He does the unglamorous defensive work that lets the stars shine.",
       "watch_for": "The way he covers ground to break up the other team's attacks — he always seems to be first to a loose ball.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "brahim",
       "team_id": "mar",
       "name": "Brahim Díaz",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -117,13 +153,18 @@
       "league": "La Liga (Spain)",
       "journey": "A gifted, quick-footed playmaker at Spanish giants Real Madrid, Brahim was born in Spain but chose to play for Morocco. He adds close control and creativity to their attack.",
       "watch_for": "His dribbling in tight spaces — watch him wriggle away from defenders with quick, small touches.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "almiron",
       "team_id": "par",
       "name": "Miguel Almirón",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -132,13 +173,18 @@
       "league": "MLS (USA & Canada)",
       "journey": "A speedy, hard-working winger who spent years in the Premier League with Newcastle before returning to MLS side Atlanta United. He is Paraguay's most recognizable attacking player.",
       "watch_for": "His non-stop running — he sprints in behind defenders again and again, even late in games.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "sanabria",
       "team_id": "par",
       "name": "Antonio Sanabria",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -147,13 +193,18 @@
       "league": "Serie A (Italy)",
       "journey": "An experienced striker who has spent most of his career in Italy and Spain, Sanabria is Paraguay's focal point up front, linking play and finishing chances.",
       "watch_for": "The way he drops back to receive the ball and hold it up, giving his teammates time to join the attack.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "enciso",
       "team_id": "par",
       "name": "Julio Enciso",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -162,13 +213,18 @@
       "league": "Premier League (England)",
       "journey": "Paraguay's exciting young talent, Enciso plays in the Premier League for Brighton and is known for spectacular goals from distance. He is the creative spark in an otherwise gritty team.",
       "watch_for": "If he gets the ball 25 yards out with a bit of space, watch him shoot — he scores stunning long-range goals.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "gustavo-gomez",
       "team_id": "par",
       "name": "Gustavo Gómez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Centre back",
@@ -177,13 +233,18 @@
       "league": "Brazilian Série A (Brazil)",
       "journey": "Paraguay's captain and defensive rock, a commanding center back who has won major titles with Brazilian powerhouse Palmeiras. He organizes the stubborn defense that defines this team.",
       "watch_for": "His last-ditch blocks and headers — when Paraguay defend their box, he is usually the one throwing his body in the way.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "mbappe",
       "team_id": "fra",
       "name": "Kylian Mbappé",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -192,13 +253,18 @@
       "league": "La Liga (Spain)",
       "journey": "A generational talent and France's captain, Mbappé won the World Cup as a teenager in 2018 and scored a hat-trick in the 2022 final. Now the star of Real Madrid, he is chasing the trophy as France's undisputed leader.",
       "watch_for": "His acceleration — from a standing start he explodes past defenders, most dangerously cutting in from the left.",
-      "tournament_stats": {"goals": 6, "assists": 2, "note": "Among the leaders in the Golden Boot race as of 2026-07-04"},
+      "tournament_stats": {
+        "goals": 6,
+        "assists": 2,
+        "note": "Among the leaders in the Golden Boot race as of 2026-07-04"
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "dembele",
       "team_id": "fra",
       "name": "Ousmane Dembélé",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -207,13 +273,18 @@
       "league": "Ligue 1 (France)",
       "journey": "A two-footed winger of dazzling skill who reached a new peak at PSG, Dembélé is one of France's most dangerous attackers. Equally comfortable on either foot, he is almost impossible to predict.",
       "watch_for": "Defenders never know which way he'll go because he can dribble and shoot with both feet equally well.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "tchouameni",
       "team_id": "fra",
       "name": "Aurélien Tchouaméni",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Defensive midfield",
@@ -222,13 +293,18 @@
       "league": "La Liga (Spain)",
       "journey": "A powerful, elegant midfielder who shields France's defense from his base at Real Madrid. He breaks up attacks and starts new ones with calm, accurate passing.",
       "watch_for": "He sits just in front of the defense — watch him step in to intercept passes before France's opponents can build an attack.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "saliba",
       "team_id": "fra",
       "name": "William Saliba",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Centre back",
@@ -237,13 +313,18 @@
       "league": "Premier League (England)",
       "journey": "A cool, athletic center back who became one of the best defenders in the Premier League with Arsenal. He gives France calm and pace at the back.",
       "watch_for": "His recovery speed — even when an attacker gets past him, he often catches up and cleanly wins the ball back.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "vinicius",
       "team_id": "bra",
       "name": "Vinícius Júnior",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -252,13 +333,18 @@
       "league": "La Liga (Spain)",
       "journey": "An electric, trick-loving winger who became a Champions League hero at Real Madrid, Vinícius is the face of Brazil's new generation. He plays with joy, flair, and a fearless love of taking defenders on.",
       "watch_for": "One-on-one down the left wing — watch the stepovers and feints as he tries to embarrass his marker.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "raphinha",
       "team_id": "bra",
       "name": "Raphinha",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -267,13 +353,18 @@
       "league": "La Liga (Spain)",
       "journey": "A relentless, big-game winger who became a leader and top scorer for Barcelona, Raphinha brings end product and intensity to Brazil's attack.",
       "watch_for": "His shooting and set pieces — he strikes free kicks and long shots with real venom.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "rodrygo",
       "team_id": "bra",
       "name": "Rodrygo",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -282,13 +373,18 @@
       "league": "La Liga (Spain)",
       "journey": "A smart, versatile attacker and Real Madrid teammate of Vinícius, Rodrygo is known for scoring huge goals in the biggest matches. He can play across the front line.",
       "watch_for": "His timing — he makes clever runs into the box and finishes calmly when the chance falls to him.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "marquinhos",
       "team_id": "bra",
       "name": "Marquinhos",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Centre back",
@@ -297,13 +393,18 @@
       "league": "Ligue 1 (France)",
       "journey": "Brazil's captain and defensive leader, a long-serving stalwart of French champions PSG. He reads the game beautifully and marshals the back line.",
       "watch_for": "His positioning — he always seems to be standing exactly where the ball ends up, cutting out danger before it becomes a chance.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "haaland",
       "team_id": "nor",
       "name": "Erling Haaland",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -312,13 +413,18 @@
       "league": "Premier League (England)",
       "journey": "A goal-scoring machine who has smashed records at Manchester City, Haaland is a giant, ferociously quick striker and the reason Norway are dangerous. This is his first World Cup after Norway's long absence.",
       "watch_for": "His runs onto the last defender's shoulder — he lurks on the edge of offside, then bursts in behind to finish.",
-      "tournament_stats": {"goals": 5, "assists": null, "note": "Among the leaders in the Golden Boot race as of 2026-07-04"},
+      "tournament_stats": {
+        "goals": 5,
+        "assists": null,
+        "note": "Among the leaders in the Golden Boot race as of 2026-07-04"
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "odegaard",
       "team_id": "nor",
       "name": "Martin Ødegaard",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -327,13 +433,18 @@
       "league": "Premier League (England)",
       "journey": "Norway's captain and creative brain, a silky playmaker who leads Arsenal in the Premier League. He supplies the passes that set Haaland free.",
       "watch_for": "His clever through balls — watch him thread passes between defenders to release runners.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "sorloth",
       "team_id": "nor",
       "name": "Alexander Sørloth",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -342,13 +453,18 @@
       "league": "La Liga (Spain)",
       "journey": "A tall, powerful forward who found top form in Spain with Atlético Madrid, Sørloth gives Norway a second big striker alongside Haaland.",
       "watch_for": "His strength in the air and on the shoulder of defenders — he is a handful for any center back.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "nusa",
       "team_id": "nor",
       "name": "Antonio Nusa",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -357,13 +473,18 @@
       "league": "Bundesliga (Germany)",
       "journey": "A thrilling young winger at German side RB Leipzig, Nusa is Norway's exciting next-generation talent, full of pace and tricks.",
       "watch_for": "His fearless dribbling — he takes on defenders one-on-one and loves to cut inside onto his stronger foot.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "gimenez",
       "team_id": "mex",
       "name": "Santiago Giménez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -372,13 +493,18 @@
       "league": "Serie A (Italy)",
       "journey": "A sharp young striker nicknamed 'Bebote', Giménez earned a move to Italian giants AC Milan with his goalscoring. He is Mexico's main man up front.",
       "watch_for": "His movement in the box — he constantly shifts position to lose his marker and find a half-yard to shoot.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "edson-alvarez",
       "team_id": "mex",
       "name": "Edson Álvarez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Defensive midfield",
@@ -387,13 +513,18 @@
       "league": "Premier League (England)",
       "journey": "Mexico's defensive anchor and one of their leaders, Álvarez does the tough midfield work for Premier League side West Ham. He protects the defense and breaks up play.",
       "watch_for": "The way he shields the back four — watch him step across to cut out passes and snuff out counterattacks.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "lozano",
       "team_id": "mex",
       "name": "Hirving Lozano",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -402,13 +533,18 @@
       "league": "MLS (USA & Canada)",
       "journey": "Nicknamed 'Chucky', Lozano scored the famous goal that beat Germany at the 2018 World Cup. Now with MLS newcomers San Diego FC, he remains one of Mexico's most dangerous attackers.",
       "watch_for": "His direct running at defenders from the right, cutting inside onto his left foot to shoot.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "raul-jimenez",
       "team_id": "mex",
       "name": "Raúl Jiménez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -417,13 +553,18 @@
       "league": "Premier League (England)",
       "journey": "A veteran striker who has led Mexico's attack for over a decade, Jiménez returned to form in the Premier League with Fulham after recovering from a serious head injury. His experience is priceless.",
       "watch_for": "His link-up play — he holds the ball up with his back to goal and lays it off for teammates running past.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "kane",
       "team_id": "eng",
       "name": "Harry Kane",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -432,13 +573,18 @@
       "league": "Bundesliga (Germany)",
       "journey": "England's captain and all-time leading goalscorer, Kane is one of the most complete strikers in the world. He left England to win trophies with Bayern Munich and is chasing the one prize that would define his career.",
       "watch_for": "He drops deep to collect the ball and spray long passes — as much a playmaker as a finisher — then sprints back into the box.",
-      "tournament_stats": {"goals": 5, "assists": null, "note": "Among the leaders in the Golden Boot race as of 2026-07-04"},
+      "tournament_stats": {
+        "goals": 5,
+        "assists": null,
+        "note": "Among the leaders in the Golden Boot race as of 2026-07-04"
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "bellingham",
       "team_id": "eng",
       "name": "Jude Bellingham",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Midfielder",
@@ -447,13 +593,18 @@
       "league": "La Liga (Spain)",
       "journey": "A box-to-box superstar who took Real Madrid and the football world by storm as a young man, Bellingham does everything — tackle, create, and score. He is the beating heart of England's midfield.",
       "watch_for": "His late runs into the penalty box — watch him arrive from midfield to score just when the opponent forgets about him.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "saka",
       "team_id": "eng",
       "name": "Bukayo Saka",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -462,13 +613,18 @@
       "league": "Premier League (England)",
       "journey": "A beloved, ever-smiling winger who became Arsenal's star man, Saka is England's most reliable creator on the right wing. He bounced back from heartbreak at Euro 2020 to become a leader.",
       "watch_for": "His signature move: receiving on the right, cutting inside onto his left foot, and curling a shot toward the far corner.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "foden",
       "team_id": "eng",
       "name": "Phil Foden",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -477,13 +633,18 @@
       "league": "Premier League (England)",
       "journey": "A homegrown Manchester City genius who won the Premier League's Player of the Season award, Foden is a gifted, left-footed attacker who can play anywhere across the front.",
       "watch_for": "His close control in tight spaces and eye for a curling finish from the edge of the box.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "pulisic",
       "team_id": "usa",
       "name": "Christian Pulisic",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -492,13 +653,18 @@
       "league": "Serie A (Italy)",
       "journey": "'Captain America' is the face of US soccer, a winger who broke through at Borussia Dortmund, won the Champions League with Chelsea, and now stars for AC Milan. The team's hopes rest largely on him.",
       "watch_for": "His direct dribbling — watch him drive at defenders from the left and cut inside to shoot or slip a pass.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "mckennie",
       "team_id": "usa",
       "name": "Weston McKennie",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Midfielder",
@@ -507,13 +673,18 @@
       "league": "Serie A (Italy)",
       "journey": "An energetic, versatile midfielder for Italian giants Juventus, McKennie brings power, goals, and leadership to the US midfield. He can play almost anywhere and never stops running.",
       "watch_for": "His surging runs from midfield into the box, often getting on the end of crosses with his head.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "adams",
       "team_id": "usa",
       "name": "Tyler Adams",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Defensive midfield",
@@ -522,13 +693,18 @@
       "league": "Premier League (England)",
       "journey": "The US captain and midfield engine, Adams is a tenacious ball-winner who plays in the Premier League for Bournemouth. He sets the tone for the team's high-energy pressing.",
       "watch_for": "His non-stop chasing — watch him hound opponents and win the ball back the instant the US lose it.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "balogun",
       "team_id": "usa",
       "name": "Folarin Balogun",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -537,13 +713,18 @@
       "league": "Ligue 1 (France)",
       "journey": "A striker born in New York and raised in London, Balogun came through Arsenal's academy before choosing to represent the USA and moving to French side Monaco. He gives the US a genuine goal threat.",
       "watch_for": "His clever movement off the shoulder of the last defender, timing runs to stay onside and race through.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "debruyne",
       "team_id": "bel",
       "name": "Kevin De Bruyne",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -552,13 +733,18 @@
       "league": "Serie A (Italy)",
       "journey": "One of the greatest midfielders of his generation, De Bruyne won everything at Manchester City before a move to Italian side Napoli. He is the creative genius Belgium build around.",
       "watch_for": "His passing — watch him spot a teammate's run and deliver a perfect pass across the whole field or a whipped cross into the box.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "lukaku",
       "team_id": "bel",
       "name": "Romelu Lukaku",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -567,13 +753,18 @@
       "league": "Serie A (Italy)",
       "journey": "Belgium's all-time leading goalscorer, a huge, strong striker who has scored across Europe's top leagues and now plays for Napoli in Italy. He remains the focal point of the Belgian attack.",
       "watch_for": "His combination of size and surprising speed — he bullies defenders off the ball, then outruns them in behind.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "doku",
       "team_id": "bel",
       "name": "Jérémy Doku",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -582,13 +773,18 @@
       "league": "Premier League (England)",
       "journey": "An explosive, low-to-the-ground winger at Manchester City, Doku is one of the most exciting dribblers in the game and gives Belgium fresh, direct pace out wide.",
       "watch_for": "His dribbling bursts — watch him knock the ball past a defender and simply sprint away, then fire in a cross.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "tielemans",
       "team_id": "bel",
       "name": "Youri Tielemans",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Midfielder",
@@ -597,13 +793,18 @@
       "league": "Premier League (England)",
       "journey": "A composed, reliable midfielder for Premier League side Aston Villa, Tielemans provides balance and passing quality in the middle for Belgium.",
       "watch_for": "His long-range shooting and tidy passing — he keeps Belgium ticking and can score from distance.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "yamal",
       "team_id": "esp",
       "name": "Lamine Yamal",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -612,13 +813,18 @@
       "league": "La Liga (Spain)",
       "journey": "A teenage phenomenon who became a global superstar at Barcelona and starred in Spain's Euro 2024 triumph before he was even 18. He is widely seen as one of the future faces of the sport.",
       "watch_for": "Cutting in from the right onto his left foot — watch him glide past defenders and curl shots toward the far post.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "pedri",
       "team_id": "esp",
       "name": "Pedri",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Midfielder",
@@ -627,13 +833,18 @@
       "league": "La Liga (Spain)",
       "journey": "A graceful Barcelona midfielder with a genius for finding space and keeping the ball, Pedri is the metronome of Spain's passing game. He rarely gives the ball away.",
       "watch_for": "The way he always seems to have time — watch him receive under pressure, turn, and pick out the right pass instantly.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "rodri",
       "team_id": "esp",
       "name": "Rodri",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Defensive midfield",
@@ -642,13 +853,18 @@
       "league": "Premier League (England)",
       "journey": "A Ballon d'Or-winning midfielder and the anchor of both Manchester City and Spain, Rodri controls games from deep with his positioning and passing. Many consider him the best in the world in his role.",
       "watch_for": "He is always available for a pass and almost never loses the ball — the calm center around which Spain's whole team turns.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "nico-williams",
       "team_id": "esp",
       "name": "Nico Williams",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -657,13 +873,18 @@
       "league": "La Liga (Spain)",
       "journey": "A lightning-fast winger who stars for his hometown club Athletic Bilbao and shone in Spain's Euro 2024 win. He forms a thrilling young attack alongside Lamine Yamal on the other flank.",
       "watch_for": "Pure speed down the left — watch him knock the ball past his marker and burn him for pace before crossing.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "oyarzabal",
       "team_id": "esp",
       "name": "Mikel Oyarzabal",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -672,13 +893,18 @@
       "league": "La Liga (Spain)",
       "journey": "A dependable Real Sociedad forward who scored the winning goal in the Euro 2024 final, Oyarzabal is a clever, clinical finisher and one of Spain's most reliable attackers.",
       "watch_for": "His knack for arriving in the box at the perfect moment to tuck away chances.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "ronaldo",
       "team_id": "por",
       "name": "Cristiano Ronaldo",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -687,13 +913,18 @@
       "league": "Saudi Pro League (Saudi Arabia)",
       "journey": "One of the greatest and most famous footballers ever, Ronaldo is the all-time leading scorer in men's international football. Now playing in Saudi Arabia with Al Nassr, he is chasing the World Cup that has always eluded him in what is surely his final attempt.",
       "watch_for": "His shooting and heading power, and his ever-present threat in the box — plus the roar from the crowd every time he touches the ball.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "bruno-fernandes",
       "team_id": "por",
       "name": "Bruno Fernandes",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -702,13 +933,18 @@
       "league": "Premier League (England)",
       "journey": "Manchester United's captain and creative leader, Bruno is a relentless midfielder who provides goals and assists in bunches. He drives Portugal forward from midfield.",
       "watch_for": "His ambitious passing — watch him attempt the difficult, defense-splitting ball that others wouldn't even try.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "vitinha",
       "team_id": "por",
       "name": "Vitinha",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Midfielder",
@@ -717,13 +953,18 @@
       "league": "Ligue 1 (France)",
       "journey": "A small, tireless midfield conductor who became a Champions League winner and star at PSG, Vitinha keeps the ball moving and links Portugal's defense to attack.",
       "watch_for": "His constant movement and quick, one-touch passing to keep possession flowing.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "ruben-dias",
       "team_id": "por",
       "name": "Rúben Dias",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Centre back",
@@ -732,13 +973,18 @@
       "league": "Premier League (England)",
       "journey": "One of the best defenders in the world, a Manchester City leader known for his organization and will to win. He is the rock at the back for Portugal.",
       "watch_for": "His constant talking and pointing — watch how he organizes the defenders around him and throws himself into blocks.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "messi",
       "team_id": "arg",
       "name": "Lionel Messi",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -747,13 +993,18 @@
       "league": "MLS (USA & Canada)",
       "journey": "Widely regarded as the greatest player of all time, Messi finally won the World Cup in 2022 to complete his legend. Now with Inter Miami in the US, he is leading Argentina one last time in what is surely his farewell World Cup.",
       "watch_for": "Even at his age, watch the way he slows the game to walking pace, then explodes with a burst of dribbling or a perfect pass no one else sees.",
-      "tournament_stats": {"goals": 7, "assists": null, "note": "Leading the Golden Boot race for most goals as of 2026-07-04"},
+      "tournament_stats": {
+        "goals": 7,
+        "assists": null,
+        "note": "Leading the Golden Boot race for most goals as of 2026-07-04"
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "julian-alvarez",
       "team_id": "arg",
       "name": "Julián Álvarez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -762,13 +1013,18 @@
       "league": "La Liga (Spain)",
       "journey": "A relentless, intelligent forward who won the 2022 World Cup as a young star and later moved to Atlético Madrid. He combines tireless work with a deadly eye for goal.",
       "watch_for": "His pressing and movement — he never stops running, harassing defenders and darting into space to score.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "lautaro",
       "team_id": "arg",
       "name": "Lautaro Martínez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -777,13 +1033,18 @@
       "league": "Serie A (Italy)",
       "journey": "Argentina's fierce, prolific striker and captain of Italian side Inter Milan, 'El Toro' (The Bull) is known for his fighting spirit and clinical finishing.",
       "watch_for": "His aggressive runs and quick shooting — he pounces on half-chances and shoots the instant he sees an opening.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "emi-martinez",
       "team_id": "arg",
       "name": "Emiliano Martínez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Goalkeeper",
@@ -792,13 +1053,18 @@
       "league": "Premier League (England)",
       "journey": "The charismatic, sometimes villainous goalkeeper who became a national hero by winning the shootout in the 2022 World Cup final. He plays for Aston Villa and is one of the best penalty-savers in the game.",
       "watch_for": "If a game goes to a shootout, watch his mind games — he dances on his line and tries to get inside the shooter's head.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "salah",
       "team_id": "egy",
       "name": "Mohamed Salah",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -807,13 +1073,18 @@
       "league": "Premier League (England)",
       "journey": "Egypt's national hero and one of the Premier League's greatest-ever players, Salah has scored a staggering number of goals for Liverpool. He carries the hopes of Egypt and much of Africa on his shoulders.",
       "watch_for": "Cutting in from the right onto his magical left foot — the whole stadium knows what's coming and still can't stop it.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "marmoush",
       "team_id": "egy",
       "name": "Omar Marmoush",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Forward",
@@ -822,13 +1093,18 @@
       "league": "Premier League (England)",
       "journey": "A fast, direct forward whose goals in Germany earned him a big move to Manchester City, Marmoush gives Egypt a dangerous second attacking threat alongside Salah.",
       "watch_for": "His pace in transition — when Egypt win the ball, watch him sprint forward to support or lead the counterattack.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "zizo",
       "team_id": "egy",
       "name": "Zizo",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -837,13 +1113,18 @@
       "league": "Egyptian Premier League (Egypt)",
       "journey": "A creative winger and playmaker who stars in the Egyptian league for giants Al Ahly, Zizo provides assists and set-piece delivery for the national team.",
       "watch_for": "His deliveries from set pieces — watch his corners and free kicks, a key source of chances for Egypt.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "xhaka",
       "team_id": "sui",
       "name": "Granit Xhaka",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Central midfield",
@@ -852,13 +1133,18 @@
       "league": "Premier League (England)",
       "journey": "Switzerland's captain and long-time leader, a commanding left-footed midfielder who orchestrates the team's play. A vastly experienced figure after years in the Premier League and Germany.",
       "watch_for": "His range of passing from deep — watch him switch the ball across the field to change the direction of an attack.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "akanji",
       "team_id": "sui",
       "name": "Manuel Akanji",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Centre back",
@@ -867,13 +1153,18 @@
       "league": "Premier League (England)",
       "journey": "A calm, ball-playing defender who won major honors at Manchester City, Akanji is the leader of Switzerland's disciplined back line and comfortable bringing the ball out from the back.",
       "watch_for": "How comfortable he is on the ball for a defender — watch him carry it forward calmly instead of just clearing it.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "embolo",
       "team_id": "sui",
       "name": "Breel Embolo",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -882,13 +1173,18 @@
       "league": "Ligue 1 (France)",
       "journey": "A strong, powerful forward for French side Monaco, Embolo is Switzerland's main striker, able to hold the ball up and battle with defenders.",
       "watch_for": "His physical strength — watch him shield the ball from defenders and bring teammates into the attack.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "ndoye",
       "team_id": "sui",
       "name": "Dan Ndoye",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -897,13 +1193,18 @@
       "league": "Premier League (England)",
       "journey": "A quick, direct winger who earned a Premier League move to Nottingham Forest, Ndoye gives Switzerland pace and width in attack.",
       "watch_for": "His runs down the wing and willingness to take defenders on one-on-one before crossing.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "james",
       "team_id": "col",
       "name": "James Rodríguez",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Attacking midfield",
@@ -912,13 +1213,18 @@
       "league": "Liga MX (Mexico)",
       "journey": "The golden boy of Colombian football, James won the Golden Boot at the 2014 World Cup with a string of stunning goals. Now a veteran playmaker, he still pulls the strings as Colombia's captain and creative leader.",
       "watch_for": "His left foot — watch him slow down, look up, and thread a defense-splitting pass or bend a shot into the corner.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "luis-diaz",
       "team_id": "col",
       "name": "Luis Díaz",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Winger",
@@ -927,13 +1233,18 @@
       "league": "Bundesliga (Germany)",
       "journey": "An electric winger who rose from humble beginnings in Colombia to star in the Premier League and then move to Bayern Munich. He is Colombia's most dangerous attacker with his pace and directness.",
       "watch_for": "His relentless one-on-one dribbling — watch him drive at defenders down the left and refuse to stop attacking.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "duran",
       "team_id": "col",
       "name": "Jhon Durán",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Striker",
@@ -942,13 +1253,18 @@
       "league": "Saudi Pro League (Saudi Arabia)",
       "journey": "A powerful young striker famous for spectacular long-range goals, Durán earned a big move to Saudi Arabia's Al Nassr. He offers Colombia raw power and a knack for the outrageous.",
       "watch_for": "His shooting from distance — if he sees the goalkeeper off the line, he'll try to score from almost anywhere.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     },
     {
       "id": "richard-rios",
       "team_id": "col",
       "name": "Richard Ríos",
+      "world_ranking": null,
       "photo_url": null,
       "photo_credit": null,
       "position": "Central midfield",
@@ -957,8 +1273,15 @@
       "league": "Primeira Liga (Portugal)",
       "journey": "A powerful, rising midfielder who broke through with Brazilian club Palmeiras before moving to Portugal's Benfica. He gives Colombia energy and drive through the middle.",
       "watch_for": "His ball-carrying — watch him win possession and then surge forward through midfield, past opponents.",
-      "tournament_stats": {"goals": null, "assists": null, "note": null},
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
       "as_of": "2026-07-04"
     }
+  ],
+  "_notes": [
+    "world_ranking: the player's position in FOX Sports' 'World Cup 2026: ranking best 100 players' list (https://www.foxsports.com/stories/soccer/world-cup-2026-ranking-best-100-players); null if unranked or not yet filled. Fill via research/prompt-rankings.md + tools/apply_rankings.py."
   ]
 }

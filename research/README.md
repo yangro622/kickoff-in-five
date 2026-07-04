@@ -5,8 +5,8 @@
 > complete Learn section. Remaining TODO-RESEARCH slots: group letters/records,
 > a few FIFA ranks (BEL/SUI/COL/NOR/EGY/PAR), a few current clubs (Enciso, James,
 > Arias), formations/lineups, and QF venue assignment for the two July 11 games.
-> Player photos: run `python3 tools/fetch_headshots.py` from the repo root on a
-> machine with open internet — it downloads ~256px Wikipedia lead images into
+> Player photos: run `python3 tools/update_players.py` from the repo root on a
+> machine with open internet — one script fetches FOX top-100 world rankings AND downloads ~256px Wikipedia lead images into
 > `assets/players/`, records licenses in `assets/players/CREDITS.md`, and fills
 > `photo_url`/`photo_credit` in players.json automatically.
 
