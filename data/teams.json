@@ -311,7 +311,16 @@
         "mbappe",
         "dembele",
         "tchouameni",
-        "saliba"
+        "saliba",
+        "michael-olise",
+        "desire-doue",
+        "rayan-cherki",
+        "n-golo-kante",
+        "ibrahima-konate",
+        "mike-maignan",
+        "jules-kounde",
+        "marcus-thuram",
+        "bradley-barcola"
       ],
       "formation": "4-2-3-1",
       "lineup": [
@@ -407,7 +416,13 @@
         "vinicius",
         "raphinha",
         "rodrygo",
-        "marquinhos"
+        "marquinhos",
+        "gabriel-magalhaes",
+        "bruno-guimaraes",
+        "alisson",
+        "joao-pedro",
+        "gabriel-martinelli",
+        "casemiro"
       ],
       "formation": "4-3-3",
       "lineup": [
@@ -695,7 +710,12 @@
         "kane",
         "bellingham",
         "saka",
-        "foden"
+        "foden",
+        "declan-rice",
+        "cole-palmer",
+        "reece-james",
+        "marc-guehi",
+        "eberechi-eze"
       ],
       "formation": "4-2-3-1",
       "lineup": [
@@ -887,7 +907,8 @@
         "debruyne",
         "lukaku",
         "doku",
-        "tielemans"
+        "tielemans",
+        "thibaut-courtois"
       ],
       "formation": "4-2-3-1",
       "lineup": [
@@ -984,7 +1005,14 @@
         "pedri",
         "rodri",
         "nico-williams",
-        "oyarzabal"
+        "oyarzabal",
+        "marc-cucurella",
+        "martin-zubimendi",
+        "fermin-lopez",
+        "pau-cubarsi",
+        "dani-olmo",
+        "fabian-ruiz",
+        "mikel-merino"
       ],
       "formation": "4-3-3",
       "lineup": [
@@ -1080,7 +1108,13 @@
         "ronaldo",
         "bruno-fernandes",
         "vitinha",
-        "ruben-dias"
+        "ruben-dias",
+        "joao-neves",
+        "bernardo-silva",
+        "nuno-mendes",
+        "rafael-leao",
+        "joao-cancelo",
+        "goncalo-ramos"
       ],
       "formation": "4-3-3",
       "lineup": [
@@ -1176,7 +1210,10 @@
         "messi",
         "julian-alvarez",
         "lautaro",
-        "emi-martinez"
+        "emi-martinez",
+        "enzo-fernandez",
+        "alexis-mac-allister",
+        "lisandro-martinez"
       ],
       "formation": "4-3-3",
       "lineup": [

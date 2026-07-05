@@ -66,3 +66,40 @@ All headshots are Wikipedia lead images hosted on Wikimedia Commons under free l
 - **Richard Ríos** (`richard-rios.jpg`): NullReason, CC BY-SA 4.0, via Wikimedia Commons
 - **Julio Enciso** (`enciso.jpg`): jamesboyes, CC BY 2.0, via Wikimedia Commons
 - **Rodri** (`rodri.jpg`): Rolandhino1, CC BY-SA 4.0, via Wikimedia Commons
+- **Michael Olise** (`michael-olise.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **João Neves** (`joao-neves.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Declan Rice** (`declan-rice.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Gabriel Magalhães** (`gabriel-magalhaes.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Bernardo Silva** (`bernardo-silva.png`): SIC, CC BY 3.0, via Wikimedia Commons
+- **Cole Palmer** (`cole-palmer.jpg`): The White House, Public domain, via Wikimedia Commons
+- **Désiré Doué** (`desire-doue.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Rayan Cherki** (`rayan-cherki.png`): Paté kroute, CC0, via Wikimedia Commons
+- **N'Golo Kanté** (`n-golo-kante.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Thibaut Courtois** (`thibaut-courtois.jpg`): Slowette, CC BY-SA 4.0, via Wikimedia Commons
+- **Bruno Guimarães** (`bruno-guimaraes.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Marc Cucurella** (`marc-cucurella.jpg`): Biso, CC BY 4.0, via Wikimedia Commons
+- **Martín Zubimendi** (`martin-zubimendi.jpg`): Biso, CC BY 4.0, via Wikimedia Commons
+- **Enzo Fernández** (`enzo-fernandez.jpg`): The White House, Public domain, via Wikimedia Commons
+- **Ibrahima Konaté** (`ibrahima-konate.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Alisson** (`alisson.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Pau Cubarsí** (`pau-cubarsi.jpg`): Biso, CC BY 4.0, via Wikimedia Commons
+- **Mike Maignan** (`mike-maignan.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Rafael Leão** (`rafael-leao.jpg`): Agência Lusa, CC BY 3.0, via Wikimedia Commons
+- **Alexis Mac Allister** (`alexis-mac-allister.jpg`): Timmy96, CC0, via Wikimedia Commons
+- **Gabriel Martinelli** (`gabriel-martinelli.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **João Cancelo** (`joao-cancelo.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Dani Olmo** (`dani-olmo.jpg`): crop by M-B, CC BY-SA 4.0, via Wikimedia Commons
+- **Jules Koundé** (`jules-kounde.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Reece James** (`reece-james.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Marc Guéhi** (`marc-guehi.jpg`): User:YantsImages, CC BY-SA 4.0, via Wikimedia Commons
+- **Fabián Ruiz** (`fabian-ruiz.png`): Paté kroute, CC0, via Wikimedia Commons
+- **Casemiro** (`casemiro.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Mikel Merino** (`mikel-merino.jpg`): Giovanni Batista Rodriguez from San Sebastian-Donostia, España, CC BY-SA 2.0, via Wikimedia Commons
+- **Eberechi Eze** (`eberechi-eze.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Gonçalo Ramos** (`goncalo-ramos.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Marcus Thuram** (`marcus-thuram.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Lisandro Martínez** (`lisandro-martinez.jpg`): Ardfern, CC BY-SA 4.0, via Wikimedia Commons
+- **Bradley Barcola** (`bradley-barcola.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Nuno Mendes** (`nuno-mendes.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Fermin López** (`fermin-lopez.jpg`): Biso, CC BY 4.0, via Wikimedia Commons
+- **João Pedro** (`joao-pedro.jpg`): DHSgov, Public domain, via Wikimedia Commons

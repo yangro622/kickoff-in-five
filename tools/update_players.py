@@ -59,6 +59,9 @@ TITLE_OVERRIDES = {
     "zizo": "Zizo (footballer)",
     "rodri": "Rodri (footballer, born 1996)",
     "enciso": "Julio Enciso (footballer, born 2004)",
+    "fermin-lopez": "Fermín López",
+    "nuno-mendes": "Nuno Mendes (footballer, born 2002)",
+    "joao-pedro": "João Pedro (footballer, born 2001)",
 }
 
 
