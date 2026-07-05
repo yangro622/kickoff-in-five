@@ -312,6 +312,8 @@
           ${asPage
             ? (t ? `<a class="btn" href="#/team/${esc(t.id)}">Team page</a>` : "")
             : `<a class="btn" href="#/player/${esc(p.id)}" data-sheet-link>Full page &amp; link</a>`}
+          ${extBtn(espnPlayerUrl(p), "ESPN")}
+          ${extBtn(foxPlayerUrl(p, t), "FOX Sports")}
         </div>
       </div>`;
   }
@@ -348,7 +350,10 @@
     };
     backdrop.addEventListener("click", (e) => {
       if (e.target === backdrop || e.target.closest(".sheet-close")) close();
-      if (e.target.closest("a")) close(); // navigating away: dismiss the sheet
+      // In-app links navigate away, so dismiss the sheet; external links
+      // (ESPN/FOX) open a new tab and the reader stays here — keep it open.
+      const a = e.target.closest("a");
+      if (a && a.target !== "_blank") close();
     });
     document.addEventListener("keydown", onKey);
     backdrop.querySelector(".sheet-close").focus();
@@ -393,6 +398,20 @@
   }
 
   const backLink = (href, label) => `<a class="back-link" href="${href}">← ${esc(label)}</a>`;
+
+  /* ---------- outbound "more info" links (ESPN / FOX Sports) ---------- */
+
+  // Exact page URLs live in the data (espn_url / fox_url — teams have them,
+  // players can get them via research). The fallbacks are chosen to never
+  // 404: ESPN's search page for the player, and the player's national-team
+  // page on FOX (FOX player slugs aren't predictable enough to construct).
+  const espnPlayerUrl = (p) =>
+    p.espn_url || (isTodo(p.name) ? null : `https://www.espn.com/search/_/q/${encodeURIComponent(p.name)}`);
+  const foxPlayerUrl = (p, t) => p.fox_url || (t && t.fox_url) || null;
+
+  const extBtn = (url, label) => url
+    ? `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`
+    : "";
 
   /* ---------- views ---------- */
 
@@ -555,6 +574,13 @@
 
     if (theirMatches.length) {
       html += `<div class="section"><h2 class="section-title">Their matches</h2><ul class="match-list">${theirMatches.map(matchLine).join("")}</ul></div>`;
+    }
+
+    if (t.espn_url || t.fox_url) {
+      html += `<div class="section"><h2 class="section-title">Go deeper</h2>
+        <p class="prose muted small" style="margin-bottom:10px">Rosters, full stats, and news from the pros.</p>
+        <div class="btn-row">${extBtn(t.espn_url, "More on ESPN")}${extBtn(t.fox_url, "FOX Sports")}</div>
+      </div>`;
     }
 
     html += backLink("#/", "All matches");

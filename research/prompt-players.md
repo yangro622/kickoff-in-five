@@ -29,6 +29,7 @@ Field rules:
 - `league` must use one of these exact names where applicable, so the site can link to its explainer: "Premier League (England)", "La Liga (Spain)", "Serie A (Italy)", "Bundesliga (Germany)", "Ligue 1 (France)", "MLS (USA & Canada)", "Saudi Pro League (Saudi Arabia)". Other leagues: "League Name (Country)".
 - `tournament_stats` are THIS World Cup only, current as of `as_of`.
 - `watch_for` is the money field: one thing a first-time viewer can literally see with their own eyes (a run, a position, a trick, a throw). Be concrete.
+- `espn_url` / `fox_url` (optional): the player's exact profile page on espn.com (`https://www.espn.com/soccer/player/_/id/<id>/<slug>`) and foxsports.com (`https://www.foxsports.com/soccer/<slug>-player`). Verify each URL resolves to the right player before including it — FOX slugs sometimes carry a `-2` disambiguator. When absent, the site falls back to an ESPN search link and the player's national-team page on FOX.
 
 Audience is soccer beginners — plain English, no jargon. Verify every stat with search; include `as_of` dates; omit anything you can't verify. No invented quotes, no invented stats.
 

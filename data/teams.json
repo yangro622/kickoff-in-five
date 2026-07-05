@@ -94,7 +94,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/206/canada",
+      "fox_url": "https://www.foxsports.com/soccer/canada-men-team"
     },
     {
       "id": "mar",
@@ -190,7 +192,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/2869/morocco",
+      "fox_url": "https://www.foxsports.com/soccer/morocco-men-team"
     },
     {
       "id": "par",
@@ -286,7 +290,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/210/paraguay",
+      "fox_url": "https://www.foxsports.com/soccer/paraguay-men-team"
     },
     {
       "id": "fra",
@@ -391,7 +397,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-05"
+      "as_of": "2026-07-05",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/478/france",
+      "fox_url": "https://www.foxsports.com/soccer/france-men-team"
     },
     {
       "id": "bra",
@@ -493,7 +501,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/205/brazil",
+      "fox_url": "https://www.foxsports.com/soccer/brazil-men-team"
     },
     {
       "id": "nor",
@@ -589,7 +599,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/464/norway",
+      "fox_url": "https://www.foxsports.com/soccer/norway-men-team"
     },
     {
       "id": "mex",
@@ -685,7 +697,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/203/mexico",
+      "fox_url": "https://www.foxsports.com/soccer/mexico-men-team"
     },
     {
       "id": "eng",
@@ -786,7 +800,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/448/england",
+      "fox_url": "https://www.foxsports.com/soccer/england-men-team"
     },
     {
       "id": "usa",
@@ -882,7 +898,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/660/united-states",
+      "fox_url": "https://www.foxsports.com/soccer/united-states-men-team"
     },
     {
       "id": "bel",
@@ -979,7 +997,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-05"
+      "as_of": "2026-07-05",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/459/belgium",
+      "fox_url": "https://www.foxsports.com/soccer/belgium-men-team"
     },
     {
       "id": "esp",
@@ -1083,7 +1103,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/164/spain",
+      "fox_url": "https://www.foxsports.com/soccer/spain-men-team"
     },
     {
       "id": "por",
@@ -1185,7 +1207,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-05"
+      "as_of": "2026-07-05",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/482/portugal",
+      "fox_url": "https://www.foxsports.com/soccer/portugal-men-team"
     },
     {
       "id": "arg",
@@ -1284,7 +1308,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/202/argentina",
+      "fox_url": "https://www.foxsports.com/soccer/argentina-men-team"
     },
     {
       "id": "egy",
@@ -1379,7 +1405,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/2620/egypt",
+      "fox_url": "https://www.foxsports.com/soccer/egypt-men-team"
     },
     {
       "id": "sui",
@@ -1475,7 +1503,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/475/switzerland",
+      "fox_url": "https://www.foxsports.com/soccer/switzerland-men-team"
     },
     {
       "id": "col",
@@ -1571,7 +1601,9 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-04",
+      "espn_url": "https://www.espn.com/soccer/team/_/id/208/colombia",
+      "fox_url": "https://www.foxsports.com/soccer/colombia-men-team"
     }
   ]
 }
