@@ -402,7 +402,8 @@ details.fold { scroll-margin-top: 70px; }
   clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
   margin-bottom: -30px;
 }
-.sticker .avatar { width: 66px; height: 66px; font-size: 1.35rem; }
+/* sit the photo above the color band it overlaps (negative margin above) */
+.sticker .avatar { width: 66px; height: 66px; font-size: 1.35rem; position: relative; z-index: 1; }
 /* FOX World Cup top-100 marker — gold, so ranked players read at a glance. */
 .rank-badge {
   display: inline-flex;
