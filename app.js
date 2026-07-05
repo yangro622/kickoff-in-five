@@ -28,6 +28,14 @@
   const isTodo = (v) => v == null || v === "" || v === "TODO-RESEARCH";
   const listIsTodo = (a) => !Array.isArray(a) || a.length === 0 || a.every(isTodo);
 
+  // URL-safe slug for deep links, e.g. "La Liga (Spain)" -> "la-liga".
+  // The parenthetical country is dropped so a player's league string and the
+  // learn-section entry title resolve to the same slug.
+  const slug = (s) => String(s).toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
   const TODO_CHIP = '<span class="todo">Research pending</span>';
   const text = (v) => (isTodo(v) ? TODO_CHIP : esc(v));
 
@@ -294,7 +302,7 @@
       </div>
       <div class="sheet-body">
         <p class="kicker" style="margin-top:6px">Club</p>
-        <p class="prose">${text(p.club)}${isTodo(p.league) ? "" : ` · <a href="#/learn/leagues">${esc(p.league)}</a>`}</p>
+        <p class="prose">${text(p.club)}${isTodo(p.league) ? "" : ` · <a href="#/learn/leagues/${esc(slug(p.league))}">${esc(p.league)}</a>`}</p>
         ${statBits.length ? `<p class="kicker">This World Cup</p><p class="prose">${statBits.join(" · ")}</p>` : ""}
         <p class="kicker">The journey</p>
         <p class="prose">${text(p.journey)}</p>
@@ -603,31 +611,39 @@
     render(html, "Bracket — Kickoff in Five");
   }
 
-  function viewLearn(sectionId) {
+  // sectionId opens a whole section (e.g. #/learn/leagues); an optional
+  // entrySlug (e.g. #/learn/leagues/la-liga) opens and scrolls to one entry.
+  function viewLearn(sectionId, entrySlug) {
     const secs = db.learn.sections || [];
     let html = `
       <p class="kicker">New to soccer?</p>
       <h1 class="hero-title">Learn the game in five minutes</h1>
       <p class="hero-note">Everything you need to not feel lost at the watch party. Skim the headlines, tap what you're curious about.</p>`;
 
+    let entryId = null; // id of the specific entry to scroll to, if matched
     for (const s of secs) {
-      const open = s.id === sectionId;
+      const sectionOpen = s.id === sectionId && !entrySlug;
       html += `<div class="section" id="learn-${esc(s.id)}">
         <h2 class="section-title">${esc(s.title)}</h2>
         ${isTodo(s.intro) ? "" : `<p class="prose muted" style="margin-bottom:10px">${esc(s.intro)}</p>`}
-        ${(s.entries || []).map((e) => `<details class="fold" ${open ? "open" : ""}>
+        ${(s.entries || []).map((e) => {
+          const id = `learn-e-${esc(s.id)}-${esc(slug(e.title))}`;
+          const isTarget = entrySlug && s.id === sectionId && slug(e.title) === entrySlug;
+          if (isTarget) entryId = id;
+          return `<details class="fold" id="${id}" ${sectionOpen || isTarget ? "open" : ""}>
           <summary>${esc(e.title)}</summary>
           <div class="fold-body"><p class="prose">${text(e.body)}</p></div>
-        </details>`).join("")}
+        </details>`;
+        }).join("")}
       </div>`;
     }
 
     html += backLink("#/", "All matches");
     render(html, "Learn the game — Kickoff in Five");
-    if (sectionId) {
-      const el = document.getElementById(`learn-${sectionId}`);
-      if (el) el.scrollIntoView({ block: "start" });
-    }
+    // Prefer the exact entry; fall back to the section (e.g. a league with no
+    // entry of its own still lands the reader on "The club leagues").
+    const el = document.getElementById(entryId || `learn-${sectionId}`);
+    if (el) el.scrollIntoView({ block: "start" });
   }
 
   function viewNotFound(msg) {
@@ -711,14 +727,14 @@
   function route() {
     clearInterval(countdownTimer);
     const hash = location.hash.replace(/^#\/?/, "");
-    const [view, param] = hash.split("/").map(decodeURIComponent);
+    const [view, param, sub] = hash.split("/").map(decodeURIComponent);
     switch (view || "") {
       case "": return viewHome();
       case "match": return viewMatch(param);
       case "team": return viewTeam(param);
       case "player": return viewPlayer(param);
       case "bracket": return viewBracket();
-      case "learn": return viewLearn(param);
+      case "learn": return viewLearn(param, sub);
       default: return viewNotFound(`No page called “${view}”.`);
     }
   }

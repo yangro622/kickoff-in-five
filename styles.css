@@ -191,7 +191,9 @@ h1.hero-title {
 }
 .hero-note { color: var(--soft); font-size: 0.95rem; margin: 10px 2px 0; max-width: 46ch; }
 
-.section { margin: 28px 0; }
+.section { margin: 28px 0; scroll-margin-top: 70px; }
+/* keep deep-linked learn entries clear of the sticky header when scrolled to */
+details.fold { scroll-margin-top: 70px; }
 .section-title {
   font-family: var(--display);
   font-weight: 400;
