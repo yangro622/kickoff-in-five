@@ -45,7 +45,6 @@ OUT_DIR = ROOT / "assets" / "players"
 CREDITS = OUT_DIR / "CREDITS.md"
 RANKINGS_OVERRIDE = ROOT / "rankings.json"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) kickoff-in-five/0.1 (https://github.com/yangro622/kickoff-in-five)"}
-THUMB_WIDTH = 256
 FOX_URLS = [
     "https://amp.foxsports.com/stories/soccer/world-cup-2026-ranking-best-100-players",
     "https://www.foxsports.com/stories/soccer/world-cup-2026-ranking-best-100-players",
@@ -58,6 +57,8 @@ TITLE_OVERRIDES = {
     "gustavo-gomez": "Gustavo Gómez",
     "james": "James Rodríguez",
     "zizo": "Zizo (footballer)",
+    "rodri": "Rodri (footballer, born 1996)",
+    "enciso": "Julio Enciso (footballer, born 2004)",
 }
 
 
@@ -121,7 +122,11 @@ def fetch_headshots(players):
             if not src:
                 missing.append(name)
                 continue
-            url = re.sub(r"/(\d+)px-", f"/{THUMB_WIDTH}px-", src)
+            # Use the summary API's thumbnail URL verbatim. Wikimedia now
+            # rejects on-the-fly thumbnails at arbitrary widths (HTTP 400,
+            # https://w.wiki/GHai); only sizes it has already generated —
+            # like the ~330px one the summary hands back — are served.
+            url = src
             ext = url.rsplit(".", 1)[-1].split("?")[0].lower()
             if ext not in ("jpg", "jpeg", "png"):
                 ext = "jpg"

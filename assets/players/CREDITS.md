@@ -4,3 +4,65 @@ All headshots are Wikipedia lead images hosted on Wikimedia Commons under free l
 
 - **Rúben Dias** (`ruben-dias.jpg`): YantsImages, CC BY-SA 4.0, via Wikimedia Commons
 - **Julián Álvarez** (`julian-alvarez.jpg`): Argentina.gob.ar, CC BY 4.0, via Wikimedia Commons
+- **Alphonso Davies** (`davies.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Jonathan David** (`david.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Stephen Eustáquio** (`eustaquio.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Cyle Larin** (`larin.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Achraf Hakimi** (`hakimi.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Youssef En-Nesyri** (`en-nesyri.jpg`): Nawfel Ajari, CC BY-SA 4.0, via Wikimedia Commons
+- **Sofyan Amrabat** (`amrabat.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Brahim Díaz** (`brahim.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Miguel Almirón** (`almiron.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Antonio Sanabria** (`sanabria.jpg`): Antonio0403, CC0, via Wikimedia Commons
+- **Gustavo Gómez** (`gustavo-gomez.jpg`): SOCCER DIGITAL, Public domain, via Wikimedia Commons
+- **Kylian Mbappé** (`mbappe.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Ousmane Dembélé** (`dembele.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Aurélien Tchouaméni** (`tchouameni.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **William Saliba** (`saliba.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Vinícius Júnior** (`vinicius.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Raphinha** (`raphinha.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Rodrygo** (`rodrygo.jpg`): Junta de Andalucía, CC BY-SA 2.0, via Wikimedia Commons
+- **Marquinhos** (`marquinhos.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Erling Haaland** (`haaland.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Martin Ødegaard** (`odegaard.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Alexander Sørloth** (`sorloth.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Antonio Nusa** (`nusa.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Santiago Giménez** (`gimenez.png`): Selección Nacional de México, CC BY 3.0, via Wikimedia Commons
+- **Edson Álvarez** (`edson-alvarez.png`): Selección Nacional de México, CC BY 3.0, via Wikimedia Commons
+- **Hirving Lozano** (`lozano.png`): Selección Nacional de México, CC BY 3.0, via Wikimedia Commons
+- **Raúl Jiménez** (`raul-jimenez.jpg`): Timmy96, CC0, via Wikimedia Commons
+- **Harry Kane** (`kane.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Jude Bellingham** (`bellingham.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Bukayo Saka** (`saka.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Phil Foden** (`foden.jpg`): Steffen Prößdorf, CC BY-SA 4.0, via Wikimedia Commons
+- **Christian Pulisic** (`pulisic.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Weston McKennie** (`mckennie.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Tyler Adams** (`adams.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Folarin Balogun** (`balogun.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Kevin De Bruyne** (`debruyne.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Romelu Lukaku** (`lukaku.jpg`): Vyacheslav Evdokimov, CC BY-SA 3.0, via Wikimedia Commons
+- **Jérémy Doku** (`doku.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Youri Tielemans** (`tielemans.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Lamine Yamal** (`yamal.png`): 中国新闻社, CC BY 3.0, via Wikimedia Commons
+- **Pedri** (`pedri.jpg`): Biso, CC BY 4.0, via Wikimedia Commons
+- **Nico Williams** (`nico-williams.jpg`): Maider Goikoetxea, CC BY-SA 2.0, via Wikimedia Commons
+- **Mikel Oyarzabal** (`oyarzabal.jpg`): Rolandhino1, CC BY-SA 4.0, via Wikimedia Commons
+- **Cristiano Ronaldo** (`ronaldo.jpg`): YantsImages, CC BY-SA 4.0, via Wikimedia Commons
+- **Bruno Fernandes** (`bruno-fernandes.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Vitinha** (`vitinha.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Lionel Messi** (`messi.jpg`): Bryan Berlin, CC BY-SA 4.0, via Wikimedia Commons
+- **Lautaro Martínez** (`lautaro.jpg`): Agencia de Noticias ANDES, CC BY-SA 2.0, via Wikimedia Commons
+- **Emiliano Martínez** (`emi-martinez.jpg`): u/reepers_hellcat, CC BY 4.0, via Wikimedia Commons
+- **Mohamed Salah** (`salah.jpg`): Анна Нэсси, CC BY-SA 3.0, via Wikimedia Commons
+- **Omar Marmoush** (`marmoush.png`): Yallakora, CC BY 3.0, via Wikimedia Commons
+- **Zizo** (`zizo.jpg`): Mokhtar JR, CC0, via Wikimedia Commons
+- **Granit Xhaka** (`xhaka.jpg`): @cfcunofficial (Chelsea Debs) London from London, UK, CC BY-SA 2.0, via Wikimedia Commons
+- **Manuel Akanji** (`akanji.jpg`): Steffen Prößdorf, CC BY-SA 4.0, via Wikimedia Commons
+- **Breel Embolo** (`embolo.jpg`): Sven Mandel, CC BY-SA 4.0, via Wikimedia Commons
+- **Dan Ndoye** (`ndoye.jpg`): Supporterhéninois, CC0, via Wikimedia Commons
+- **James Rodríguez** (`james.jpg`): Rufus46, CC BY-SA 3.0, via Wikimedia Commons
+- **Luis Díaz** (`luis-diaz.jpg`): Werner100359, CC BY-SA 4.0, via Wikimedia Commons
+- **Jhon Durán** (`duran.png`): Fatemeh Amuzad/Ali Haddadi Asl, CC BY 4.0, via Wikimedia Commons
+- **Richard Ríos** (`richard-rios.jpg`): NullReason, CC BY-SA 4.0, via Wikimedia Commons
+- **Julio Enciso** (`enciso.jpg`): jamesboyes, CC BY 2.0, via Wikimedia Commons
+- **Rodri** (`rodri.jpg`): Rolandhino1, CC BY-SA 4.0, via Wikimedia Commons
