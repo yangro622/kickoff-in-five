@@ -115,7 +115,7 @@
     const color = teamColor(team);
     const vars = `--av-a:${esc(color)};--av-b:color-mix(in srgb, ${esc(color)} 55%, #000)`;
     if (p && !isTodo(p.photo_url)) {
-      return `<span class="avatar ${extra}" style="${vars}"><img src="${esc(p.photo_url)}" alt="" loading="lazy" onerror="this.remove()"></span>`;
+      return `<span class="avatar ${extra}" style="${vars}"><img src="${esc(p.photo_url)}" alt="" loading="lazy" decoding="async" onerror="this.remove()"></span>`;
     }
     return `<span class="avatar ${extra}" style="${vars}">${esc(initials(p ? p.name : null))}</span>`;
   }
@@ -193,25 +193,34 @@
 
   // FOX Sports' "World Cup 2026: ranking best 100 players" position, when filled.
   const rankBadge = (p, extra = "") => p.world_ranking
-    ? `<span class="rank-badge ${extra}" title="No. ${esc(String(p.world_ranking))} in FOX Sports' World Cup top-100 player ranking">#${esc(String(p.world_ranking))}</span>`
+    ? `<span class="rank-badge ${extra}" title="No. ${esc(String(p.world_ranking))} in FOX Sports' World Cup top-100 player ranking"><span class="rank-badge-star" aria-hidden="true">★</span>${esc(String(p.world_ranking))}</span>`
     : "";
+
+  // Best FOX-ranked players first (No. 1 on the left); unranked keep their
+  // original order after the ranked ones (Array.sort is stable in modern JS).
+  const byRank = (a, b) => (a.world_ranking || Infinity) - (b.world_ranking || Infinity);
+  const rankedFirst = (players) => players.slice().sort(byRank);
 
   function playerSticker(p) {
     const team = teamOf(p.team_id);
     const band = `--band:${esc(teamColor(team))}`;
     const name = isTodo(p.name) ? '<span class="muted">Star TBD</span>' : esc(p.name);
     const sub = isTodo(p.club) ? "research pending" : p.club;
-    return `<button type="button" class="sticker" style="${band}" data-player="${esc(p.id)}" aria-haspopup="dialog">
+    const top100 = p.world_ranking ? " is-top100" : "";
+    const tag = p.world_ranking ? `<span class="top100-tag" aria-hidden="true">Top 100</span>` : "";
+    return `<button type="button" class="sticker${top100}" style="${band}" data-player="${esc(p.id)}" aria-haspopup="dialog">
       <span class="sticker-band" aria-hidden="true"></span>
-      ${avatar(p, team)}
+      ${tag}
+      ${avatar(p, team, p.world_ranking ? "avatar--ranked" : "")}
       <span class="sticker-name">${rankBadge(p)}${name}</span>
       <span class="sticker-sub">${esc(sub)}</span>
       ${team ? `<span class="sticker-flag" aria-hidden="true">${team.flag}</span>` : ""}
     </button>`;
   }
 
+  // Every sticker row is ordered best-ranked-first so the top player sits on the left.
   const stickerRow = (players) =>
-    `<div class="snap-row">${players.map(playerSticker).join("")}</div>`;
+    `<div class="snap-row">${rankedFirst(players).map(playerSticker).join("")}</div>`;
 
   /* ---------- the pitch (default lineup) ---------- */
 
@@ -242,7 +251,7 @@
       const linked = entry.player_id && db.playerById[entry.player_id];
       const p = linked ? db.playerById[entry.player_id] : { name: entry.name, photo_url: entry.photo_url };
       const label = entry.name.trim().split(/\s+/).pop();
-      const inner = `${avatar(p, team)}<span class="pitch-node-name">${esc(label)}</span>`;
+      const inner = `${avatar(p, team, p.world_ranking ? "avatar--ranked" : "")}<span class="pitch-node-name">${esc(label)}</span>`;
       return linked
         ? `<button type="button" class="pitch-node" ${pos} data-player="${esc(entry.player_id)}" aria-haspopup="dialog" aria-label="${esc(entry.name)}">${inner}</button>`
         : `<button type="button" class="pitch-node" ${pos} disabled aria-label="${esc(entry.name)}">${inner}</button>`;
@@ -357,7 +366,7 @@
         <p class="prose">${text(m.storyline)}</p>
         <p class="kicker">Three things to watch</p>
         ${watch}
-        ${stars.length ? `<p class="kicker">Star players</p><div class="snap-row" style="margin:0;padding:6px 0 8px">${stars.map(playerSticker).join("")}</div>` : ""}
+        ${stars.length ? `<p class="kicker">Star players</p><div class="snap-row" style="margin:0;padding:6px 0 8px">${rankedFirst(stars).map(playerSticker).join("")}</div>` : ""}
         <div class="sheet-actions">
           <a class="btn btn--primary" href="#/match/${esc(m.id)}">Full guide</a>
           <button class="btn" type="button" data-share="${esc(m.id)}">Share card</button>
@@ -638,7 +647,8 @@
     const teams = [side(m, 1), side(m, 2)].filter((s) => !s.tbd).map((s) => s.team);
     const stars = teams
       .flatMap((t) => (t.star_player_ids || []).map((pid) => db.playerById[pid]).filter(Boolean))
-      .filter((p) => !isTodo(p.name));
+      .filter((p) => !isTodo(p.name))
+      .sort(byRank);
 
     const watch = listIsTodo(m.things_to_watch) ? "" :
       `<ol class="share-watch">${m.things_to_watch.filter((t) => !isTodo(t)).map((t) => `<li>${esc(t)}</li>`).join("")}</ol>`;

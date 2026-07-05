@@ -91,9 +91,9 @@ a { color: var(--green-deep); }
   position: sticky;
   top: 0;
   z-index: 40;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  background: rgba(242, 241, 236, 0.85);
+  /* Opaque background instead of backdrop-filter: a blurred sticky header
+     repaints on every scroll frame and is the main cause of scroll jank. */
+  background: rgba(242, 241, 236, 0.96);
   border-bottom: 1px solid var(--line);
 }
 .site-header-inner {
@@ -372,6 +372,7 @@ h1.hero-title {
 /* ---------- player stickers ---------- */
 
 .sticker {
+  position: relative;
   flex: 0 0 150px;
   scroll-snap-align: start;
   display: grid;
@@ -400,20 +401,46 @@ h1.hero-title {
   margin-bottom: -30px;
 }
 .sticker .avatar { width: 66px; height: 66px; font-size: 1.35rem; }
+/* FOX World Cup top-100 marker — gold, so ranked players read at a glance. */
 .rank-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
   font-family: var(--display);
   font-weight: 400;
   font-size: 0.68rem;
   letter-spacing: 0.03em;
-  color: #fff;
-  background: var(--ink);
+  color: #3a2c05;
+  background: linear-gradient(135deg, #f7d154, #e0a021);
   border-radius: 6px;
-  padding: 2px 6px;
+  padding: 2px 7px;
   margin-right: 6px;
   vertical-align: 2px;
+  box-shadow: 0 1px 3px rgba(120, 82, 0, 0.35);
 }
-.rank-badge--lg { font-size: 0.85rem; padding: 3px 8px; vertical-align: 4px; }
+.rank-badge-star { font-size: 0.82em; line-height: 1; }
+.rank-badge--lg { font-size: 0.85rem; padding: 3px 9px; vertical-align: 4px; }
+
+/* Gold ring on a ranked player's headshot. */
+.avatar--ranked { border-color: #f2c94c; box-shadow: 0 0 0 2px #e0a021, 0 2px 8px rgba(13, 14, 11, 0.22); }
+
+/* Ranked player sticker: gold outline + corner "Top 100" tag. */
+.sticker.is-top100 { border-color: #e8b23a; box-shadow: 0 0 0 1px #e8b23a, var(--shadow-sm); }
+.top100-tag {
+  position: absolute;
+  top: 8px; right: 8px;
+  z-index: 2;
+  font-family: var(--ui);
+  font-weight: 800;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3a2c05;
+  background: linear-gradient(135deg, #f7d154, #e0a021);
+  border-radius: 999px;
+  padding: 3px 8px;
+  box-shadow: 0 1px 3px rgba(120, 82, 0, 0.35);
+}
 
 .sticker-name {
   font-family: var(--display);
@@ -445,6 +472,9 @@ h1.hero-title {
   min-height: 58px;
   position: relative;
   overflow: hidden;
+  /* Skip rendering/layout for off-screen rows on the long schedule list. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 58px;
 }
 .match-line::before {
   content: "";
