@@ -316,6 +316,12 @@
       </div>`;
   }
 
+  // Sheets can stack (match peek → player card), so navigation must close
+  // every open sheet — not just the top one — or the destination page stays
+  // hidden under the leftover overlay with body scrolling still locked.
+  const sheetClosers = new Set();
+  const closeAllSheets = () => { for (const close of [...sheetClosers]) close(); };
+
   // Generic bottom sheet: hovers over the current page, never navigates.
   function openSheet(label, bodyHTML) {
     const prev = document.activeElement;
@@ -330,11 +336,13 @@
     document.body.style.overflow = "hidden";
 
     const close = () => {
+      sheetClosers.delete(close);
       backdrop.remove();
       if (!document.querySelector(".sheet-backdrop")) document.body.style.overflow = "";
       document.removeEventListener("keydown", onKey);
       if (prev && prev.focus) prev.focus();
     };
+    sheetClosers.add(close);
     const onKey = (e) => {
       if (e.key === "Escape" && backdrop === [...document.querySelectorAll(".sheet-backdrop")].pop()) close();
     };
@@ -377,7 +385,7 @@
         ${stars.length ? `<p class="kicker">Star players</p><div class="snap-row" style="margin:0;padding:6px 0 8px">${rankedFirst(stars).map(playerSticker).join("")}</div>` : ""}
         <div class="sheet-actions">
           <a class="btn btn--primary" href="#/match/${esc(m.id)}">Full guide</a>
-          <button class="btn" type="button" data-share="${esc(m.id)}">Share card</button>
+          <button class="btn" type="button" data-share="${esc(m.id)}">Share link</button>
         </div>
       </div>`;
     const sides = [side(m, 1), side(m, 2)].map((s) => s.tbd ? s.note : s.team.name);
@@ -406,6 +414,8 @@
 
     html += `<div class="btn-row">
       <a class="btn" href="#/bracket">Bracket</a>
+      <a class="btn" href="#/teams">Teams</a>
+      <a class="btn" href="#/players">Players</a>
       <a class="btn" href="#/learn">New here? Learn</a>
     </div>`;
 
@@ -501,7 +511,7 @@
 
     html += `<div class="btn-row" ${m.status === "final" || !m.watch_link ? 'style="grid-template-columns:1fr"' : ""}>
       ${m.status !== "final" && m.watch_link ? `<a class="btn btn--primary" href="${esc(m.watch_link)}" target="_blank" rel="noopener">Watch live →</a>` : ""}
-      <button class="btn" type="button" data-share="${esc(m.id)}">Share card</button>
+      <button class="btn" type="button" data-share="${esc(m.id)}">Share link</button>
     </div>`;
 
     html += backLink("#/", "All matches");
@@ -611,6 +621,40 @@
     render(html, "Bracket — Kickoff in Five");
   }
 
+  function viewTeams() {
+    const byStanding = (a, b) => ((a.fifa_rank ?? Infinity) - (b.fifa_rank ?? Infinity)) || a.name.localeCompare(b.name);
+    const alive = db.teams.filter((t) => t.still_alive).sort(byStanding);
+    const out = db.teams.filter((t) => !t.still_alive).sort(byStanding);
+
+    const line = (t) => `<li><a class="team-line pressable" href="#/team/${esc(t.id)}" style="--band:${esc(teamColor(t))}">
+      ${flagDisc(t, "flag-disc--sm")}
+      <span class="team-line-names">${esc(t.name)}<br>
+        <span class="team-line-sub">${t.fifa_rank != null ? `FIFA rank ${esc(String(t.fifa_rank))}` : "FIFA rank TBD"}${isTodo(t.best_wc_finish) ? "" : ` · best finish: ${esc(t.best_wc_finish)}`}</span>
+      </span>
+      <span class="status-pill ${t.still_alive ? "status-pill--alive" : "status-pill--out"}">${t.still_alive ? "Alive" : "Out"}</span>
+    </a></li>`;
+
+    let html = `
+      <p class="kicker">World Cup 2026 · Knockout stage</p>
+      <h1 class="hero-title">The teams</h1>
+      <p class="hero-note">All ${db.teams.length} nations that reached the knockouts. Tap a team for its stars, lineup, and story.</p>`;
+    if (alive.length) html += `<h2 class="day-heading">Still alive (${alive.length})</h2><ul class="match-list">${alive.map(line).join("")}</ul>`;
+    if (out.length) html += `<h2 class="day-heading">Eliminated (${out.length})</h2><ul class="match-list">${out.map(line).join("")}</ul>`;
+    html += backLink("#/", "All matches");
+    render(html, "Teams — Kickoff in Five");
+  }
+
+  function viewPlayers() {
+    const players = rankedFirst(db.players.filter((p) => !isTodo(p.name)));
+    const html = `
+      <p class="kicker">World Cup 2026</p>
+      <h1 class="hero-title">The players</h1>
+      <p class="hero-note">Every star in the guide, best-ranked first. Tap a card for the full player story.</p>
+      <div class="sticker-grid">${players.map(playerSticker).join("")}</div>
+      ${backLink("#/", "All matches")}`;
+    render(html, "Players — Kickoff in Five");
+  }
+
   // sectionId opens a whole section (e.g. #/learn/leagues); an optional
   // entrySlug (e.g. #/learn/leagues/la-liga) opens and scrolls to one entry.
   function viewLearn(sectionId, entrySlug) {
@@ -655,56 +699,35 @@
       </div>`, "Not found — Kickoff in Five");
   }
 
-  /* ---------- share / screenshot mode ---------- */
+  /* ---------- share ---------- */
 
-  function openShare(matchId) {
+  // Share = the match page's own link. Native share sheet where available,
+  // clipboard otherwise — opening the link lands on the exact same page.
+  async function shareMatch(matchId, btn) {
     const m = db.matchById[matchId];
     if (!m) return;
-    const teams = [side(m, 1), side(m, 2)].filter((s) => !s.tbd).map((s) => s.team);
-    const stars = teams
-      .flatMap((t) => (t.star_player_ids || []).map((pid) => db.playerById[pid]).filter(Boolean))
-      .filter((p) => !isTodo(p.name))
-      .sort(byRank);
+    const names = [side(m, 1), side(m, 2)].map((s) => (s.tbd ? "TBD" : s.team.name));
+    const url = `${location.origin}${location.pathname}#/match/${encodeURIComponent(matchId)}`;
+    const title = `${names[0]} vs ${names[1]} — Kickoff in Five`;
 
-    const watch = listIsTodo(m.things_to_watch) ? "" :
-      `<ol class="share-watch">${m.things_to_watch.filter((t) => !isTodo(t)).map((t) => `<li>${esc(t)}</li>`).join("")}</ol>`;
-    const starsLine = stars.length
-      ? `<p class="share-stars"><strong>Stars:</strong> ${stars.map((p) => esc(p.name)).join(" · ")}</p>` : "";
-    const k = kickoff(m);
-    const venue = isTodo(m.venue) ? null : m.venue;
-    const city = isTodo(m.city) ? null : m.city;
-    const place = [venue, city].filter(Boolean).join(" · ") || "Venue TBD";
+    if (navigator.share) {
+      try { await navigator.share({ title, url }); return; }
+      catch (err) { if (err.name === "AbortError") return; /* else fall through to clipboard */ }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      flashBtn(btn, "Link copied ✓");
+    } catch {
+      window.prompt("Copy this link:", url);
+    }
+  }
 
-    const overlay = document.createElement("div");
-    overlay.className = "share-overlay";
-    overlay.innerHTML = `
-      <div class="share-stage">
-        <p class="share-hint">Screenshot this card — it's sized for sharing.</p>
-        <div class="share-card">
-          ${duel(m)}
-          <div class="share-card-body">
-            ${isTodo(m.storyline) ? "" : `<p class="share-storyline">${esc(m.storyline)}</p>`}
-            ${watch}
-            ${starsLine}
-            <p class="small muted" style="margin:12px 0 0">${esc(k.day)} · ${esc(place)}</p>
-          </div>
-          <div class="share-foot"><span>World Cup 2026</span><span>Kickoff in Five</span></div>
-        </div>
-        <p style="margin-top:16px"><button class="btn share-close" type="button">Done</button></p>
-      </div>`;
-    document.body.appendChild(overlay);
-    document.body.style.overflow = "hidden";
-
-    const close = () => {
-      overlay.remove();
-      document.body.style.overflow = "";
-      document.removeEventListener("keydown", onKey);
-    };
-    const onKey = (e) => { if (e.key === "Escape") close(); };
-    overlay.querySelector(".share-close").addEventListener("click", close);
-    overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
-    document.addEventListener("keydown", onKey);
-    overlay.querySelector(".share-close").focus();
+  function flashBtn(btn, label) {
+    if (!btn || btn.dataset.flashing) return;
+    btn.dataset.flashing = "1";
+    const original = btn.textContent;
+    btn.textContent = label;
+    setTimeout(() => { btn.textContent = original; delete btn.dataset.flashing; }, 1600);
   }
 
   /* ---------- router ---------- */
@@ -725,6 +748,7 @@
   }
 
   function route() {
+    closeAllSheets();
     clearInterval(countdownTimer);
     const hash = location.hash.replace(/^#\/?/, "");
     const [view, param, sub] = hash.split("/").map(decodeURIComponent);
@@ -734,6 +758,8 @@
       case "team": return viewTeam(param);
       case "player": return viewPlayer(param);
       case "bracket": return viewBracket();
+      case "teams": return viewTeams();
+      case "players": return viewPlayers();
       case "learn": return viewLearn(param, sub);
       default: return viewNotFound(`No page called “${view}”.`);
     }
@@ -760,7 +786,7 @@
       window.addEventListener("hashchange", route);
       document.body.addEventListener("click", (e) => {
         const share = e.target.closest("[data-share]");
-        if (share) return openShare(share.getAttribute("data-share"));
+        if (share) return void shareMatch(share.getAttribute("data-share"), share);
         const player = e.target.closest("[data-player]");
         if (player && !player.disabled) return openPlayerSheet(player.getAttribute("data-player"));
         // match links open a hover-over preview instead of navigating;
