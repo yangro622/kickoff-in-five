@@ -327,13 +327,13 @@
         {
           "name": "Mike Maignan",
           "position": "Goalkeeper",
-          "player_id": null,
+          "player_id": "mike-maignan",
           "photo_url": null
         },
         {
           "name": "Jules Koundé",
           "position": "Right back",
-          "player_id": null,
+          "player_id": "jules-kounde",
           "photo_url": null
         },
         {
@@ -361,15 +361,15 @@
           "photo_url": null
         },
         {
-          "name": "Eduardo Camavinga",
+          "name": "N'Golo Kanté",
           "position": "Central midfield",
-          "player_id": null,
+          "player_id": "n-golo-kante",
           "photo_url": null
         },
         {
-          "name": "Ousmane Dembélé",
+          "name": "Michael Olise",
           "position": "Right wing",
-          "player_id": "dembele",
+          "player_id": "michael-olise",
           "photo_url": null
         },
         {
@@ -385,13 +385,13 @@
           "photo_url": null
         },
         {
-          "name": "Randal Kolo Muani",
+          "name": "Ousmane Dembélé",
           "position": "Striker",
-          "player_id": null,
+          "player_id": "dembele",
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-05"
     },
     {
       "id": "bra",
@@ -429,7 +429,7 @@
         {
           "name": "Alisson",
           "position": "Goalkeeper",
-          "player_id": null,
+          "player_id": "alisson",
           "photo_url": null
         },
         {
@@ -447,7 +447,7 @@
         {
           "name": "Gabriel Magalhães",
           "position": "Centre back",
-          "player_id": null,
+          "player_id": "gabriel-magalhaes",
           "photo_url": null
         },
         {
@@ -459,13 +459,13 @@
         {
           "name": "Bruno Guimarães",
           "position": "Central midfield",
-          "player_id": null,
+          "player_id": "bruno-guimaraes",
           "photo_url": null
         },
         {
           "name": "Casemiro",
           "position": "Defensive midfield",
-          "player_id": null,
+          "player_id": "casemiro",
           "photo_url": null
         },
         {
@@ -740,7 +740,7 @@
         {
           "name": "Marc Guéhi",
           "position": "Centre back",
-          "player_id": null,
+          "player_id": "marc-guehi",
           "photo_url": null
         },
         {
@@ -752,7 +752,7 @@
         {
           "name": "Declan Rice",
           "position": "Defensive midfield",
-          "player_id": null,
+          "player_id": "declan-rice",
           "photo_url": null
         },
         {
@@ -776,7 +776,7 @@
         {
           "name": "Cole Palmer",
           "position": "Left wing",
-          "player_id": null,
+          "player_id": "cole-palmer",
           "photo_url": null
         },
         {
@@ -913,9 +913,9 @@
       "formation": "4-2-3-1",
       "lineup": [
         {
-          "name": "Koen Casteels",
+          "name": "Thibaut Courtois",
           "position": "Goalkeeper",
-          "player_id": null,
+          "player_id": "thibaut-courtois",
           "photo_url": null
         },
         {
@@ -979,7 +979,7 @@
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-05"
     },
     {
       "id": "esp",
@@ -1043,7 +1043,7 @@
         {
           "name": "Marc Cucurella",
           "position": "Left back",
-          "player_id": null,
+          "player_id": "marc-cucurella",
           "photo_url": null
         },
         {
@@ -1061,7 +1061,7 @@
         {
           "name": "Fabián Ruiz",
           "position": "Central midfield",
-          "player_id": null,
+          "player_id": "fabian-ruiz",
           "photo_url": null
         },
         {
@@ -1127,7 +1127,7 @@
         {
           "name": "João Cancelo",
           "position": "Right back",
-          "player_id": null,
+          "player_id": "joao-cancelo",
           "photo_url": null
         },
         {
@@ -1145,7 +1145,7 @@
         {
           "name": "Nuno Mendes",
           "position": "Left back",
-          "player_id": null,
+          "player_id": "nuno-mendes",
           "photo_url": null
         },
         {
@@ -1155,9 +1155,9 @@
           "photo_url": null
         },
         {
-          "name": "Rúben Neves",
+          "name": "João Neves",
           "position": "Defensive midfield",
-          "player_id": null,
+          "player_id": "joao-neves",
           "photo_url": null
         },
         {
@@ -1169,7 +1169,7 @@
         {
           "name": "Bernardo Silva",
           "position": "Right wing",
-          "player_id": null,
+          "player_id": "bernardo-silva",
           "photo_url": null
         },
         {
@@ -1181,11 +1181,11 @@
         {
           "name": "Rafael Leão",
           "position": "Left wing",
-          "player_id": null,
+          "player_id": "rafael-leao",
           "photo_url": null
         }
       ],
-      "as_of": "2026-07-04"
+      "as_of": "2026-07-05"
     },
     {
       "id": "arg",
@@ -1256,13 +1256,13 @@
         {
           "name": "Enzo Fernández",
           "position": "Central midfield",
-          "player_id": null,
+          "player_id": "enzo-fernandez",
           "photo_url": null
         },
         {
           "name": "Alexis Mac Allister",
           "position": "Central midfield",
-          "player_id": null,
+          "player_id": "alexis-mac-allister",
           "photo_url": null
         },
         {

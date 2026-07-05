@@ -1291,9 +1291,14 @@
       "age": 24,
       "club": "Bayern Munich",
       "league": "Bundesliga (Germany)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Born in London to a Nigerian and Algerian family, Olise chose to represent France. He turned quiet, skilful years at Crystal Palace into a big move to German champions Bayern Munich, where he became one of Europe's most creative wingers.",
+      "watch_for": "He cuts in from the right onto his stronger left foot to curl shots and thread killer passes — and his whipped free-kicks and corners create chance after chance.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "joao-neves",
@@ -1306,9 +1311,14 @@
       "age": 21,
       "club": "Paris Saint-Germain",
       "league": "Ligue 1 (France)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Benfica academy graduate who joined Paris Saint-Germain and immediately became one of the best young midfielders in the world, winning the 2025 Champions League. Small, tireless and technically superb.",
+      "watch_for": "His non-stop pressing — the moment Portugal lose the ball, he is first to chase it down and win it straight back.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "declan-rice",
@@ -1321,9 +1331,14 @@
       "age": 27,
       "club": "Arsenal",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Rice worked his way up at West Ham before a record British move to Arsenal turned him into one of the world's best midfielders — the engine and a leader of England's midfield.",
+      "watch_for": "His set-pieces have become a real weapon lately — plus the way he breaks up an attack and then drives forward with the ball.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "gabriel-magalhaes",
@@ -1336,9 +1351,14 @@
       "age": 28,
       "club": "Arsenal",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Brazilian centre-back who left home young for Europe and became a rock at the heart of Arsenal's defence — big, brave and increasingly a leader for Brazil.",
+      "watch_for": "His dominance in both boxes — he wins headers to clear his own goal, then charges up for corners to score them.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "bernardo-silva",
@@ -1351,9 +1371,14 @@
       "age": 31,
       "club": "Manchester City",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A quiet genius from Portugal who became a serial trophy-winner at Manchester City under Pep Guardiola — one of the most intelligent and hard-working attackers of his generation.",
+      "watch_for": "How he keeps the ball glued to his feet in crowded areas — defenders lunge in and he just rolls away from them.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "cole-palmer",
@@ -1366,9 +1391,14 @@
       "age": 24,
       "club": "Chelsea",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Manchester City academy player who gambled on joining Chelsea for regular football and exploded into a superstar, becoming their talisman almost overnight.",
+      "watch_for": "His ice-cold penalties and the way he drifts in from the left to curl shots into the far corner — followed by his trademark shiver celebration.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "nuno-mendes",
@@ -1381,9 +1411,14 @@
       "age": 23,
       "club": "Paris Saint-Germain",
       "league": "Ligue 1 (France)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Sporting Lisbon product who became Paris Saint-Germain's first-choice left-back and a Champions League winner, blessed with electric pace and attacking instinct.",
+      "watch_for": "His overlapping runs — he flies past his own winger down the left to reach the byline and cross.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "desire-doue",
@@ -1396,9 +1431,14 @@
       "age": 20,
       "club": "Paris Saint-Germain",
       "league": "Ligue 1 (France)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A product of French club Rennes, Doué is a fearless young forward who broke out at Paris Saint-Germain, starring in their 2025 Champions League triumph while still a teenager. He is one of the brightest talents in the world game.",
+      "watch_for": "His close control in tight spaces — he loves to dribble straight at defenders and wriggle through a crowd before shooting.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "rayan-cherki",
@@ -1411,9 +1451,14 @@
       "age": 22,
       "club": "Manchester City",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Lyon academy prodigy famous for outrageous flair, Cherki earned a move to Manchester City. Long hyped as one of France's most gifted playmakers, he is finally turning teenage promise into end product.",
+      "watch_for": "The audacious pass or flick — no-look balls, backheels and tricks that most players wouldn't even attempt.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "n-golo-kante",
@@ -1426,9 +1471,14 @@
       "age": 35,
       "club": "Fenerbahçe",
       "league": "Süper Lig (Turkey)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "One of soccer's great underdog stories: once a low-league player who nearly slipped through the cracks, Kanté rose to win the Premier League, the Champions League and the 2018 World Cup with France, all while staying famously humble.",
+      "watch_for": "How much ground he covers — he seems to be everywhere at once, nipping in to steal the ball just as the opponent thinks they're clear.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "thibaut-courtois",
@@ -1441,9 +1491,14 @@
       "age": 34,
       "club": "Real Madrid",
       "league": "La Liga (Spain)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A towering Belgian goalkeeper regarded as one of the very best in the world, Courtois has won league titles and the Champions League at Real Madrid with a string of match-winning displays.",
+      "watch_for": "How his sheer height and reach make the goal look small — he saves shots that seem destined for the top corner.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "bruno-guimaraes",
@@ -1456,9 +1511,14 @@
       "age": 28,
       "club": "Newcastle",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Brazilian midfielder who became the heartbeat and captain of Newcastle United after moving from France. Combative, creative and full of personality.",
+      "watch_for": "The way he wins the ball and instantly spins forward — one moment tackling, the next driving Brazil up the pitch.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "marc-cucurella",
@@ -1471,9 +1531,14 @@
       "age": 27,
       "club": "Chelsea",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Barcelona academy product with unmistakable curly hair, Cucurella became a Premier League and Champions League winner at Chelsea and a European champion with Spain.",
+      "watch_for": "His relentless energy up and down the left, and the way he sticks tight to opposing wingers, snapping into tackles.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "martin-zubimendi",
@@ -1486,9 +1551,14 @@
       "age": 27,
       "club": "Arsenal",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A long-time loyalist at Real Sociedad before joining Arsenal, Zubimendi is a classy holding midfielder and a European champion with Spain.",
+      "watch_for": "How he sits in front of the defence and quietly recycles the ball — always available, always picking the simple, smart pass.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "enzo-fernandez",
@@ -1501,9 +1571,14 @@
       "age": 25,
       "club": "Chelsea",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A breakout star of Argentina's 2022 World Cup win, Enzo then became the most expensive signing in British history at Chelsea — a polished, forward-thinking midfielder.",
+      "watch_for": "His long-range passing — he loves to switch the ball across the field or slide a through-ball to release a runner.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "fermin-lopez",
@@ -1516,9 +1591,14 @@
       "age": 22,
       "club": "Barcelona",
       "league": "La Liga (Spain)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Barcelona academy graduate who forced his way into the first team with fearless, box-to-box running and a knack for scoring big goals.",
+      "watch_for": "His late runs into the penalty area — he arrives from midfield to get on the end of crosses and cut-backs.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "ibrahima-konate",
@@ -1531,9 +1611,14 @@
       "age": 26,
       "club": "Liverpool",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A powerful French centre-back who developed in France and Germany before becoming a Champions League and Premier League winner at Liverpool, growing into one of France's most dependable defenders.",
+      "watch_for": "His raw speed for such a big man — he can turn and sprint back to recover balls that looked like certain goals for the opponent.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "alisson",
@@ -1546,9 +1631,14 @@
       "age": 33,
       "club": "Liverpool",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Rated for years among the world's best goalkeepers, Alisson won everything at Liverpool and is Brazil's undisputed No.1 — calm, agile and superb with the ball at his feet.",
+      "watch_for": "His one-on-one saves — he stays tall and patient, spreading himself to block the shot at the last possible moment.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "pau-cubarsi",
@@ -1561,9 +1651,14 @@
       "age": 19,
       "club": "Barcelona",
       "league": "La Liga (Spain)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A teenage Barcelona centre-back who broke into the team while still a schoolboy and looked instantly at home against the world's best forwards — a future cornerstone of Spain's defence.",
+      "watch_for": "His maturity on the ball — remarkably calm for his age, he steps out of defence and passes through the lines like a midfielder.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "joao-pedro",
@@ -1576,9 +1671,14 @@
       "age": 24,
       "club": "Chelsea",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Brazilian forward who climbed through Watford and Brighton in England before joining Chelsea and breaking into the national team.",
+      "watch_for": "His movement across the front line and cool finishing — he drops in to link play, then darts in behind to score.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "mike-maignan",
@@ -1591,9 +1691,14 @@
       "age": 30,
       "club": "AC Milan",
       "league": "Serie A (Italy)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Paris-raised goalkeeper who succeeded the great Gianluigi Donnarumma at AC Milan and made the No.1 shirt his own for France. Commanding in his box and excellent with his feet.",
+      "watch_for": "How he starts attacks — instead of simply clearing the ball he'll roll or throw it out fast to launch a counter.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "rafael-leao",
@@ -1606,9 +1711,14 @@
       "age": 26,
       "club": "AC Milan",
       "league": "Serie A (Italy)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Portuguese winger with rare physical gifts who became a star at AC Milan in Italy. Tall, fast and unpredictable, he is a highlight-reel player on his day.",
+      "watch_for": "The long, loping stride that eats up ground — once he's running at a defender in open space, he's almost impossible to stop.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "alexis-mac-allister",
@@ -1621,9 +1731,14 @@
       "age": 27,
       "club": "Liverpool",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A 2022 World Cup winner with Argentina who became a Premier League champion and midfield mainstay at Liverpool. Intelligent and comfortable on both feet.",
+      "watch_for": "His clever positioning — always finding the right pocket to receive the ball and keep Argentina's play ticking.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "gabriel-martinelli",
@@ -1636,9 +1751,14 @@
       "age": 24,
       "club": "Arsenal",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Spotted playing futsal and lower-league football in Brazil, Martinelli earned a move to Arsenal and blossomed into a rapid, direct winger.",
+      "watch_for": "His runs in behind — the instant his team wins the ball he sprints past the full-back to chase it into space.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "joao-cancelo",
@@ -1651,9 +1771,14 @@
       "age": 31,
       "club": "Barcelona",
       "league": "La Liga (Spain)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A versatile Portuguese full-back who has played for Europe's biggest clubs — Juventus, Manchester City and Barcelona — and can attack down either flank.",
+      "watch_for": "His passing range from full-back — he often drifts infield and sprays a pass across the pitch like a midfielder.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "dani-olmo",
@@ -1666,9 +1791,14 @@
       "age": 27,
       "club": "Barcelona",
       "league": "La Liga (Spain)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Olmo left Barcelona's academy as a teenager to develop in Croatia and Germany, then returned to Barcelona a finished product and a Euro 2024 hero for Spain.",
+      "watch_for": "His clever movement between the lines — he finds pockets of space just behind the strikers to receive and shoot.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "jules-kounde",
@@ -1681,9 +1811,14 @@
       "age": 27,
       "club": "Barcelona",
       "league": "La Liga (Spain)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A stylish French defender who broke through at Bordeaux, starred at Sevilla in Spain, then joined Barcelona. Equally at home at right-back or centre-back, and known for his cool head.",
+      "watch_for": "His timing in the tackle — he lets the attacker commit, then slides in cleanly to win the ball without giving away a foul.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "reece-james",
@@ -1696,9 +1831,14 @@
       "age": 26,
       "club": "Chelsea",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Chelsea academy graduate and now the club's captain, James is a powerful, all-action right-back whose quality is undeniable when fitness allows.",
+      "watch_for": "His long, driven crosses and passes — he can pick out a teammate 40 yards away with pinpoint accuracy.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "marc-guehi",
@@ -1711,9 +1851,14 @@
       "age": 25,
       "club": "Manchester City",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Born in Ivory Coast and raised in England, Guéhi came through Chelsea, became a leader at Crystal Palace and earned a big move. Calm and reliable at the back.",
+      "watch_for": "His composure under pressure — he'll let an attacker close in before stepping out with the ball rather than hoofing it clear.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "fabian-ruiz",
@@ -1726,9 +1871,14 @@
       "age": 30,
       "club": "Paris Saint-Germain",
       "league": "Ligue 1 (France)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "An elegant Spanish midfielder who starred at Napoli in Italy before winning the Champions League with Paris Saint-Germain — a reliable big-game performer.",
+      "watch_for": "His gliding runs from deep and the range of his left foot — he can switch the play or thread a pass into the box.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "casemiro",
@@ -1741,9 +1891,14 @@
       "age": 34,
       "club": "Manchester United",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A five-time Champions League winner with Real Madrid, Casemiro is one of the great defensive midfielders of his era and a long-time shield for Brazil.",
+      "watch_for": "How he protects the back four — reading danger early to step in front of attackers and snuff out attacks before they start.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "mikel-merino",
@@ -1756,9 +1911,14 @@
       "age": 29,
       "club": "Arsenal",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A tall, all-round midfielder who made his name at Real Sociedad, won Euro 2024 with Spain — scoring a famous late header — then joined Arsenal.",
+      "watch_for": "His threat in the air: he is often pushed up as an emergency striker, rising above defenders to head in goals from corners.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "eberechi-eze",
@@ -1771,9 +1931,14 @@
       "age": 27,
       "club": "Arsenal",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Released by several academies as a boy, Eze fought his way up through England's lower leagues to the Premier League and into the national team — a classic never-give-up story.",
+      "watch_for": "His dribbling in the final third — quick feet and shifts of the hips to beat a defender before bending a shot at goal.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "goncalo-ramos",
@@ -1786,9 +1951,14 @@
       "age": 24,
       "club": "Paris Saint-Germain",
       "league": "Ligue 1 (France)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Portuguese striker who announced himself with a hat-trick at the 2022 World Cup, then earned a move to Paris Saint-Germain. A classic penalty-box finisher.",
+      "watch_for": "His movement inside the box — he peels off defenders and arrives late to meet crosses and rebounds.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "marcus-thuram",
@@ -1801,9 +1971,14 @@
       "age": 28,
       "club": "Inter Milan",
       "league": "Serie A (Italy)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Son of France's 1998 World Cup winner Lilian Thuram, Marcus carved his own path in Germany and then Italy, becoming a key striker for Inter Milan. Big, strong and surprisingly mobile.",
+      "watch_for": "The way he uses his body to shield the ball and bring teammates into play, then peels off to attack crosses at the back post.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "lisandro-martinez",
@@ -1816,9 +1991,14 @@
       "age": 28,
       "club": "Manchester United",
       "league": "Premier League (England)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "Nicknamed 'The Butcher' for his ferocious defending, this smaller-than-average centre-back beat the doubters to win the World Cup with Argentina and star for Manchester United.",
+      "watch_for": "His aggression — he steps out to meet attackers head-on and throws himself in front of shots and crosses.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     },
     {
       "id": "bradley-barcola",
@@ -1831,9 +2011,14 @@
       "age": 23,
       "club": "Paris Saint-Germain",
       "league": "Ligue 1 (France)",
-      "journey": "TODO-RESEARCH",
-      "watch_for": "TODO-RESEARCH",
-      "as_of": "2026-07-04"
+      "journey": "A Lyon-born winger who became a regular starter at Paris Saint-Germain, Barcola forced his way into the France squad through sheer pace and productivity down the left.",
+      "watch_for": "His acceleration — he knocks the ball past the full-back and simply outruns him to the byline.",
+      "tournament_stats": {
+        "goals": null,
+        "assists": null,
+        "note": null
+      },
+      "as_of": "2026-07-05"
     }
   ],
   "_notes": [
