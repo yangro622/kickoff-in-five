@@ -36,15 +36,28 @@ facts live in `/data/`, and these prompts are the bridge.**
 - No stat without date context. No invented quotes or stats.
 - If a fact can't be verified by search, **omit it** — a shorter card beats a wrong one.
 
-## Post-game updates (phone workflow)
+## Post-game updates — now automated
 
-Edit `data/matches.json` in the GitHub mobile web UI:
+Scores and bracket advancement update themselves. The **Live scores** GitHub
+Action (`.github/workflows/live-scores.yml`) runs every 30 min in July, calls
+`tools/live_update.py`, and commits when a match goes final. That script pulls
+finished results from ESPN's public (keyless) World Cup scoreboard, writes the
+`score`/`penalties`, and then `tools/bracket.py` cascades everything that used
+to be edited by hand:
 
-1. Set `"status": "final"`.
-2. Set `"score": "2-1"` (and `"penalties": "4-3"` if it went to a shootout).
-3. Write a one-line `"recap"`.
-4. If a later-round `"tbd"` slot is now decided: replace `"team1_id": "tbd"` with the
-   real team id and delete the `team1_tbd_note` line.
-5. If a team is knocked out, flip its `"still_alive": false` in `data/teams.json`.
+- advances the winner into the next round (via each knockout match's
+  `team1_from` / `team2_from` link) and clears the `Winner of …` placeholder,
+- flips the loser's `still_alive` to `false`.
 
-Commit. Done — the bracket, home page, and match cards all derive from this file.
+Run it yourself any time (or hit **Run workflow** in the Actions tab):
+
+```bash
+python3 tools/live_update.py            # fetch, write, cascade
+python3 tools/live_update.py --dry-run  # preview, write nothing
+```
+
+**You only ever touch editorial prose.** The score, bracket and still-alive are
+derived, so the one thing left to add after a game is a one-line `"recap"` and
+(for the now-known next matchup) its `storyline` / `things_to_watch`. Winners are
+read straight from the scoreline, so a manual `score` edit cascades too if you'd
+rather not wait for the Action.

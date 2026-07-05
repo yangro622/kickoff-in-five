@@ -1,0 +1,41 @@
+name: Live scores
+
+# Pulls finished knockout results from ESPN and commits updated data so the
+# static site reflects scores + bracket advancement with no manual editing.
+# The cron only fires in July (the tournament window); each run is a no-op
+# unless a match has just gone final, so off-window firings are cheap.
+on:
+  schedule:
+    - cron: "*/30 * 1-20 7 *"   # every 30 min, Jul 1-20 (UTC)
+  workflow_dispatch: {}          # manual "Run workflow" button, any time
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-scores
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch results and cascade the bracket
+        run: python3 tools/live_update.py
+
+      - name: Commit if anything changed
+        run: |
+          if [[ -n "$(git status --porcelain data/matches.json data/teams.json)" ]]; then
+            git config user.name "kickoff-bot"
+            git config user.email "20604224+yangro622@users.noreply.github.com"
+            git add data/matches.json data/teams.json
+            git commit -m "data: live result + bracket update [skip ci]"
+            git push
+          else
+            echo "No result changes this run."
+          fi
