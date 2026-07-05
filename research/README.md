@@ -28,6 +28,7 @@ facts live in `/data/`, and these prompts are the bridge.**
 | `prompt-teams.md` | `data/teams.json` | 16 Round-of-16 teams, full profiles |
 | `prompt-players.md` | `data/players.json` | 3–4 stars per team (~50 players). Run after teams.json so IDs match |
 | `prompt-matches.md` | `data/matches.json` | Verifies dates/venues/kickoff times; fills storylines, things to watch, H2H |
+| `prompt-matchups.md` | `data/matchups.json` | Precomputed preview for **every** knockout pairing the bracket can still produce; auto-injected when a matchup locks in |
 | `prompt-learn.md` | `data/learn.json` | Rules, format, positions, leagues |
 
 ## Accuracy rules (enforced in every prompt)
@@ -47,17 +48,38 @@ to be edited by hand:
 
 - advances the winner into the next round (via each knockout match's
   `team1_from` / `team2_from` link) and clears the `Winner of …` placeholder,
-- flips the loser's `still_alive` to `false`.
+- flips the loser's `still_alive` to `false`,
+- **injects the matchup preview** — the moment a match's two teams are both
+  known, `bracket.py` copies the `storyline` / `things_to_watch` / `h2h` for
+  that pairing out of `data/matchups.json` and derives its `stakes` from the
+  bracket. It fills only blank/`TODO-RESEARCH` fields, so it is idempotent and
+  never overwrites a hand-written preview.
 
 Run it yourself any time (or hit **Run workflow** in the Actions tab):
 
 ```bash
-python3 tools/live_update.py            # fetch, write, cascade
+python3 tools/live_update.py            # fetch, write, cascade (incl. editorial)
 python3 tools/live_update.py --dry-run  # preview, write nothing
 ```
 
-**You only ever touch editorial prose.** The score, bracket and still-alive are
-derived, so the one thing left to add after a game is a one-line `"recap"` and
-(for the now-known next matchup) its `storyline` / `things_to_watch`. Winners are
-read straight from the scoreline, so a manual `score` edit cascades too if you'd
+### The matchup library (`data/matchups.json`)
+
+So that a preview is ready the *instant* a matchup is decided — no scramble to
+research it mid-tournament — every pairing the remaining bracket can still
+produce is written ahead of time, keyed by the two team ids sorted and joined
+with `__` (e.g. `bra__mex`). Regenerate it whenever the set of still-alive teams
+changes:
+
+```bash
+python3 tools/gen_matchups.py           # rebuild data/matchups.json (85 pairings today)
+```
+
+`gen_matchups.py` composes each storyline/things-to-watch from the teams' own
+identities and carries a curated, search-verified head-to-head for the marquee
+pairings. To improve or extend the prose, edit that generator (or run
+`prompt-matchups.md` in a web-enabled session) and re-run it.
+
+**You only ever touch one thing now: the post-game `"recap"`.** Score, bracket,
+still-alive *and* the next matchup's preview are all derived. Winners are read
+straight from the scoreline, so a manual `score` edit cascades too if you'd
 rather not wait for the Action.

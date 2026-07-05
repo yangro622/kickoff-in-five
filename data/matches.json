@@ -2,7 +2,7 @@
   "_notes": [
     "Round of 16 (July 4-7) matchups, venues, and kickoff times are confirmed and verified as of 2026-07-04. datetime_utc holds the verified kickoff instant in UTC; date_local is the venue-local calendar date.",
     "Watch the UTC date rollover for night games: Mexico vs England kicks off 8pm ET on July 5 in Mexico City, which is 2026-07-06T00:00:00Z (Mexico City observes UTC-6 year-round, no daylight saving); USA vs Belgium kicks off 8pm ET / 5pm PT on July 6 in Seattle, which is 2026-07-07T00:00:00Z.",
-    "QF/SF/Final venues, dates, and kickoff times are confirmed and filled in, but the teams remain TBD (team1_id/team2_id 'tbd' plus tbd_note fields). Storyline/things_to_watch/h2h/stakes for those rounds stay 'TODO-RESEARCH' until the teams are known.",
+    "QF/SF/Final venues, dates, and kickoff times are confirmed. A slot stays TBD (team1_id/team2_id 'tbd' + tbd_note) with storyline/things_to_watch/h2h/stakes 'TODO-RESEARCH' until BOTH its teams are known; at that point tools/bracket.py auto-injects the preview from data/matchups.json (storyline/things_to_watch/h2h) and derives stakes from the bracket. Only the post-game 'recap' is still written by hand.",
     "Bracket flow: R16 slots 1+2 -> QF1 (Boston, Jul 9), 3+4 -> QF2 (Los Angeles, Jul 10), 5+6 -> QF3 (Miami, Jul 11), 7+8 -> QF4 (Kansas City, Jul 11); QF1+QF2 -> SF1 (Dallas, Jul 14), QF3+QF4 -> SF2 (Atlanta, Jul 15); SF1+SF2 -> Final (MetLife, Jul 19).",
     "For undetermined sides use team1_id/team2_id: 'tbd' plus team1_tbd_note/team2_tbd_note. When a result lands, replace the id and delete the note."
   ],
@@ -239,16 +239,16 @@
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "A rematch of the emotional 2022 semifinal, where France ended Morocco's historic run. Win and you are into the semifinals; lose and the World Cup is over. Watch for Achraf Hakimi and Kylian Mbappé to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Whether Morocco's counterattacking can overcome France's lightning counters"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "France beat Morocco 2-0 in the 2022 World Cup semifinal — Théo Hernández scored inside five minutes and Randal Kolo Muani sealed it late."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner reaches the semifinals in Arlington, USA on July 14, one step from the final.",
       "watch_link": "https://www.foxsports.com/live"
     },
     {

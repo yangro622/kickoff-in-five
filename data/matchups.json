@@ -1,0 +1,1030 @@
+{
+  "_notes": [
+    "Precomputed previews for every knockout pairing the remaining bracket can still produce, keyed by the two team ids sorted and joined with '__'. tools/bracket.py injects the matching entry into data/matches.json the moment a matchup is decided; 'stakes' is derived from the bracket at that point, so it is not stored here.",
+    "storyline and things_to_watch are composed from each team's identity and signature threat (mirroring teams.json / players.json). head-to-head facts are curated; scorelines given are verified. Regenerate with tools/gen_matchups.py whenever the set of still-alive teams changes."
+  ],
+  "matchups": {
+    "arg__bel": {
+      "round": "SF",
+      "storyline": "A semifinal between Belgium, a gifted, experienced generation, and Argentina, the reigning world champions. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kevin De Bruyne and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Belgium's patient possession can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Belgium and Argentina rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "arg__bra": {
+      "round": "F",
+      "storyline": "The Superclásico — South America's fiercest rivalry, and the two biggest names in the game. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Brazil's dazzling wing play can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Argentina beat Brazil 1-0 in the 2021 Copa América final at the Maracanã (Ángel Di María), Lionel Messi's first senior title.",
+        "The great rivals have never met in a World Cup final."
+      ]
+    },
+    "arg__col": {
+      "round": "QF",
+      "storyline": "A rematch of the fiery 2024 Copa América final. Win and you are into the semifinals; lose and the World Cup is over. Watch for Lionel Messi and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Argentina's street-smart game management can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Fierce recent rivals — Argentina won the 2024 Copa América final 1-0, Lautaro Martínez scoring late in extra time."
+      ]
+    },
+    "arg__eng": {
+      "round": "F",
+      "storyline": "One of football's most charged rivalries, thick with World Cup history. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether England's controlled, structured play can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Charged with history — England won 1-0 in 2002 (a Beckham penalty), but Argentina went through on penalties in 1998 after Beckham's red card, and Maradona's 1986 'Hand of God' still stings."
+      ]
+    },
+    "arg__esp": {
+      "round": "SF",
+      "storyline": "World champions against European champions — a true heavyweight collision. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Spain's possession game can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "World champions against European champions: a rare, final-worthy heavyweight clash."
+      ]
+    },
+    "arg__fra": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Argentina, the reigning world champions. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether France's lightning counters can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "France and Argentina rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "arg__mar": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and Argentina, the reigning world champions. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Morocco's counterattacking can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Morocco and Argentina rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "arg__mex": {
+      "round": "F",
+      "storyline": "A familiar World Cup pairing that Argentina have always come through. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Mexico's quick passing can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Argentina have won every World Cup meeting — 2-1 in 2006, 3-1 in 2010, and 2-0 in the 2022 group stage, Messi scoring in the last of those."
+      ]
+    },
+    "arg__nor": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Argentina, the reigning world champions. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Norway's direct, physical play can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Norway and Argentina rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "arg__por": {
+      "round": "SF",
+      "storyline": "The dream stage for one last Messi versus Ronaldo meeting. The winner goes to the World Cup final; the loser goes home one step short. Watch for Cristiano Ronaldo and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Portugal's technical midfield play can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "They have never met in a competitive World Cup game — but the pull of Messi and Ronaldo sharing one last stage is irresistible."
+      ]
+    },
+    "arg__sui": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Argentina, the reigning world champions, and Switzerland, disciplined and hard to break down. Win and you are into the semifinals; lose and the World Cup is over. Watch for Lionel Messi and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Argentina's street-smart game management can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Argentina edged Switzerland 1-0 in the 2014 Round of 16, Ángel Di María scoring in the 118th minute."
+      ]
+    },
+    "arg__usa": {
+      "round": "SF",
+      "storyline": "The co-hosts against the world champions — a David-and-Goliath tie. The winner goes to the World Cup final; the loser goes home one step short. Watch for Christian Pulisic and Lionel Messi to decide it.",
+      "things_to_watch": [
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether the USA's relentless pressing can overcome Argentina's street-smart game management"
+      ],
+      "h2h": [
+        "Argentina thrashed the USA 4-0 in the 2016 Copa América semifinal, Messi scoring a stunning free kick."
+      ]
+    },
+    "bel__bra": {
+      "round": "F",
+      "storyline": "A repeat of Belgium's stunning 2018 quarterfinal win over Brazil. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Kevin De Bruyne to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Whether Brazil's dazzling wing play can overcome Belgium's patient possession"
+      ],
+      "h2h": [
+        "Belgium stunned Brazil 2-1 in the 2018 World Cup quarterfinal, one of their greatest results."
+      ]
+    },
+    "bel__col": {
+      "round": "SF",
+      "storyline": "A semifinal between Belgium, a gifted, experienced generation, and Colombia, rhythmic and technical. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kevin De Bruyne and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Belgium's patient possession can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Belgium and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bel__egy": {
+      "round": "SF",
+      "storyline": "A semifinal between Belgium, a gifted, experienced generation, and Egypt, built around Mohamed Salah. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kevin De Bruyne and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Belgium's patient possession can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Belgium and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bel__eng": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and Belgium, a gifted, experienced generation. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Kevin De Bruyne to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Whether England's controlled, structured play can overcome Belgium's patient possession"
+      ],
+      "h2h": [
+        "England and Belgium meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "bel__esp": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Belgium, a gifted, experienced generation, and Spain, the reigning European champions. Win and you are into the semifinals; lose and the World Cup is over. Watch for Kevin De Bruyne and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Belgium's patient possession can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "Belgium and Spain meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "bel__fra": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Belgium, a gifted, experienced generation. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Kevin De Bruyne to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Whether France's lightning counters can overcome Belgium's patient possession"
+      ],
+      "h2h": [
+        "France and Belgium meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "bel__mar": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and Belgium, a gifted, experienced generation. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Kevin De Bruyne to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Whether Morocco's counterattacking can overcome Belgium's patient possession"
+      ],
+      "h2h": [
+        "Morocco and Belgium rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bel__mex": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and Belgium, a gifted, experienced generation. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Kevin De Bruyne to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Whether Mexico's quick passing can overcome Belgium's patient possession"
+      ],
+      "h2h": [
+        "Mexico and Belgium rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bel__nor": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Belgium, a gifted, experienced generation. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Kevin De Bruyne to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Whether Norway's direct, physical play can overcome Belgium's patient possession"
+      ],
+      "h2h": [
+        "Norway and Belgium meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "bel__por": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Belgium, a gifted, experienced generation, and Portugal, carrying the ageless Cristiano Ronaldo. Win and you are into the semifinals; lose and the World Cup is over. Watch for Kevin De Bruyne and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether Belgium's patient possession can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "Belgium knocked the holders out of Euro 2020, winning 1-0 through a stunning Thorgan Hazard strike."
+      ]
+    },
+    "bel__sui": {
+      "round": "SF",
+      "storyline": "A semifinal between Belgium, a gifted, experienced generation, and Switzerland, disciplined and hard to break down. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kevin De Bruyne and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Belgium's patient possession can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Belgium and Switzerland meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "bra__col": {
+      "round": "F",
+      "storyline": "A World Cup final between Brazil, the five-time world champions, and Colombia, rhythmic and technical. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Brazil's dazzling wing play can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Brazil and Colombia meet regularly in South American competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "bra__egy": {
+      "round": "F",
+      "storyline": "A World Cup final between Brazil, the five-time world champions, and Egypt, built around Mohamed Salah. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Brazil's dazzling wing play can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Brazil and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bra__eng": {
+      "round": "QF",
+      "storyline": "A rare meeting of two of the game's heavyweight names. Win and you are into the semifinals; lose and the World Cup is over. Watch for Vinícius Júnior and Harry Kane to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether Brazil's dazzling wing play can overcome England's controlled, structured play"
+      ],
+      "h2h": [
+        "Rare opponents — Brazil won the most recent meeting 1-0, a March 2024 friendly at Wembley settled by teenager Endrick."
+      ]
+    },
+    "bra__esp": {
+      "round": "F",
+      "storyline": "A World Cup final between Brazil, the five-time world champions, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Brazil's dazzling wing play can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "Brazil and Spain rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bra__fra": {
+      "round": "SF",
+      "storyline": "A renewal of a classic World Cup rivalry, from France's 1998 title to their 2006 upset of Brazil. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Vinícius Júnior to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Whether France's lightning counters can overcome Brazil's dazzling wing play"
+      ],
+      "h2h": [
+        "One of the World Cup's great rivalries: France won the 1998 final 3-0 (Zinedine Zidane twice) and the 2006 quarterfinal 1-0 (Thierry Henry)."
+      ]
+    },
+    "bra__mar": {
+      "round": "SF",
+      "storyline": "A semifinal between Morocco, Africa's history-makers, and Brazil, the five-time world champions. The winner goes to the World Cup final; the loser goes home one step short. Watch for Achraf Hakimi and Vinícius Júnior to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Whether Morocco's counterattacking can overcome Brazil's dazzling wing play"
+      ],
+      "h2h": [
+        "Morocco and Brazil rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bra__mex": {
+      "round": "QF",
+      "storyline": "A knockout pairing Brazil have long dominated on the World Cup stage. Win and you are into the semifinals; lose and the World Cup is over. Watch for Vinícius Júnior and Raúl Jiménez to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Whether Brazil's dazzling wing play can overcome Mexico's quick passing"
+      ],
+      "h2h": [
+        "Brazil beat Mexico 2-0 in the 2018 Round of 16 through Neymar and Roberto Firmino.",
+        "Brazil have never lost to Mexico at a World Cup."
+      ]
+    },
+    "bra__por": {
+      "round": "F",
+      "storyline": "A World Cup final between Brazil, the five-time world champions, and Portugal, carrying the ageless Cristiano Ronaldo. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether Brazil's dazzling wing play can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "Brazil and Portugal rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bra__sui": {
+      "round": "F",
+      "storyline": "A World Cup final between Brazil, the five-time world champions, and Switzerland, disciplined and hard to break down. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Brazil's dazzling wing play can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Brazil and Switzerland rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "bra__usa": {
+      "round": "F",
+      "storyline": "A World Cup final between Brazil, the five-time world champions, and the USA, the high-energy co-hosts. One match, in the New York area, to be crowned champions of the world. Watch for Vinícius Júnior and Christian Pulisic to decide it.",
+      "things_to_watch": [
+        "Vinícius Júnior taking his marker on one-on-one down the left",
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Whether Brazil's dazzling wing play can overcome the USA's relentless pressing"
+      ],
+      "h2h": [
+        "Brazil and the USA rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__egy": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Egypt, built around Mohamed Salah, and Colombia, rhythmic and technical. Win and you are into the semifinals; lose and the World Cup is over. Watch for Mohamed Salah and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Egypt's fast counterattacking can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Egypt and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__eng": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and Colombia, rhythmic and technical. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether England's controlled, structured play can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "England and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__esp": {
+      "round": "SF",
+      "storyline": "A semifinal between Spain, the reigning European champions, and Colombia, rhythmic and technical. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Spain's possession game can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Spain and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__fra": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Colombia, rhythmic and technical. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether France's lightning counters can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "France and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__mar": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and Colombia, rhythmic and technical. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Morocco's counterattacking can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Morocco and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__mex": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and Colombia, rhythmic and technical. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Mexico's quick passing can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Mexico and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__nor": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Colombia, rhythmic and technical. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Norway's direct, physical play can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Norway and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__por": {
+      "round": "SF",
+      "storyline": "A semifinal between Portugal, carrying the ageless Cristiano Ronaldo, and Colombia, rhythmic and technical. The winner goes to the World Cup final; the loser goes home one step short. Watch for Cristiano Ronaldo and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether Portugal's technical midfield play can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "Portugal and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "col__usa": {
+      "round": "SF",
+      "storyline": "A semifinal between the USA, the high-energy co-hosts, and Colombia, rhythmic and technical. The winner goes to the World Cup final; the loser goes home one step short. Watch for Christian Pulisic and Luis Díaz to decide it.",
+      "things_to_watch": [
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Luis Díaz's relentless one-on-one dribbling down the left",
+        "Whether the USA's relentless pressing can overcome Colombia's technical, rhythmic play"
+      ],
+      "h2h": [
+        "the USA and Colombia rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__eng": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and Egypt, built around Mohamed Salah. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether England's controlled, structured play can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "England and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__esp": {
+      "round": "SF",
+      "storyline": "A semifinal between Spain, the reigning European champions, and Egypt, built around Mohamed Salah. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Spain's possession game can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Spain and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__fra": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Egypt, built around Mohamed Salah. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether France's lightning counters can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "France and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__mar": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and Egypt, built around Mohamed Salah. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Morocco's counterattacking can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Morocco and Egypt meet regularly in African competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "egy__mex": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and Egypt, built around Mohamed Salah. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Mexico's quick passing can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Mexico and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__nor": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Egypt, built around Mohamed Salah. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Norway's direct, physical play can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Norway and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__por": {
+      "round": "SF",
+      "storyline": "A semifinal between Portugal, carrying the ageless Cristiano Ronaldo, and Egypt, built around Mohamed Salah. The winner goes to the World Cup final; the loser goes home one step short. Watch for Cristiano Ronaldo and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether Portugal's technical midfield play can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "Portugal and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__sui": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Egypt, built around Mohamed Salah, and Switzerland, disciplined and hard to break down. Win and you are into the semifinals; lose and the World Cup is over. Watch for Mohamed Salah and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Egypt's fast counterattacking can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Egypt and Switzerland rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "egy__usa": {
+      "round": "SF",
+      "storyline": "A semifinal between the USA, the high-energy co-hosts, and Egypt, built around Mohamed Salah. The winner goes to the World Cup final; the loser goes home one step short. Watch for Christian Pulisic and Mohamed Salah to decide it.",
+      "things_to_watch": [
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Mohamed Salah cutting in onto his deadly left foot",
+        "Whether the USA's relentless pressing can overcome Egypt's fast counterattacking"
+      ],
+      "h2h": [
+        "the USA and Egypt rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "eng__esp": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether England's controlled, structured play can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "England and Spain meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "eng__fra": {
+      "round": "SF",
+      "storyline": "A repeat of the 2022 quarterfinal that France won in a nerve-shredding finish. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Harry Kane to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether France's lightning counters can overcome England's controlled, structured play"
+      ],
+      "h2h": [
+        "France beat England 2-1 in the 2022 World Cup quarterfinal, Harry Kane missing a late penalty."
+      ]
+    },
+    "eng__mar": {
+      "round": "SF",
+      "storyline": "A semifinal between Morocco, Africa's history-makers, and England, still chasing a first trophy since 1966. The winner goes to the World Cup final; the loser goes home one step short. Watch for Achraf Hakimi and Harry Kane to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether Morocco's counterattacking can overcome England's controlled, structured play"
+      ],
+      "h2h": [
+        "Morocco and England rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "eng__nor": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Norway, Erling Haaland's Norway, and England, still chasing a first trophy since 1966. Win and you are into the semifinals; lose and the World Cup is over. Watch for Erling Haaland and Harry Kane to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether Norway's direct, physical play can overcome England's controlled, structured play"
+      ],
+      "h2h": [
+        "England usually dominate, but Norway's 2-1 win in a 1981 qualifier produced the immortal 'your boys took a hell of a beating' commentary."
+      ]
+    },
+    "eng__por": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and Portugal, carrying the ageless Cristiano Ronaldo. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether England's controlled, structured play can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "England and Portugal meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "eng__sui": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and Switzerland, disciplined and hard to break down. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether England's controlled, structured play can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "England and Switzerland meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "eng__usa": {
+      "round": "F",
+      "storyline": "A World Cup final between England, still chasing a first trophy since 1966, and the USA, the high-energy co-hosts. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Christian Pulisic to decide it.",
+      "things_to_watch": [
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Whether England's controlled, structured play can overcome the USA's relentless pressing"
+      ],
+      "h2h": [
+        "England and the USA rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "esp__fra": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether France's lightning counters can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "Two European giants who have traded modern classics, including France's 2-1 win in the 2021 Nations League final."
+      ]
+    },
+    "esp__mar": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Morocco's counterattacking can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "Morocco and Spain rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "esp__mex": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Mexico's quick passing can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "Mexico and Spain rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "esp__nor": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Norway's direct, physical play can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "Norway and Spain meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "esp__sui": {
+      "round": "SF",
+      "storyline": "A semifinal between Spain, the reigning European champions, and Switzerland, disciplined and hard to break down. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Spain's possession game can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Spain and Switzerland meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "esp__usa": {
+      "round": "QF",
+      "storyline": "A chance for the USA to recreate their famous 2009 upset of Spain. Win and you are into the semifinals; lose and the World Cup is over. Watch for Christian Pulisic and Lamine Yamal to decide it.",
+      "things_to_watch": [
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether the USA's relentless pressing can overcome Spain's possession game"
+      ],
+      "h2h": [
+        "The USA stunned Spain 2-0 in the 2009 Confederations Cup semifinal, ending a world-record 35-match unbeaten run."
+      ]
+    },
+    "fra__mar": {
+      "round": "QF",
+      "storyline": "A rematch of the emotional 2022 semifinal, where France ended Morocco's historic run. Win and you are into the semifinals; lose and the World Cup is over. Watch for Achraf Hakimi and Kylian Mbappé to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Whether Morocco's counterattacking can overcome France's lightning counters"
+      ],
+      "h2h": [
+        "France beat Morocco 2-0 in the 2022 World Cup semifinal — Théo Hernández scored inside five minutes and Randal Kolo Muani sealed it late."
+      ]
+    },
+    "fra__mex": {
+      "round": "SF",
+      "storyline": "A semifinal between France, the defending champions, and Mexico, the tireless co-hosts. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Raúl Jiménez to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Whether France's lightning counters can overcome Mexico's quick passing"
+      ],
+      "h2h": [
+        "France and Mexico rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "fra__nor": {
+      "round": "SF",
+      "storyline": "A semifinal between France, the defending champions, and Norway, Erling Haaland's Norway. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Erling Haaland to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Whether France's lightning counters can overcome Norway's direct, physical play"
+      ],
+      "h2h": [
+        "France and Norway meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "fra__por": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Portugal, carrying the ageless Cristiano Ronaldo. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether France's lightning counters can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "France and Portugal meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "fra__sui": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and Switzerland, disciplined and hard to break down. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether France's lightning counters can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "France and Switzerland meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "fra__usa": {
+      "round": "F",
+      "storyline": "A World Cup final between France, the defending champions, and the USA, the high-energy co-hosts. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Christian Pulisic to decide it.",
+      "things_to_watch": [
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Whether France's lightning counters can overcome the USA's relentless pressing"
+      ],
+      "h2h": [
+        "France and the USA rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mar__mex": {
+      "round": "SF",
+      "storyline": "A semifinal between Morocco, Africa's history-makers, and Mexico, the tireless co-hosts. The winner goes to the World Cup final; the loser goes home one step short. Watch for Achraf Hakimi and Raúl Jiménez to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Whether Morocco's counterattacking can overcome Mexico's quick passing"
+      ],
+      "h2h": [
+        "Morocco and Mexico rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mar__nor": {
+      "round": "SF",
+      "storyline": "A semifinal between Morocco, Africa's history-makers, and Norway, Erling Haaland's Norway. The winner goes to the World Cup final; the loser goes home one step short. Watch for Achraf Hakimi and Erling Haaland to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Whether Morocco's counterattacking can overcome Norway's direct, physical play"
+      ],
+      "h2h": [
+        "Morocco and Norway rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mar__por": {
+      "round": "F",
+      "storyline": "A rematch of the 2022 quarterfinal where Morocco made history against Portugal. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether Morocco's counterattacking can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "Morocco stunned Portugal 1-0 in the 2022 quarterfinal, Youssef En-Nesyri's towering header making them the first African team to reach a World Cup semifinal."
+      ]
+    },
+    "mar__sui": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and Switzerland, disciplined and hard to break down. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Morocco's counterattacking can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Morocco and Switzerland rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mar__usa": {
+      "round": "F",
+      "storyline": "A World Cup final between Morocco, Africa's history-makers, and the USA, the high-energy co-hosts. One match, in the New York area, to be crowned champions of the world. Watch for Achraf Hakimi and Christian Pulisic to decide it.",
+      "things_to_watch": [
+        "Achraf Hakimi bombing forward from right-back like an extra winger",
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Whether Morocco's counterattacking can overcome the USA's relentless pressing"
+      ],
+      "h2h": [
+        "Morocco and the USA rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mex__nor": {
+      "round": "QF",
+      "storyline": "A quarterfinal between Norway, Erling Haaland's Norway, and Mexico, the tireless co-hosts. Win and you are into the semifinals; lose and the World Cup is over. Watch for Erling Haaland and Raúl Jiménez to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Whether Norway's direct, physical play can overcome Mexico's quick passing"
+      ],
+      "h2h": [
+        "Norway and Mexico rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mex__por": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and Portugal, carrying the ageless Cristiano Ronaldo. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether Mexico's quick passing can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "Mexico and Portugal rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mex__sui": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and Switzerland, disciplined and hard to break down. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Mexico's quick passing can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Mexico and Switzerland rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "mex__usa": {
+      "round": "F",
+      "storyline": "A World Cup final between Mexico, the tireless co-hosts, and the USA, the high-energy co-hosts. One match, in the New York area, to be crowned champions of the world. Watch for Raúl Jiménez and Christian Pulisic to decide it.",
+      "things_to_watch": [
+        "Raúl Jiménez holding the ball up to bring Mexico's runners into play",
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Whether Mexico's quick passing can overcome the USA's relentless pressing"
+      ],
+      "h2h": [
+        "Mexico and the USA meet regularly in CONCACAF competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "nor__por": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Portugal, carrying the ageless Cristiano Ronaldo. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether Norway's direct, physical play can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "Norway and Portugal meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "nor__sui": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and Switzerland, disciplined and hard to break down. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Norway's direct, physical play can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Norway and Switzerland meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "nor__usa": {
+      "round": "F",
+      "storyline": "A World Cup final between Norway, Erling Haaland's Norway, and the USA, the high-energy co-hosts. One match, in the New York area, to be crowned champions of the world. Watch for Erling Haaland and Christian Pulisic to decide it.",
+      "things_to_watch": [
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Whether Norway's direct, physical play can overcome the USA's relentless pressing"
+      ],
+      "h2h": [
+        "Norway and the USA rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    },
+    "por__sui": {
+      "round": "SF",
+      "storyline": "A semifinal between Portugal, carrying the ageless Cristiano Ronaldo, and Switzerland, disciplined and hard to break down. The winner goes to the World Cup final; the loser goes home one step short. Watch for Cristiano Ronaldo and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Portugal's technical midfield play can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "Portugal and Switzerland meet regularly in European competition, so neither side holds many secrets from the other."
+      ]
+    },
+    "por__usa": {
+      "round": "QF",
+      "storyline": "A quarterfinal between the USA, the high-energy co-hosts, and Portugal, carrying the ageless Cristiano Ronaldo. Win and you are into the semifinals; lose and the World Cup is over. Watch for Christian Pulisic and Cristiano Ronaldo to decide it.",
+      "things_to_watch": [
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Cristiano Ronaldo hunting one more iconic moment, plus Portugal's set-piece threat",
+        "Whether the USA's relentless pressing can overcome Portugal's technical midfield play"
+      ],
+      "h2h": [
+        "They drew 2-2 at the 2014 World Cup, Portugal snatching a Ronaldo-assisted equalizer in the final seconds."
+      ]
+    },
+    "sui__usa": {
+      "round": "SF",
+      "storyline": "A semifinal between the USA, the high-energy co-hosts, and Switzerland, disciplined and hard to break down. The winner goes to the World Cup final; the loser goes home one step short. Watch for Christian Pulisic and Granit Xhaka to decide it.",
+      "things_to_watch": [
+        "Christian Pulisic driving at defenders with the home crowd behind him",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether the USA's relentless pressing can overcome Switzerland's compact defending"
+      ],
+      "h2h": [
+        "the USA and Switzerland rarely cross paths, so there is little recent history between them — a genuine step into the unknown."
+      ]
+    }
+  }
+}
