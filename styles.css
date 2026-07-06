@@ -723,7 +723,7 @@ details.fold[open] > summary::after { transform: rotate(-135deg); }
 .pitch-note { position: absolute; left: 50%; top: 50%; translate: -50% -50%; z-index: 2; }
 .pitch-legend { margin: 10px 2px 0; font-size: 0.8rem; color: var(--faint); }
 
-/* ---------- sheets (player card + match peek overlays) ---------- */
+/* ---------- sheets (player card overlay) ---------- */
 
 .sheet-backdrop {
   position: fixed;
@@ -790,7 +790,6 @@ details.fold[open] > summary::after { transform: rotate(-135deg); }
 .sheet-body .watch-list { margin-top: 4px; }
 .sheet-actions { display: flex; gap: 10px; margin-top: 22px; flex-wrap: wrap; }
 .sheet-actions .btn { flex: 1; }
-.sheet .duel { border-radius: 0; }
 
 /* ---------- bracket ---------- */
 

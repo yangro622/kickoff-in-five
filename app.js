@@ -176,7 +176,7 @@
     const foot = m.status === "final"
       ? `<span>Full time · ${esc(k.day)}</span><span>${esc(placeOf(m))}</span>`
       : `<span class="cd" ${hero ? "data-countdown" : ""}>${esc(countdownText(m))}</span><span>${esc(placeOf(m))}</span>`;
-    return `<a class="fixture pressable" href="#/match/${esc(m.id)}" data-peek="${esc(m.id)}">
+    return `<a class="fixture pressable" href="#/match/${esc(m.id)}">
       ${duel(m)}
       <div class="fixture-foot">${foot}</div>
     </a>`;
@@ -190,7 +190,7 @@
     const meta = m.status === "final" && m.score
       ? `<span class="score">${esc(m.score)}</span>${m.penalties ? `pens ${esc(m.penalties)}` : esc(k.day)}`
       : `${esc(k.day)}<br>${esc(k.time)}`;
-    return `<li><a class="match-line pressable" style="${stripeVars(m)}" href="#/match/${esc(m.id)}" data-peek="${esc(m.id)}">
+    return `<li><a class="match-line pressable" style="${stripeVars(m)}" href="#/match/${esc(m.id)}">
       ${flags ? `<span class="match-line-flags" aria-hidden="true">${flags}</span>` : ""}
       <span class="match-line-names">${names(a)}<br>${names(b)}</span>
       <span class="match-line-meta">${meta}</span>
@@ -318,9 +318,9 @@
       </div>`;
   }
 
-  // Sheets can stack (match peek → player card), so navigation must close
-  // every open sheet — not just the top one — or the destination page stays
-  // hidden under the leftover overlay with body scrolling still locked.
+  // Navigation must close any open sheet (e.g. browser back/forward while a
+  // player card is up), or the destination page stays hidden under the
+  // leftover overlay with body scrolling still locked.
   const sheetClosers = new Set();
   const closeAllSheets = () => { for (const close of [...sheetClosers]) close(); };
 
@@ -364,37 +364,6 @@
     const p = db.playerById[id];
     if (!p) return;
     openSheet(isTodo(p.name) ? "Player card" : p.name, playerSheetBody(p));
-  }
-
-  // Quick match preview: the five-minute core without leaving the page.
-  function openMatchSheet(id) {
-    const m = db.matchById[id];
-    if (!m) return;
-    const teams = [side(m, 1), side(m, 2)].filter((s) => !s.tbd).map((s) => s.team);
-    const stars = teams.flatMap((t) => (t.star_player_ids || []).map((pid) => db.playerById[pid]).filter(Boolean));
-    const k = kickoff(m);
-    const watch = listIsTodo(m.things_to_watch)
-      ? `<p class="prose">${TODO_CHIP}</p>`
-      : `<ol class="watch-list">${m.things_to_watch.map((t) => `<li>${text(t)}</li>`).join("")}</ol>`;
-
-    const body = `
-      ${duel(m)}
-      <div class="sheet-body">
-        <p class="small muted" style="margin:12px 0 0">
-          ${m.status === "final" ? `Full time · ${esc(k.day)}` : `${esc(countdownText(m))}`} · ${esc(placeOf(m))}
-        </p>
-        <p class="kicker">The storyline</p>
-        <p class="prose">${text(m.storyline)}</p>
-        <p class="kicker">Three things to watch</p>
-        ${watch}
-        ${stars.length ? `<p class="kicker">Star players</p><div class="snap-row" style="margin:0;padding:6px 0 8px">${rankedFirst(stars).map(playerSticker).join("")}</div>` : ""}
-        <div class="sheet-actions">
-          <a class="btn btn--primary" href="#/match/${esc(m.id)}">Full guide</a>
-          <button class="btn" type="button" data-share="${esc(m.id)}">Share link</button>
-        </div>
-      </div>`;
-    const sides = [side(m, 1), side(m, 2)].map((s) => s.tbd ? s.note : s.team.name);
-    openSheet(`${sides[0]} vs ${sides[1]}`, body);
   }
 
   const backLink = (href, label) => `<a class="back-link" href="${href}">← ${esc(label)}</a>`;
@@ -624,7 +593,7 @@
         </div>`;
       };
       const place = isTodo(m.city) ? "" : ` · ${m.city.split(",")[0]}`;
-      return `<a class="bnode pressable" href="#/match/${esc(m.id)}" data-peek="${esc(m.id)}">
+      return `<a class="bnode pressable" href="#/match/${esc(m.id)}">
         <div class="bnode-meta">${esc(k.day)}${esc(place)}</div>
         ${row(1)}${row(2)}
       </a>`;
@@ -815,13 +784,6 @@
         if (share) return void shareMatch(share.getAttribute("data-share"), share);
         const player = e.target.closest("[data-player]");
         if (player && !player.disabled) return openPlayerSheet(player.getAttribute("data-player"));
-        // match links open a hover-over preview instead of navigating;
-        // modified clicks (new tab etc.) fall through to the real link
-        const peek = e.target.closest("[data-peek]");
-        if (peek && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) {
-          e.preventDefault();
-          return openMatchSheet(peek.getAttribute("data-peek"));
-        }
       });
       route();
     } catch (err) {
