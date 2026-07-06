@@ -740,6 +740,20 @@
     if (revealObserver) {
       for (const el of $main.children) { el.classList.add("reveal"); revealObserver.observe(el); }
     }
+    trackPageView(title);
+  }
+
+  // One page_view per rendered route. The index.html gtag config disables
+  // automatic page_views because GA4 drops the #/... fragment, which would
+  // report every route as a single page.
+  function trackPageView(title) {
+    if (typeof window.gtag !== "function") return;
+    const route = location.hash.replace(/^#\/?/, "");
+    window.gtag("event", "page_view", {
+      page_title: title,
+      page_location: location.href,
+      page_path: location.pathname + route,
+    });
   }
 
   function route() {
