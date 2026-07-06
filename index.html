@@ -11,6 +11,16 @@
   <link rel="preload" href="fonts/anton-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Analytics (GA4). Routes are hash-based and GA4 ignores URL
+       fragments, so automatic page_views are off; app.js sends one per
+       route change with the hash mapped into page_path instead. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEYMVRMPE0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TEYMVRMPE0', { send_page_view: false });
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
