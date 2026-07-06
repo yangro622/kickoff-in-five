@@ -99,8 +99,8 @@
       "city": "Mexico City, Mexico",
       "team1_id": "mex",
       "team2_id": "eng",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "2-3",
       "penalties": null,
       "recap": null,
       "storyline": "Co-hosts Mexico get a dream setting, the iconic Estadio Azteca high in the mountains of Mexico City, against an England team still chasing its first World Cup title since 1966. England hold the historical edge, but the altitude, the hostile crowd, and raw knockout pressure make this a genuine coin-flip.",
@@ -261,23 +261,22 @@
       "city": "Inglewood, USA",
       "team1_id": "nor",
       "team1_from": "r16-bra-nor",
-      "team2_id": "tbd",
+      "team2_id": "eng",
       "team2_from": "r16-mex-eng",
-      "team2_tbd_note": "Winner of Mexico vs England",
       "status": "upcoming",
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "A quarterfinal between Norway, Erling Haaland's Norway, and England, still chasing a first trophy since 1966. Win and you are into the semifinals; lose and the World Cup is over. Watch for Erling Haaland and Harry Kane to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether Norway's direct, physical play can overcome England's controlled, structured play"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "England usually dominate, but Norway's 2-1 win in a 1981 qualifier produced the immortal 'your boys took a hell of a beating' commentary."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner reaches the semifinals in Arlington, USA on July 14, one step from the final.",
       "watch_link": "https://www.foxsports.com/live"
     },
     {
@@ -353,7 +352,7 @@
       "team1_tbd_note": "Winner of Morocco vs France",
       "team2_id": "tbd",
       "team2_from": "qf-2",
-      "team2_tbd_note": "Winner of QF 2",
+      "team2_tbd_note": "Winner of Norway vs England",
       "status": "upcoming",
       "score": null,
       "penalties": null,
