@@ -22,7 +22,7 @@ import re
 import sys
 import unicodedata
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import bracket  # same directory
 
@@ -101,6 +101,16 @@ def run(dry_run=False):
     day_cache = {}
     changed = False
 
+    def events_on(ymd):
+        """Fetch (and cache) one day's ESPN scoreboard; [] on failure."""
+        if ymd not in day_cache:
+            try:
+                day_cache[ymd] = fetch_day(ymd)
+            except Exception as e:  # network/API hiccup: skip, try again next run
+                print(f"fetch failed for {ymd}: {e}", file=sys.stderr)
+                day_cache[ymd] = []
+        return day_cache[ymd]
+
     for m in matches:
         if m.get("status") == "final" or not m.get("datetime_utc"):
             continue
@@ -111,14 +121,18 @@ def run(dry_run=False):
         if t1 in (None, "", "tbd") or t2 in (None, "", "tbd"):
             continue  # matchup not set yet (an earlier round is still open)
 
-        ymd = kickoff.strftime("%Y%m%d")
-        if ymd not in day_cache:
-            try:
-                day_cache[ymd] = fetch_day(ymd)
-            except Exception as e:  # network/API hiccup: skip, try again next run
-                print(f"fetch failed for {ymd}: {e}", file=sys.stderr)
-                day_cache[ymd] = []
-        comp = find_competition(day_cache[ymd], {t1, t2}, resolve)
+        # ESPN files a match under its local/US-Eastern calendar date, which
+        # for a night kickoff is the day *before* the UTC date (e.g. Mexico vs
+        # England, 8pm ET Jul 5 = 2026-07-06T00:00Z, lives on ESPN's Jul 5
+        # slate). Scan the kickoff day and its neighbors so a UTC-date rollover
+        # can't hide a finished game. In a knockout each pair meets once, so
+        # matching on the two team ids stays unambiguous across adjacent days.
+        comp = None
+        for delta in (-1, 0, 1):
+            day = (kickoff + timedelta(days=delta)).strftime("%Y%m%d")
+            comp = find_competition(events_on(day), {t1, t2}, resolve)
+            if comp:
+                break
         if not comp:
             continue
         res = result_from(comp, t1, t2, resolve)
