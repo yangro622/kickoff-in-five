@@ -434,6 +434,21 @@ details.fold { scroll-margin-top: 70px; }
   vertical-align: 2px;
   box-shadow: 0 1px 3px rgba(120, 82, 0, 0.35);
 }
+/* "Where the ranking comes from" credit link (players page + player card). */
+.rank-source {
+  color: var(--soft);
+  font-size: 0.82rem;
+  margin: 8px 2px 0;
+}
+.rank-source a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #e0a021;
+}
+.rank-source a:hover { color: var(--ink); }
+.rank-source--sheet { font-size: 0.78rem; margin-top: 6px; }
+
 .rank-badge-star { font-size: 0.82em; line-height: 1; }
 .rank-badge--lg { font-size: 0.85rem; padding: 3px 9px; vertical-align: 4px; }
 

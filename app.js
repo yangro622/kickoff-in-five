@@ -199,6 +199,13 @@
 
   /* ---------- player stickers ---------- */
 
+  // Where the world_ranking numbers come from — surfaced as a "source" link so
+  // the ranking is attributable rather than something we appear to have made up.
+  const RANK_SOURCE_URL = "https://www.foxsports.com/stories/soccer/world-cup-2026-ranking-best-100-players";
+  const RANK_SOURCE_NAME = "FOX Sports — World Cup 2026: ranking best 100 players";
+  const rankSourceNote = (extra = "") =>
+    `<p class="rank-source ${extra}">Rankings from <a href="${RANK_SOURCE_URL}" target="_blank" rel="noopener">${esc(RANK_SOURCE_NAME)} ↗</a></p>`;
+
   // FOX Sports' "World Cup 2026: ranking best 100 players" position, when filled.
   const rankBadge = (p, extra = "") => p.world_ranking
     ? `<span class="rank-badge ${extra}" title="No. ${esc(String(p.world_ranking))} in FOX Sports' World Cup top-100 player ranking"><span class="rank-badge-star" aria-hidden="true">★</span>${esc(String(p.world_ranking))}</span>`
@@ -298,6 +305,7 @@
             ${isTodo(p.position) ? "Position TBD" : esc(p.position)}${p.age != null ? ` · age ${esc(String(p.age))}` : ""}
             ${p.world_ranking ? ` · <span title="FOX Sports' World Cup top-100 player ranking">World Cup Top 100: <strong>No. ${esc(String(p.world_ranking))}</strong></span>` : ""}
           </p>
+          ${p.world_ranking ? rankSourceNote("rank-source--sheet") : ""}
         </div>
       </div>
       <div class="sheet-body">
@@ -645,6 +653,7 @@
       <p class="kicker">World Cup 2026</p>
       <h1 class="hero-title">The players</h1>
       <p class="hero-note">Every star in the guide, best-ranked first. Tap a card for the full player story.</p>
+      ${rankSourceNote()}
       <div class="sticker-grid">${players.map(playerSticker).join("")}</div>
       ${backLink("#/", "All matches")}`;
     render(html, "Players — Kickoff in Five");
