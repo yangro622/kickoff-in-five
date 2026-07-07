@@ -126,8 +126,8 @@
       "city": "Seattle, USA",
       "team1_id": "usa",
       "team2_id": "bel",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "1-4",
       "penalties": null,
       "recap": null,
       "storyline": "A rematch loaded with history: the last time these teams met at a World Cup, Belgium knocked the USA out in extra time in 2014, a night defined by American goalkeeper Tim Howard's record-breaking 16 saves. Now the co-hosts get a shot at revenge in front of a raucous Seattle crowd against a Belgium side still packed with stars like Kevin De Bruyne and Romelu Lukaku.",
@@ -287,25 +287,24 @@
       "date_local": "2026-07-11",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, USA",
-      "team1_id": "tbd",
+      "team1_id": "bel",
       "team1_from": "r16-usa-bel",
-      "team1_tbd_note": "Winner of United States vs Belgium",
       "team2_id": "esp",
       "team2_from": "r16-esp-por",
       "status": "upcoming",
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "A quarterfinal between Belgium, a gifted, experienced generation, and Spain, the reigning European champions. Win and you are into the semifinals; lose and the World Cup is over. Watch for Kevin De Bruyne and Lamine Yamal to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Belgium's patient possession can overcome Spain's possession game"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "Belgium and Spain meet regularly in European competition, so neither side holds many secrets from the other."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner reaches the semifinals in Atlanta, USA on July 15, one step from the final.",
       "watch_link": "https://www.foxsports.com/live"
     },
     {
@@ -378,7 +377,7 @@
       "city": "Atlanta, USA",
       "team1_id": "tbd",
       "team1_from": "qf-3",
-      "team1_tbd_note": "Winner of QF 3",
+      "team1_tbd_note": "Winner of Belgium vs Spain",
       "team2_id": "tbd",
       "team2_from": "qf-4",
       "team2_tbd_note": "Winner of QF 4",
