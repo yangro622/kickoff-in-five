@@ -207,9 +207,9 @@
       "city": "Vancouver, Canada",
       "team1_id": "sui",
       "team2_id": "col",
-      "status": "upcoming",
-      "score": null,
-      "penalties": null,
+      "status": "final",
+      "score": "0-0",
+      "penalties": "4-3",
       "recap": null,
       "storyline": "Two well-organized sides meet in Vancouver with a place in the quarterfinals on the line. Switzerland are the reliable tournament over-achievers who so often grind out knockout results; Colombia bring South American flair and just came through a tough group. Their only previous World Cup meeting came back in 1994, when Colombia won 2-0.",
       "things_to_watch": [
@@ -317,23 +317,22 @@
       "city": "Kansas City, USA",
       "team1_id": "arg",
       "team1_from": "r16-arg-egy",
-      "team2_id": "tbd",
+      "team2_id": "sui",
       "team2_from": "r16-sui-col",
-      "team2_tbd_note": "Winner of Switzerland vs Colombia",
       "status": "upcoming",
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "A quarterfinal between Argentina, the reigning world champions, and Switzerland, disciplined and hard to break down. Win and you are into the semifinals; lose and the World Cup is over. Watch for Lionel Messi and Granit Xhaka to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Granit Xhaka dictating from deep with his range of passing",
+        "Whether Argentina's street-smart game management can overcome Switzerland's compact defending"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "Argentina edged Switzerland 1-0 in the 2014 Round of 16, Ángel Di María scoring in the 118th minute."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner reaches the semifinals in Atlanta, USA on July 15, one step from the final.",
       "watch_link": "https://www.foxsports.com/live"
     },
     {
@@ -379,7 +378,7 @@
       "team1_tbd_note": "Winner of Belgium vs Spain",
       "team2_id": "tbd",
       "team2_from": "qf-4",
-      "team2_tbd_note": "Winner of QF 4",
+      "team2_tbd_note": "Winner of Argentina vs Switzerland",
       "status": "upcoming",
       "score": null,
       "penalties": null,
