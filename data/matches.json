@@ -319,8 +319,8 @@
       "team1_from": "r16-arg-egy",
       "team2_id": "sui",
       "team2_from": "r16-sui-col",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "3-1",
       "penalties": null,
       "recap": null,
       "storyline": "A quarterfinal between Argentina, the reigning world champions, and Switzerland, disciplined and hard to break down. Win and you are into the semifinals; lose and the World Cup is over. Watch for Lionel Messi and Granit Xhaka to decide it.",
@@ -373,23 +373,22 @@
       "city": "Atlanta, USA",
       "team1_id": "esp",
       "team1_from": "qf-3",
-      "team2_id": "tbd",
+      "team2_id": "arg",
       "team2_from": "qf-4",
-      "team2_tbd_note": "Winner of Argentina vs Switzerland",
       "status": "upcoming",
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "World champions against European champions — a true heavyweight collision. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Lionel Messi to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Spain's possession game can overcome Argentina's street-smart game management"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "World champions against European champions: a rare, final-worthy heavyweight clash."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner reaches the World Cup final in East Rutherford, USA on July 19 — one win from being champions of the world.",
       "watch_link": "https://www.foxsports.com/live"
     },
     {
@@ -405,7 +404,7 @@
       "team1_tbd_note": "Winner of France vs England",
       "team2_id": "tbd",
       "team2_from": "sf-2",
-      "team2_tbd_note": "Winner of SF 2",
+      "team2_tbd_note": "Winner of Spain vs Argentina",
       "status": "upcoming",
       "score": null,
       "penalties": null,
