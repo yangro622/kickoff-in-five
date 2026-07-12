@@ -263,8 +263,8 @@
       "team1_from": "r16-bra-nor",
       "team2_id": "eng",
       "team2_from": "r16-mex-eng",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "1-2",
       "penalties": null,
       "recap": null,
       "storyline": "A quarterfinal between Norway, Erling Haaland's Norway, and England, still chasing a first trophy since 1966. Win and you are into the semifinals; lose and the World Cup is over. Watch for Erling Haaland and Harry Kane to decide it.",
@@ -345,23 +345,22 @@
       "city": "Arlington, USA",
       "team1_id": "fra",
       "team1_from": "qf-1",
-      "team2_id": "tbd",
+      "team2_id": "eng",
       "team2_from": "qf-2",
-      "team2_tbd_note": "Winner of Norway vs England",
       "status": "upcoming",
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "A repeat of the 2022 quarterfinal that France won in a nerve-shredding finish. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Harry Kane to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Kylian Mbappé's explosive acceleration cutting in from the left",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether France's lightning counters can overcome England's controlled, structured play"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "France beat England 2-1 in the 2022 World Cup quarterfinal, Harry Kane missing a late penalty."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner reaches the World Cup final in East Rutherford, USA on July 19 — one win from being champions of the world.",
       "watch_link": "https://www.foxsports.com/live"
     },
     {
@@ -403,7 +402,7 @@
       "city": "East Rutherford, USA",
       "team1_id": "tbd",
       "team1_from": "sf-1",
-      "team1_tbd_note": "Winner of SF 1",
+      "team1_tbd_note": "Winner of France vs England",
       "team2_id": "tbd",
       "team2_from": "sf-2",
       "team2_tbd_note": "Winner of SF 2",
