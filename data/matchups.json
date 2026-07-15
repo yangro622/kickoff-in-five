@@ -42,8 +42,8 @@
       ]
     },
     "arg__eng": {
-      "round": "F",
-      "storyline": "One of football's most charged rivalries, thick with World Cup history. One match, in the New York area, to be crowned champions of the world. Watch for Harry Kane and Lionel Messi to decide it.",
+      "round": "SF",
+      "storyline": "One of football's most charged rivalries, thick with World Cup history. The winner goes to the World Cup final; the loser goes home one step short. Watch for Harry Kane and Lionel Messi to decide it.",
       "things_to_watch": [
         "Harry Kane dropping deep to spray passes, then sprinting into the box",
         "Lionel Messi, likely in his final World Cup, orchestrating the attack",
@@ -54,8 +54,8 @@
       ]
     },
     "arg__esp": {
-      "round": "SF",
-      "storyline": "World champions against European champions — a true heavyweight collision. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Lionel Messi to decide it.",
+      "round": "F",
+      "storyline": "World champions against European champions — a true heavyweight collision. One match, in the New York area, to be crowned champions of the world. Watch for Lamine Yamal and Lionel Messi to decide it.",
       "things_to_watch": [
         "Lamine Yamal cutting in from the right to curl shots at the far post",
         "Lionel Messi, likely in his final World Cup, orchestrating the attack",
@@ -703,8 +703,8 @@
       ]
     },
     "esp__fra": {
-      "round": "F",
-      "storyline": "A World Cup final between France, the defending champions, and Spain, the reigning European champions. One match, in the New York area, to be crowned champions of the world. Watch for Kylian Mbappé and Lamine Yamal to decide it.",
+      "round": "SF",
+      "storyline": "A semifinal between France, the defending champions, and Spain, the reigning European champions. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Lamine Yamal to decide it.",
       "things_to_watch": [
         "Kylian Mbappé's explosive acceleration cutting in from the left",
         "Lamine Yamal cutting in from the right to curl shots at the far post",
