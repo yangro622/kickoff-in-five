@@ -3,7 +3,7 @@
     "Round of 16 (July 4-7) matchups, venues, and kickoff times are confirmed and verified as of 2026-07-04. datetime_utc holds the verified kickoff instant in UTC; date_local is the venue-local calendar date.",
     "Watch the UTC date rollover for night games: Mexico vs England kicks off 8pm ET on July 5 in Mexico City, which is 2026-07-06T00:00:00Z (Mexico City observes UTC-6 year-round, no daylight saving); USA vs Belgium kicks off 8pm ET / 5pm PT on July 6 in Seattle, which is 2026-07-07T00:00:00Z.",
     "QF/SF/Final venues, dates, and kickoff times are confirmed. A slot stays TBD (team1_id/team2_id 'tbd' + tbd_note) with storyline/things_to_watch/h2h/stakes 'TODO-RESEARCH' until BOTH its teams are known; at that point tools/bracket.py auto-injects the preview from data/matchups.json (storyline/things_to_watch/h2h) and derives stakes from the bracket. Only the post-game 'recap' is still written by hand.",
-    "Bracket flow: R16 slots 1+2 -> QF1 (Boston, Jul 9), 3+4 -> QF2 (Los Angeles, Jul 10), 5+6 -> QF3 (Miami, Jul 11), 7+8 -> QF4 (Kansas City, Jul 11); QF1+QF2 -> SF1 (Dallas, Jul 14), QF3+QF4 -> SF2 (Atlanta, Jul 15); SF1+SF2 -> Final (MetLife, Jul 19).",
+    "Bracket flow (verified against the official bracket): R16 slots 1+2 -> QF1 (Boston, Jul 9), 5+6 -> QF2 (Los Angeles, Jul 10), 3+4 -> QF3 (Miami, Jul 11), 7+8 -> QF4 (Kansas City, Jul 11); QF1+QF2 -> SF1 (Dallas/Arlington, Jul 14), QF3+QF4 -> SF2 (Atlanta, Jul 15); SF1+SF2 -> Final (MetLife, Jul 19). Note the middle two QFs cross the R16 halves: LA draws slots 5+6, Miami draws slots 3+4.",
     "For undetermined sides use team1_id/team2_id: 'tbd' plus team1_tbd_note/team2_tbd_note. When a result lands, replace the id and delete the note."
   ],
   "matches": [
@@ -259,22 +259,22 @@
       "date_local": "2026-07-10",
       "venue": "SoFi Stadium",
       "city": "Inglewood, USA",
-      "team1_id": "nor",
-      "team1_from": "r16-bra-nor",
-      "team2_id": "eng",
-      "team2_from": "r16-mex-eng",
+      "team1_id": "bel",
+      "team1_from": "r16-usa-bel",
+      "team2_id": "esp",
+      "team2_from": "r16-esp-por",
       "status": "final",
       "score": "1-2",
       "penalties": null,
-      "recap": null,
-      "storyline": "A quarterfinal between Norway, Erling Haaland's Norway, and England, still chasing a first trophy since 1966. Win and you are into the semifinals; lose and the World Cup is over. Watch for Erling Haaland and Harry Kane to decide it.",
+      "recap": "Fabian Ruiz opened the scoring and substitute Mikel Merino struck late as Spain edged Belgium 2-1 to reach the semifinals.",
+      "storyline": "A quarterfinal between Belgium, a gifted, experienced generation, and Spain, the reigning European champions. Win and you are into the semifinals; lose and the World Cup is over. Watch for Kevin De Bruyne and Lamine Yamal to decide it.",
       "things_to_watch": [
-        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
-        "Harry Kane dropping deep to spray passes, then sprinting into the box",
-        "Whether Norway's direct, physical play can overcome England's controlled, structured play"
+        "Kevin De Bruyne's pinpoint passes and whipped crosses",
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether Belgium's patient possession can overcome Spain's possession game"
       ],
       "h2h": [
-        "England usually dominate, but Norway's 2-1 win in a 1981 qualifier produced the immortal 'your boys took a hell of a beating' commentary."
+        "Belgium and Spain meet regularly in European competition, so neither side holds many secrets from the other."
       ],
       "stakes": "The winner reaches the semifinals in Arlington, USA on July 14, one step from the final.",
       "watch_link": "https://www.foxsports.com/live"
@@ -287,22 +287,22 @@
       "date_local": "2026-07-11",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, USA",
-      "team1_id": "bel",
-      "team1_from": "r16-usa-bel",
-      "team2_id": "esp",
-      "team2_from": "r16-esp-por",
+      "team1_id": "nor",
+      "team1_from": "r16-bra-nor",
+      "team2_id": "eng",
+      "team2_from": "r16-mex-eng",
       "status": "final",
       "score": "1-2",
       "penalties": null,
-      "recap": null,
-      "storyline": "A quarterfinal between Belgium, a gifted, experienced generation, and Spain, the reigning European champions. Win and you are into the semifinals; lose and the World Cup is over. Watch for Kevin De Bruyne and Lamine Yamal to decide it.",
+      "recap": "Jude Bellingham inspired England past Erling Haaland's Norway, a 2-1 win booking a semifinal date with Argentina.",
+      "storyline": "A quarterfinal between Norway, Erling Haaland's Norway, and England, still chasing a first trophy since 1966. Win and you are into the semifinals; lose and the World Cup is over. Watch for Erling Haaland and Harry Kane to decide it.",
       "things_to_watch": [
-        "Kevin De Bruyne's pinpoint passes and whipped crosses",
-        "Lamine Yamal cutting in from the right to curl shots at the far post",
-        "Whether Belgium's patient possession can overcome Spain's possession game"
+        "Erling Haaland lurking on the last defender's shoulder to burst in behind",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
+        "Whether Norway's direct, physical play can overcome England's controlled, structured play"
       ],
       "h2h": [
-        "Belgium and Spain meet regularly in European competition, so neither side holds many secrets from the other."
+        "England usually dominate, but Norway's 2-1 win in a 1981 qualifier produced the immortal 'your boys took a hell of a beating' commentary."
       ],
       "stakes": "The winner reaches the semifinals in Atlanta, USA on July 15, one step from the final.",
       "watch_link": "https://www.foxsports.com/live"
@@ -345,20 +345,20 @@
       "city": "Arlington, USA",
       "team1_id": "fra",
       "team1_from": "qf-1",
-      "team2_id": "eng",
+      "team2_id": "esp",
       "team2_from": "qf-2",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "0-2",
       "penalties": null,
-      "recap": null,
-      "storyline": "A repeat of the 2022 quarterfinal that France won in a nerve-shredding finish. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Harry Kane to decide it.",
+      "recap": "Mikel Oyarzabal converted an early penalty won by Lamine Yamal and Pedro Porro added a second after the break as Spain shut out France to reach their first World Cup final since 2010.",
+      "storyline": "A semifinal between France, the defending champions, and Spain, the reigning European champions. The winner goes to the World Cup final; the loser goes home one step short. Watch for Kylian Mbappé and Lamine Yamal to decide it.",
       "things_to_watch": [
         "Kylian Mbappé's explosive acceleration cutting in from the left",
-        "Harry Kane dropping deep to spray passes, then sprinting into the box",
-        "Whether France's lightning counters can overcome England's controlled, structured play"
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Whether France's lightning counters can overcome Spain's possession game"
       ],
       "h2h": [
-        "France beat England 2-1 in the 2022 World Cup quarterfinal, Harry Kane missing a late penalty."
+        "Two European giants who have traded modern classics, including France's 2-1 win in the 2021 Nations League final."
       ],
       "stakes": "The winner reaches the World Cup final in East Rutherford, USA on July 19 — one win from being champions of the world.",
       "watch_link": "https://www.foxsports.com/live"
@@ -371,22 +371,22 @@
       "date_local": "2026-07-15",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta, USA",
-      "team1_id": "esp",
+      "team1_id": "eng",
       "team1_from": "qf-3",
       "team2_id": "arg",
       "team2_from": "qf-4",
-      "status": "upcoming",
-      "score": null,
+      "status": "final",
+      "score": "1-2",
       "penalties": null,
-      "recap": null,
-      "storyline": "World champions against European champions — a true heavyweight collision. The winner goes to the World Cup final; the loser goes home one step short. Watch for Lamine Yamal and Lionel Messi to decide it.",
+      "recap": "Anthony Gordon put England ahead after halftime, but two late goals, with Lionel Messi pulling the strings, sent Argentina through 2-1.",
+      "storyline": "One of football's most charged rivalries, thick with World Cup history. The winner goes to the World Cup final; the loser goes home one step short. Watch for Harry Kane and Lionel Messi to decide it.",
       "things_to_watch": [
-        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Harry Kane dropping deep to spray passes, then sprinting into the box",
         "Lionel Messi, likely in his final World Cup, orchestrating the attack",
-        "Whether Spain's possession game can overcome Argentina's street-smart game management"
+        "Whether England's controlled, structured play can overcome Argentina's street-smart game management"
       ],
       "h2h": [
-        "World champions against European champions: a rare, final-worthy heavyweight clash."
+        "Charged with history — England won 1-0 in 2002 (a Beckham penalty), but Argentina went through on penalties in 1998 after Beckham's red card, and Maradona's 1986 'Hand of God' still stings."
       ],
       "stakes": "The winner reaches the World Cup final in East Rutherford, USA on July 19 — one win from being champions of the world.",
       "watch_link": "https://www.foxsports.com/live"
@@ -399,26 +399,24 @@
       "date_local": "2026-07-19",
       "venue": "MetLife Stadium",
       "city": "East Rutherford, USA",
-      "team1_id": "tbd",
+      "team1_id": "esp",
       "team1_from": "sf-1",
-      "team1_tbd_note": "Winner of France vs England",
-      "team2_id": "tbd",
+      "team2_id": "arg",
       "team2_from": "sf-2",
-      "team2_tbd_note": "Winner of Spain vs Argentina",
       "status": "upcoming",
       "score": null,
       "penalties": null,
       "recap": null,
-      "storyline": "TODO-RESEARCH",
+      "storyline": "World champions against European champions — a true heavyweight collision. One match, in the New York area, to be crowned champions of the world. Watch for Lamine Yamal and Lionel Messi to decide it.",
       "things_to_watch": [
-        "TODO-RESEARCH",
-        "TODO-RESEARCH",
-        "TODO-RESEARCH"
+        "Lamine Yamal cutting in from the right to curl shots at the far post",
+        "Lionel Messi, likely in his final World Cup, orchestrating the attack",
+        "Whether Spain's possession game can overcome Argentina's street-smart game management"
       ],
       "h2h": [
-        "TODO-RESEARCH"
+        "World champions against European champions: a rare, final-worthy heavyweight clash."
       ],
-      "stakes": "TODO-RESEARCH",
+      "stakes": "The winner is crowned champions of the world — soccer's ultimate prize.",
       "watch_link": "https://www.foxsports.com/live"
     }
   ]
